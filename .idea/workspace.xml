@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectId" id="1gB7nyo3IbzIMrKASMt7mbDX1Y7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="azure" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="" />
+      <created>1597576305859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597576305859</updated>
+      <workItem from="1597576308926" duration="35000" />
+      <workItem from="1597576432747" duration="177000" />
+      <workItem from="1597626856902" duration="1733000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="570" y="74" key="#CLI_Interpreters" timestamp="1597627746532">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="570" y="74" key="#CLI_Interpreters/0.58.3200.1742@0.58.3200.1742" timestamp="1597627746532" />
+    <state x="794" y="58" key="#PHP" timestamp="1597627033068">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="794" y="58" key="#PHP/0.58.3200.1742@0.58.3200.1742" timestamp="1597627033068" />
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597627617939">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1597627617939" />
+    <state x="346" y="58" key="SettingsEditor" timestamp="1597628390657">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1597628390657" />
+    <state x="688" y="58" width="1817" height="1736" key="search.everywhere.popup" timestamp="1597627616153">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="688" y="58" width="1817" height="1736" key="search.everywhere.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1597627616153" />
+    <state x="1027" y="720" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597627909684">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="1027" y="720" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1597627909684" />
+  </component>
+</project>
