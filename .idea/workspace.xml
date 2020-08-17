@@ -64,6 +64,9 @@
       <workItem from="1597628758635" duration="43000" />
       <workItem from="1597630181309" duration="27000" />
       <workItem from="1597630235016" duration="16000" />
+      <workItem from="1597659131281" duration="18000" />
+      <workItem from="1597705059339" duration="18000" />
+      <workItem from="1597705100074" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -114,6 +117,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1597627617939" />
+    <state x="257" y="58" key="CommitChangelistDialog2" timestamp="1597705240465">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="257" y="58" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1597705240465" />
     <state x="346" y="58" key="SettingsEditor" timestamp="1597630205697">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
