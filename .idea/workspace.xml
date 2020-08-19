@@ -22,7 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea files">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,18 +34,28 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1gB7nyo3IbzIMrKASMt7mbDX1Y7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="azure" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -67,6 +78,8 @@
       <workItem from="1597659131281" duration="18000" />
       <workItem from="1597705059339" duration="18000" />
       <workItem from="1597705100074" duration="349000" />
+      <workItem from="1597745372892" duration="130000" />
+      <workItem from="1597803837889" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -89,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597705365623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="idea files">
+      <created>1597745472788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597745472788</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,22 +140,22 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="794" y="58" key="#PHP/0.58.3200.1742@0.58.3200.1742" timestamp="1597627033068" />
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597627617939">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597804086290">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1597627617939" />
-    <state x="257" y="58" key="CommitChangelistDialog2" timestamp="1597705413938">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1597804086290" />
+    <state x="257" y="58" key="CommitChangelistDialog2" timestamp="1597745472357">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="257" y="58" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1597705413938" />
+    <state x="257" y="58" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1597745472357" />
     <state x="346" y="58" key="SettingsEditor" timestamp="1597630205697">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1597630205697" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1597705393024">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1597745484123">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1597705393024" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1597745484123" />
     <state x="688" y="58" width="1817" height="1736" key="search.everywhere.popup" timestamp="1597627616153">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
