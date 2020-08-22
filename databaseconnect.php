@@ -12,22 +12,22 @@
 
             $conn = sqlsrv_connect($serverName, $connectionOptions);
             if ($conn == false) {
-                echo "Connection failed";
+                echo "Connection failed :(";
                 die(print_r( sqlsrv_errors(), true));
             }
-            echo "Connected" . '<br>';
+            echo "Connected!" . "<br>";
 
             $tsql = "SELECT * FROM Students;";
             $getResults = sqlsrv_query($conn, $tsql);
 
-            echo ("Reading data from table" . '<br>');
+            echo "Reading id data from table Students:" . "<br>";
             if ($getResults == FALSE) {
                 die(print_r(sqlsrv_errors(), true));
             }
 
         	while ($row = sqlsrv_fetch_array($getResults,
                     SQLSRV_FETCH_ASSOC)) {
-        		echo $row['id'] . '<br>';
+        		echo $row["id"] . "<br>";
         	}
         ?>
      </body>

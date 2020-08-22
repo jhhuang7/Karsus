@@ -4,12 +4,19 @@
         <meta charset="UTF-8">
         <title>Index</title>
     </head>
-
     <body>
-        <a href="phpinfopage.php">phpinfopage</a>
+        <h1>Hot Shots by Karsus</h1>
 
-        <br>
+        <form action="index.php" method="POST">
+            <label for="id">Student ID</label>
+            <input type="text" id="id" name="id">
+            <br>
 
-        <a href="databaseconnect.php">databaseconnect</a>
+            <label for="pw">Password</label>
+            <input type="password" id="pw" name="pw">
+            <br>
+
+            <input type="submit" id="login" value="Login">
+        </form>
     </body>
 </html>

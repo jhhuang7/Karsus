@@ -5,7 +5,7 @@
 
      <body>
         <?php
-            echo phpinfo()
+            echo phpinfo();
         ?>
      </body>
 </html>
