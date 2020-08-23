@@ -22,14 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="php config">
-      <change afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databaseconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/databaseconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databaseconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/databaseconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpinfopage.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpinfopage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpinfopage.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/phpinfopage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php" />
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +102,8 @@
       <workItem from="1597883123934" duration="5120000" />
       <workItem from="1597918930144" duration="44000" />
       <workItem from="1598006934388" duration="293000" />
-      <workItem from="1598089985251" duration="4893000" />
+      <workItem from="1598089985251" duration="4980000" />
+      <workItem from="1598176426830" duration="4999000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -135,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597901306691</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Basic Login.">
+      <created>1598094912993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598094912993</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +176,8 @@
     <MESSAGE value="idea files" />
     <MESSAGE value="index.html" />
     <MESSAGE value="php config" />
-    <option name="LAST_COMMIT_MESSAGE" value="php config" />
+    <MESSAGE value="Basic Login." />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Login." />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1597887148551">
@@ -176,10 +196,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598094614826" />
-    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598007164955">
+    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598094912547">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598007164955" />
+    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598094912547" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -200,22 +220,26 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598090216357" />
-    <state x="1143" y="745" key="NewPhpFileDialog" timestamp="1598093459088">
+    <state x="1143" y="745" key="NewPhpFileDialog" timestamp="1598178064164">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="1143" y="745" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598093459088" />
+    <state x="1143" y="745" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598178064164" />
     <state x="346" y="58" key="SettingsEditor" timestamp="1597887149541">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1597887149541" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1597901334924">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1598094945634">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1597901334924" />
-    <state x="688" y="58" width="1817" height="1736" key="search.everywhere.popup" timestamp="1597627616153">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1598094945634" />
+    <state x="759" y="407" key="run.anything.popup" timestamp="1598178584738">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="688" y="58" width="1817" height="1736" key="search.everywhere.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1597627616153" />
+    <state x="759" y="407" key="run.anything.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1598178584738" />
+    <state x="688" y="58" width="1906" height="1736" key="search.everywhere.popup" timestamp="1598178998480">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="688" y="58" width="1906" height="1736" key="search.everywhere.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1598178998480" />
     <state x="1027" y="720" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597627909684">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>

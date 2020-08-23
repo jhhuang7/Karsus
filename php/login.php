@@ -1,8 +1,8 @@
 <html lang="en">
     <head>
-        <title>Index</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <title>Log in</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -18,7 +18,7 @@
             $conn = sqlsrv_connect($serverName, $connectionOptions);
             if ($conn == false) {
                 // Connection problem
-                header("Location: index.html");
+                header("Location: ../index.html");
                 exit();
             }
 
@@ -28,7 +28,7 @@
 
             if ($getResults == FALSE) {
                 // Query problem
-                header("Location: index.html");
+                header("Location: ../index.html");
                 exit();
             }
 
@@ -40,7 +40,7 @@
                 header("Location: home.php");
                 exit();
             } else {
-                header("Location: index.html?error=yes");
+                header("Location: ../index.html?error=badlogin");
                 exit();
             }
         ?>
