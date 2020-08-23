@@ -19,6 +19,25 @@
 
 <body>
     <?php
+
+    class Task
+    {
+        public $taskName = 'Default';
+        public $ccode = 'Default';
+
+        public function getDisplayName()
+        {
+            return $this->ccode . ': ' . $this->taskName;
+        }
+    }
+
+    class Student
+    {
+        public $name = 'Default';
+        public $score = 'Default';
+        public $imgsrc = 'images/Avatar_sml.png';
+    }
+
     session_start();
     $id = $_SESSION["id"];
 
@@ -48,6 +67,56 @@
     $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
     $name = $row["FirstName"];
     echo "<h1>Welcome $name!</h1><hr>";
+
+    $taskSql = "SELECT * from Works where student=" . $id . " and status='I'";
+    $getResults = sqlsrv_query($conn, $taskSql);
+    $tasks = array();
+
+
+    if ($getResults == FALSE) {
+        // Query problem
+        header("Location: index.html");
+        exit();
+    }
+
+    while ($row = sqlsrv_fetch_array(
+        $getResults,
+        SQLSRV_FETCH_ASSOC
+    )) {
+        if ($row["status"] == "I") {
+            $task = new Task;
+            $task->taskName = $row["thing"];
+            $task->ccode = $row["ccode"];
+            array_push($tasks, $task);
+        }
+    }
+
+    $classSql = "select class from Enrollment where student = " . $id;
+    $getResults = sqlsrv_query($conn, $classSql);
+    $classes = array();
+
+    while ($row = sqlsrv_fetch_array(
+        $getResults,
+        SQLSRV_FETCH_ASSOC
+    )) {
+        array_push($classes, $row['class']);
+    }
+
+    $lbSql = "select top 50 FirstName, LastName, score from Students order by score desc";
+    $getResults = sqlsrv_query($conn, $lbSql);
+    $lboard = array();
+
+    while ($row = sqlsrv_fetch_array(
+        $getResults,
+        SQLSRV_FETCH_ASSOC
+    )) {
+        $student = new Student;
+        $student->name = $row['FirstName'] . ' ' . $row['LastName'];
+        $student->score = $row['score'];
+        array_push($lboard, $student);
+    }
+
+
     ?>
 
     <div class="container">
@@ -56,36 +125,27 @@
                 <div class="card-body">
                     <h4 class="card-title">Classes</h4>
                     <div class="container scroll">
-                        <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">DECO3801</button>
-                        </p>
-                        <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">COMP3702</button>
-                        </p>
-                        <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">COMS3000</button>
-                        </p>
+                        <?php
+                        for ($i = 0; $i < count($classes); $i++) {
+                            echo '<p class="card-text"><button type="button" class="btn btn-primary w-100">' . $classes[$i] . '</button></p>';
+                        }
+                        ?>
                     </div>
-
                 </div>
             </div>
             <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Tasks</h4>
                     <div class="container scroll">
-                        <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">DECO3801: Design home page for Client Dashboard</button>
-                        </p>
-                        <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">COMP3702: Develop AI controls for LaserTanks</button>
-                        </p>
-                        <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">COMS3000: Discover 2 vulnerabilities in SeedLAB</button>
-                        </p>
+                        <?php
+                        for ($i = 0; $i < count($tasks); $i++) {
+                            echo '<p class="card-text"><button type="button" class="btn btn-info w-100 text-left">' . $tasks[$i]->getDisplayName() . '</button></p>';
+                        }
+                        ?>
                     </div>
                     <div class="container" style="margin-top: 18px;">
                         <p class="card-text">
-                            <button type="button" name="" id="" class="btn btn-secondary w-100 text-left" btn-lg btn-block">Completed Tasks</button>
+                            <button type="button" name="" id="" class="btn btn-secondary w-100 text-left">Completed Tasks</button>
                         </p>
                     </div>
                 </div>
@@ -106,7 +166,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <?php
+                                for ($i = 0; $i < count($lboard); $i++) {
+                                    echo '<tr>' .
+                                        '<th scope="row">' . ($i + 1) . '</th>' .
+                                        '<td>' . $lboard[$i]->name . '</td>' .
+                                        '<td><img src="' . $lboard[$i]->imgsrc . '" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>' .
+                                        '<td>' . $lboard[$i]->score . '</td>' .
+                                        '</tr>';
+                                }
+                                ?>
+                                <!-- <tr>
                                     <th scope="row">1</th>
                                     <td>William Fitzmaurice</td>
                                     <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
@@ -123,7 +193,7 @@
                                     <td>Jacob Watson</td>
                                     <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
                                     <td>20</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
