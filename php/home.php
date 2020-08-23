@@ -23,21 +23,19 @@
             public string $taskName = 'Default';
             public string $ccode = 'Default';
 
-            /* Auxiliary
             public function getDisplayName()
             {
                 return $this->ccode . ': ' . $this->taskName;
             }
-            */
         }
 
         class Student
         {
             public string $name = 'Default';
             public string $score = 'Default';
-            /* auxiliary
-            public string $imgsrc = 'images/Avatar_sml.png';
-            */
+            
+            public string $imgsrc = '../images/Avatar_sml.png';
+            
         }
 
         session_start();
@@ -178,24 +176,6 @@
                                             '</tr>';
                                     }
                                     ?>
-                                    <!-- <tr>
-                                        <th scope="row">1</th>
-                                        <td>William Fitzmaurice</td>
-                                        <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Harry Huang</td>
-                                        <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
-                                        <td>30</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Jacob Watson</td>
-                                        <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
-                                        <td>20</td>
-                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>

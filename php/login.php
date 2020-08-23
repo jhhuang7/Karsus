@@ -22,8 +22,7 @@
                 exit();
             }
 
-            $tsql = "SELECT COUNT(*) as num FROM Students WHERE id =" .
-                $id . "AND pw = '" . $pw . "';";
+            $tsql = 'select pw from Students where id = '.$id;
             $getResults = sqlsrv_query($conn, $tsql);
 
             if ($getResults == FALSE) {
@@ -33,8 +32,9 @@
             }
 
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
-
-            if ($row["num"] == 1) {
+            $hash = $row["pw"];
+            
+            if (password_verify($pw, $hash)) {
                 session_start();
                 $_SESSION["id"] = $id;
                 header("Location: home.php");
