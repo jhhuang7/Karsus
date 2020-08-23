@@ -5,6 +5,16 @@
     <title>Home</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        .scroll {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .card-deck {
+            margin-bottom: 30px
+        }
+    </style>
 </head>
 
 <body>
@@ -42,79 +52,87 @@
 
     <div class="container">
         <div class="card-deck">
-            <div class="card">
+            <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Classes</h4>
-                    <p class="card-text">
-                        <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">DECO3801</button>
-                    </p>
-                    <p class="card-text">
-                        <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">COMP3702</button>
-                    </p>
+                    <div class="container scroll">
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">DECO3801</button>
+                        </p>
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">COMP3702</button>
+                        </p>
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">COMS3000</button>
+                        </p>
+                    </div>
 
-
-                    <p class="card-text">
-                        <button type="button" name="" id="" class="btn btn-primary w-100" btn-lg btn-block">COMS3000</button>
-                    </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Tasks</h4>
-                    <p class="card-text">
-                        <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">DECO3801: Design home page for Client Dashboard</button>
-                    </p>
-                    <p class="card-text">
-                        <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">COMP3702: Develop AI controls for LaserTanks</button>
-                    </p>
-
-
-                    <p class="card-text">
-                        <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">COMS3000: Discover 2 vulnerabilities in SeedLAB</button>
-                    </p>
+                    <div class="container scroll">
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">DECO3801: Design home page for Client Dashboard</button>
+                        </p>
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">COMP3702: Develop AI controls for LaserTanks</button>
+                        </p>
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-info w-100 text-left" btn-lg btn-block">COMS3000: Discover 2 vulnerabilities in SeedLAB</button>
+                        </p>
+                    </div>
+                    <div class="container" style="margin-top: 18px;">
+                        <p class="card-text">
+                            <button type="button" name="" id="" class="btn btn-secondary w-100 text-left" btn-lg btn-block">Completed Tasks</button>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="card-deck">
-            <div class="card">
+            <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Leader board</h4>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Avatar</th>
-                                <th scope="col">Score</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>William Fitzmaurice</td>
-                                <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
-                                <td>50</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Harry Huang</td>
-                                <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Jacob Watson</td>
-                                <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
-                                <td>20</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="container scroll">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Avatar</th>
+                                    <th scope="col">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>William Fitzmaurice</td>
+                                    <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Harry Huang</td>
+                                    <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Jacob Watson</td>
+                                    <td><img src="images/Avatar_sml.PNG" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Customise</h4>
-                    <img src="images/Avatar.PNG" class="img-thumbnail w-75 mx-auto d-block" alt="Avatar">
+                    <img src="images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">
                 </div>
             </div>
         </div>
