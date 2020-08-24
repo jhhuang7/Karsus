@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Customise</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script>
@@ -44,9 +44,9 @@
 <body>
     <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
         <div class="avatar">
-            <img id="baseAvatar" src="../images/avatars/base2.png">
-            <img id="hat" src="../images/avatars/witch-hat.png">
-            <img id="outfit" src="../images/avatars/suit.png">
+            <img id="baseAvatar" alt=baseAvatar" src="../images/avatars/base2.png">
+            <img id="hat" alt="hat" src="../images/avatars/witch-hat.png">
+            <img id="outfit" alt="outfit" src="../images/avatars/suit.png">
         </div>
     </div>
     <div class="container">
