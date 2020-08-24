@@ -51,7 +51,7 @@
         $conn = sqlsrv_connect($serverName, $connectionOptions);
         if ($conn == false) {
             // Connection problem
-            header("Location: index.html");
+            header("Location: ../index.html");
             exit();
         }
 
@@ -60,7 +60,7 @@
 
         if ($getResults == FALSE) {
             // Query problem
-            header("Location: index.html");
+            header("Location: ../index.html");
             exit();
         }
 
@@ -75,7 +75,7 @@
 
         if ($getResults == FALSE) {
             // Query problem
-            header("Location: index.html");
+            header("Location: ../index.html");
             exit();
         }
 
