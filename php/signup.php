@@ -16,7 +16,6 @@
 
             $hashed_password = password_hash($pw, PASSWORD_DEFAULT);
 
-
             $serverName = "tcp:karsus.database.windows.net,1433";
             $connectionOptions = array("UID" => "karsus", "PWD" => "K@rth0us",
                 "Database" => "Karsus", "LoginTimeout" => 30,
@@ -40,13 +39,14 @@
 
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
             if ($row["num"] != 0) {
-                header("Location: ../index.html?error=badsignup");
+                header("Location: ../index.html?status=badsignup");
                 exit();
             } else {
                 $insert = "INSERT INTO 
                     Students(id, FirstName, LastName, email, phone, pw, score) 
                     VALUES(" . $id . ", '" . $first . "', '" . $last . "', '" .
-                    $email . "', '" . $phone . "', '" . $hashed_password . "', 0);";
+                    $email . "', '" . $phone . "', '" .
+                    $hashed_password . "', 0);";
                 $stmt = sqlsrv_prepare($conn, $insert);
                 if (!sqlsrv_execute($stmt)) {
                     // Insert problem

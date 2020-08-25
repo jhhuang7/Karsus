@@ -140,12 +140,17 @@
                   params[d(spl[0])] = spl.length >= 2 ? d(spl[1]) : true;
               });
 
-            if (params['error'] === 'badlogin') {
+            if (params["status"] === "badlogin") {
                 document.getElementById('errorDiv').style.visibility
-                        = 'visible';
-            } else if (params['error'] === 'badsignup') {
-                document.getElementById('badSignUp').style.visibility
-                        = 'visible';
+                        = "visible";
+            } else if (params["status"] === "badsignup") {
+                document.getElementById("badSignUp").style.visibility
+                        = "visible";
+            } else {
+                document.getElementById("errorDiv").style.visibility
+                    = "hidden";
+                document.getElementById("badSignUp").style.visibility
+                    = "hidden";
             }
         </script>
     </body>

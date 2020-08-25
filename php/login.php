@@ -22,7 +22,7 @@
                 exit();
             }
 
-            $tsql = 'select pw from Students where id = '.$id;
+            $tsql = "SELECT pw FROM Students WHERE id = " . $id . ";";
             $getResults = sqlsrv_query($conn, $tsql);
 
             if ($getResults == FALSE) {
@@ -40,7 +40,7 @@
                 header("Location: home.php");
                 exit();
             } else {
-                header("Location: ../index.html?error=badlogin");
+                header("Location: ../index.html?status=badlogin");
                 exit();
             }
         ?>
