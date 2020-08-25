@@ -57,10 +57,13 @@
         <button onclick="switchHat('witch-hat.png')">Witch Hat</button>
     </div>
     <div class="container">
-        <p class="h2">Outfits</p>
+        <p class="h2">Shirts</p>
         <button onclick="switchOutfit('coat.png')">Coat</button>
         <button onclick="switchOutfit('jacket.png')">Jacket</button>
         <button onclick="switchOutfit('suit.png')">Suit</button>
+        <button onclick="switchOutfit('rlblue.png')">RL Blue</button>
+        <button onclick="switchOutfit('rlred.png')">RL Red</button>
+        <button onclick="switchOutfit('rlpink.png')">RL Pink</button>
     </div>
 </body>
 
