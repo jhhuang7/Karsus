@@ -1,4 +1,5 @@
-/*
+/* Commented out for now to avoid errors
+
 -- Items purchased by user
 select * from Inventory p where p.name in 
 	(select item from Purchase p inner join Inventory i on p.item = i.name where student = [id])
@@ -16,4 +17,5 @@ from Students
 inner join Purchase on Students.id = Purchase.student
 inner join Inventory on Purchase.item = Inventory.name
 where Students.id = [id]
+
 */
