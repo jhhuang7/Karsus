@@ -22,7 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="" />
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/customise.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/queries.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +106,8 @@
       <workItem from="1598176426830" duration="5088000" />
       <workItem from="1598233016770" duration="257000" />
       <workItem from="1598265462520" duration="521000" />
-      <workItem from="1598307504370" duration="3398000" />
+      <workItem from="1598307504370" duration="3515000" />
+      <workItem from="1598325375723" duration="9059000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -167,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598313376929</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="idea">
+      <created>1598313898514</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598313898514</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +212,8 @@
     <MESSAGE value="Basic Signup." />
     <MESSAGE value="Remove some warnings (code smells!)" />
     <MESSAGE value="New Ralph Lauren shirts!" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Ralph Lauren shirts!" />
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -212,10 +232,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598094614826" />
-    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598313376546">
+    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598313898282">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598313376546" />
+    <state x="257" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598313898282" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -236,22 +256,22 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598090216357" />
-    <state x="1143" y="745" key="NewPhpFileDialog" timestamp="1598178064164">
+    <state x="1143" y="745" key="NewPhpFileDialog" timestamp="1598328862791">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="1143" y="745" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598178064164" />
+    <state x="1143" y="745" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598328862791" />
     <state x="346" y="58" key="SettingsEditor" timestamp="1598308988394">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1598313400630">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1598313947734">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1598313400630" />
-    <state x="759" y="407" key="run.anything.popup" timestamp="1598178584738">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1598313947734" />
+    <state x="759" y="407" key="run.anything.popup" timestamp="1598331320039">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="759" y="407" key="run.anything.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1598178584738" />
+    <state x="759" y="407" key="run.anything.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1598331320039" />
     <state x="688" y="58" width="1906" height="1736" key="search.everywhere.popup" timestamp="1598178998480">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
