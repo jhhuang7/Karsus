@@ -137,8 +137,7 @@
                 array_push($lboard, $student);
             }
 
-            // - SUM(cost)
-            $goldSql = "select  SUM(score)/COUNT(*) 
+            $goldSql = "select  SUM(score)/COUNT(*) - SUM(cost)
                 as [Balance]
                 from Students
                 inner join Purchase on Students.id = Purchase.student
@@ -158,7 +157,7 @@
 
             <div class="col text-right">
                 <?php
-                    echo '<span style="color:gold; font-size:25px;">' . $gold . 'g   ' .
+                    echo '<span style="color:gold; font-size:25px;">' . $gold . 'KC   ' .
                         '<a href="profile.php"><img src="../images/profile.png" alt="profile" width=40 height=40 /></a></span>';
                 ?>
             </div>
@@ -168,7 +167,7 @@
             <div class="card-deck">
                 <div class="card bg-light">
                     <div class="card-body">
-                        <h4 class="card-title">Classes</h4>
+                        <h4 class="card-title"><a href="class.php">Classes</a></h4>
                         <div class="container scroll">
                             <?php
                                 for ($i = 0; $i < count($classes); $i++) {
