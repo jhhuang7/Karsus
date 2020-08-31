@@ -33,35 +33,47 @@
                 WHERE class ='" . $course . "';";
             $results2 = sqlsrv_query($conn, $q2);
 
-            $q3 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date 
-                FROM Task WHERE ccode ='" . $course . "' ORDER BY date ASC;";
+            $q3 = "SELECT S.FirstName, S.LastName FROM Students S, Enrollment E 
+                WHERE E.class ='" . $course . "' AND E.student=S.id 
+                ORDER BY S.score DESC, S.LastName;";
             $results3 = sqlsrv_query($conn, $q3);
 
+            $q4 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date 
+                FROM Task WHERE ccode ='" . $course . "' ORDER BY due;";
+            $results4 = sqlsrv_query($conn, $q4);
+
             if ($results1 == false or $results2 == false
-                    or $results3 == false) {
+                    or $results3 == false or $results4 == false) {
                 // Query problem
                 header("Location: home.php");
                 exit();
             }
 
             $row1 = sqlsrv_fetch_array($results1, SQLSRV_FETCH_ASSOC);
-            $row2 = sqlsrv_fetch_array($results2, SQLSRV_FETCH_ASSOC);
-
             echo "Course Code: " . $row1["code"];
             echo "<br>";
 
             echo "Course Description: " . $row1["info"];
             echo "<br>";
 
+            $row2 = sqlsrv_fetch_array($results2, SQLSRV_FETCH_ASSOC);
             echo "Number of People: " . $row2["num"];
             echo "<br>";
 
-            echo "Tasks: <br><ol>";
+            echo "Class List: <br><ul>";
             while ($row3 = sqlsrv_fetch_array($results3,
                 SQLSRV_FETCH_ASSOC)) {
-                echo "<li>Task: " . $row3["title"] .
-                    "; Information: " . $row3["info"] .
-                    "; Due date: " . $row3["date"] .
+                echo "<li>" . $row3["FirstName"] .
+                    " " . $row3["LastName"] . "</li>";
+            }
+            echo "</ul>";
+
+            echo "Tasks: <br><ol>";
+            while ($row4 = sqlsrv_fetch_array($results4,
+                SQLSRV_FETCH_ASSOC)) {
+                echo "<li>Task: " . $row4["title"] .
+                    "; Information: " . $row4["info"] .
+                    "; Due date: " . $row4["date"] .
                     ".</li>";
             }
             echo "</ol>";
