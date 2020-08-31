@@ -63,8 +63,9 @@
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
             $name = $row["FirstName"];
 
-            $taskSql = "SELECT * from Works where student=" . $id .
-                " and status='I'";
+            $taskSql = "SELECT top 5 * from Works W, Task T where W.student=" .
+                $id . " and W.status='I' and W.ccode=T.ccode and W.thing=T.title
+                order by T.due";
             $getResults = sqlsrv_query($conn, $taskSql);
             $tasks = array();
 
@@ -85,8 +86,9 @@
                 }
             }
 
-            $doneSql = "SELECT * from Works where student=" . $id
-                . " and status='C'";
+            $doneSql = "SELECT top 5 * from Works W, Task T where W.student=" .
+                $id . " and W.status='C' and W.ccode=T.ccode and W.thing=T.title
+                order by T.due";
             $getResults2 = sqlsrv_query($conn, $doneSql);
             $done = array();
 
@@ -116,7 +118,7 @@
             }
 
             $lbSql = "select top 50 FirstName, LastName, score 
-                from Students order by score desc";
+                from Students order by score desc, LastName, FirstName";
             $getResults = sqlsrv_query($conn, $lbSql);
             $lboard = array();
 
@@ -190,16 +192,18 @@
                 </div>
                 <div class="card bg-light">
                     <div class="card-body">
-                        <h4 class="card-title"><a href="task.php">Tasks</a></h4>
+                        <h4 class="card-title">Tasks</h4>
                         <div class="container scroll">
                             <p class="card-text">
-                                <button
-                                    type="button"
-                                    name="" id=""
-                                    class="btn btn-secondary w-100 text-left"
-                                >
-                                    TODO Tasks
-                                </button>
+                                <a href="task.php">
+                                    <button
+                                        type="button"
+                                        name="" id=""
+                                        class="btn btn-secondary w-100 text-left"
+                                    >
+                                        TODO Tasks
+                                    </button>
+                                </a>
                             </p>
                             <?php
                                 for ($i = 0; $i < count($tasks); $i++) {
@@ -228,7 +232,11 @@
             <div class="card-deck">
                 <div class="card bg-light">
                     <div class="card-body">
-                        <h4 class="card-title">Leader board</h4>
+                        <h4 class="card-title">Leaderboard</h4>
+                        <select>
+                            <option>Filter options:</option>
+                            <option>Needs to be implemented!</option>
+                        </select>
                         <div class="container scroll">
                             <table class="table">
                                 <thead>
@@ -257,8 +265,10 @@
                 </div>
                 <div class="card bg-light">
                     <div class="card-body">
-                        <h4 class="card-title"><a href="customise.php">Customise</a></h4>
-                        <img src="../images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">
+                        <h4 class="card-title">Customise</h4>
+                        <a href="customise.php">
+                            <img src="../images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">
+                        </a>
                     </div>
                 </div>
             </div>
