@@ -4,6 +4,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.5.1.js"></script>
         <style>
             .scroll {
                 max-height: 300px;
@@ -18,22 +19,18 @@
 
     <body>
         <?php
-            class Task
-            {
+            class Task {
                 public string $taskName = 'Default';
                 public string $ccode = 'Default';
 
-                public function getDisplayName()
-                {
+                public function getDisplayName() {
                     return $this->ccode . ': ' . $this->taskName;
                 }
             }
 
-            class Student
-            {
+            class Student {
                 public string $name = 'Default';
                 public string $score = 'Default';
-
                 public string $imgsrc = '../images/Avatar_sml.png';
             }
 
@@ -66,7 +63,8 @@
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
             $name = $row["FirstName"];
 
-            $taskSql = "SELECT * from Works where student=" . $id . " and status='I'";
+            $taskSql = "SELECT * from Works where student=" . $id .
+                " and status='I'";
             $getResults = sqlsrv_query($conn, $taskSql);
             $tasks = array();
 
@@ -78,9 +76,7 @@
             }
 
             while ($row = sqlsrv_fetch_array(
-                $getResults,
-                SQLSRV_FETCH_ASSOC
-            )) {
+                    $getResults, SQLSRV_FETCH_ASSOC)) {
                 if ($row["status"] == "I") {
                     $task = new Task;
                     $task->taskName = $row["thing"];
@@ -89,10 +85,10 @@
                 }
             }
 
-            $doneSql = "SELECT * from Works where student=" . $id . " and status='C'";
+            $doneSql = "SELECT * from Works where student=" . $id
+                . " and status='C'";
             $getResults2 = sqlsrv_query($conn, $doneSql);
             $done = array();
-
 
             if ($getResults2 == FALSE) {
                 // Query problem
@@ -101,9 +97,7 @@
             }
 
             while ($row2 = sqlsrv_fetch_array(
-                $getResults2,
-                SQLSRV_FETCH_ASSOC
-            )) {
+                $getResults2, SQLSRV_FETCH_ASSOC)) {
                 if ($row2["status"] == "C") {
                     $task2 = new Task;
                     $task2->taskName = $row2["thing"];
@@ -117,13 +111,12 @@
             $classes = array();
 
             while ($row = sqlsrv_fetch_array(
-                $getResults,
-                SQLSRV_FETCH_ASSOC
-            )) {
+                $getResults, SQLSRV_FETCH_ASSOC)) {
                 array_push($classes, $row['class']);
             }
 
-            $lbSql = "select top 50 FirstName, LastName, score from Students order by score desc";
+            $lbSql = "select top 50 FirstName, LastName, score 
+                from Students order by score desc";
             $getResults = sqlsrv_query($conn, $lbSql);
             $lboard = array();
 
@@ -157,8 +150,14 @@
 
             <div class="col text-right">
                 <?php
-                    echo '<span style="color:gold; font-size:25px;">' . $gold . 'KC   ' .
-                        '<a href="profile.php"><img src="../images/profile.png" alt="profile" width=40 height=40 /></a></span>';
+                    echo '<span style="color:gold; font-size:25px;">' .
+                        $gold . 'KC   ' .
+                        '<a href="profile.php">
+                        <img 
+                            src="../images/profile.png" 
+                            alt="profile" width=40 height=40 
+                        />
+                        </a></span>';
                 ?>
             </div>
         </div>
@@ -167,11 +166,23 @@
             <div class="card-deck">
                 <div class="card bg-light">
                     <div class="card-body">
-                        <h4 class="card-title"><a href="class.php">Classes</a></h4>
+                        <h4 class="card-title">
+                            Classes
+                        </h4>
                         <div class="container scroll">
                             <?php
                                 for ($i = 0; $i < count($classes); $i++) {
-                                    echo '<p class="card-text"><button type="button" class="btn btn-primary w-100">' . $classes[$i] . '</button></p>';
+                                    echo '<p class="card-text">
+                                        <form 
+                                            action="class.php" 
+                                            method="POST">
+                                            <input 
+                                                type="submit" 
+                                                class="btn btn-primary w-100"
+                                                name="course"
+                                                value="'. $classes[$i] . '"
+                                            />
+                                        </form></p>';
                                 }
                             ?>
                         </div>
@@ -182,11 +193,22 @@
                         <h4 class="card-title"><a href="task.php">Tasks</a></h4>
                         <div class="container scroll">
                             <p class="card-text">
-                                <button type="button" name="" id="" class="btn btn-secondary w-100 text-left">TODO Tasks</button>
+                                <button
+                                    type="button"
+                                    name="" id=""
+                                    class="btn btn-secondary w-100 text-left"
+                                >
+                                    TODO Tasks
+                                </button>
                             </p>
                             <?php
                                 for ($i = 0; $i < count($tasks); $i++) {
-                                    echo '<p class="card-text"><button type="button" class="btn btn-info w-100 text-left">' . $tasks[$i]->getDisplayName() . '</button></p>';
+                                    echo '<p class="card-text">
+                                        <button 
+                                            type="button" 
+                                            class="btn btn-info w-100 text-left">' .
+                                        $tasks[$i]->getDisplayName() . '
+                                        </button></p>';
                                 }
                             ?>
                         </div>
