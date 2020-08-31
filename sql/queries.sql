@@ -19,5 +19,3 @@ from Students
 inner join Purchase on Students.id = Purchase.student
 inner join Inventory on Purchase.item = Inventory.name
 where Students.id = [id]
-
-
