@@ -22,11 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="Class page created, waiting to be filled">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/customise.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/queries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +65,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,7 +109,12 @@
       <workItem from="1598351552645" duration="367000" />
       <workItem from="1598398881407" duration="630000" />
       <workItem from="1598437221744" duration="143000" />
-      <workItem from="1598486774771" duration="3577000" />
+      <workItem from="1598486774771" duration="3868000" />
+      <workItem from="1598611775467" duration="255000" />
+      <workItem from="1598704988487" duration="71000" />
+      <workItem from="1598754521640" duration="269000" />
+      <workItem from="1598787209896" duration="173000" />
+      <workItem from="1598835022730" duration="5718000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -228,7 +235,35 @@
       <option name="project" value="LOCAL" />
       <updated>1598399414861</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="idea">
+      <created>1598497542792</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1598497542792</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Probably could be deleted if not needed">
+      <created>1598497584532</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1598497584532</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Uncommented reference file">
+      <created>1598497619777</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1598497619777</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Class page created, waiting to be filled">
+      <created>1598497659646</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1598497659646</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +294,10 @@
     <MESSAGE value="More account functionality" />
     <MESSAGE value="Displaying more from DB" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="Probably could be deleted if not needed" />
+    <MESSAGE value="Uncommented reference file" />
+    <MESSAGE value="Class page created, waiting to be filled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class page created, waiting to be filled" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -274,14 +312,14 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="51" y="574" key="#SQL_Dialects/0.58.3200.1742@0.58.3200.1742" timestamp="1598091817692" />
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598094614826">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598838877097">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598094614826" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598399414209">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598838877097" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598835113076">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598399414209" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598835113076" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -310,10 +348,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1598399496136">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1598497714312">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1598399496136" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1598497714312" />
     <state x="759" y="407" key="run.anything.popup" timestamp="1598331320039">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
