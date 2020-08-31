@@ -41,6 +41,10 @@
     </head>
 
     <body>
+        <h1>
+            Customise
+        </h1>
+
         <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
             <div class="avatar">
                 <img id="baseAvatar" alt=baseAvatar" src="../images/avatars/base2.png">

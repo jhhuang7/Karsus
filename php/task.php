@@ -9,8 +9,15 @@
     <body>
         <div class="container" style="margin-top: 50px; margin-bottom: 50px">
             <form>
-                <p class="h1">DECO3801: Design home page for Client Dashboard</p>
+                <p class="h1">Task</p>
 
+                <p>
+                    Task info:
+                    title, course, description, due date,
+                    who's completed this task.
+                </p>
+
+<!--                Actual questions will be pulled from DB!-->
                 <div class="form-group">
                     <div class="container">
                         <div class="row">
@@ -76,7 +83,13 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary float-right">Submit Answers</button>
+                <button
+                        type="submit"
+                        class="btn btn-primary float-right"
+                        onclick="alert('Score based on length of answers.');"
+                >
+                    Submit Answers
+                </button>
             </form>
         </div>
 
