@@ -114,7 +114,7 @@
       <workItem from="1598704988487" duration="71000" />
       <workItem from="1598754521640" duration="269000" />
       <workItem from="1598787209896" duration="173000" />
-      <workItem from="1598835022730" duration="5718000" />
+      <workItem from="1598835022730" duration="6028000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -263,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598497659646</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="idea">
+      <created>1598841058533</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1598841058534</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,11 +300,11 @@
     <MESSAGE value="README" />
     <MESSAGE value="More account functionality" />
     <MESSAGE value="Displaying more from DB" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Probably could be deleted if not needed" />
     <MESSAGE value="Uncommented reference file" />
     <MESSAGE value="Class page created, waiting to be filled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class page created, waiting to be filled" />
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -316,10 +323,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598838877097" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598835113076">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598841058009">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598835113076" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598841058009" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
