@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +114,10 @@
       <workItem from="1598912521582" duration="3981000" />
       <workItem from="1598960220243" duration="429000" />
       <workItem from="1599008246770" duration="318000" />
-      <workItem from="1599018332584" duration="1144000" />
+      <workItem from="1599018332584" duration="1204000" />
+      <workItem from="1599048091795" duration="52000" />
+      <workItem from="1599091645487" duration="1489000" />
+      <workItem from="1599094783837" duration="1300000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -340,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598917523811</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="idea">
+      <created>1599019500493</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1599019500493</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,12 +387,12 @@
     <MESSAGE value="Removed blanks lines" />
     <MESSAGE value="Added 'back to home' button" />
     <MESSAGE value="Now displaying class specific information" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Added back 'locked up' message" />
     <MESSAGE value="Added title and placeholder info" />
     <MESSAGE value="More placeholder info instead of hyperlinks" />
     <MESSAGE value="Includes class list and sorted tasks by due date" />
-    <option name="LAST_COMMIT_MESSAGE" value="Includes class list and sorted tasks by due date" />
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -401,10 +411,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598838877097" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1598917523681">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599096250692">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1598917523681" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599096250692" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -433,10 +443,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1598917554026">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1599019518418">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1598917554026" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1599019518418" />
     <state x="759" y="407" key="run.anything.popup" timestamp="1598331320039">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
