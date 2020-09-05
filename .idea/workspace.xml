@@ -23,7 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
+      <change afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/queries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +65,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql/queries.sql" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -118,6 +126,11 @@
       <workItem from="1599048091795" duration="52000" />
       <workItem from="1599091645487" duration="1489000" />
       <workItem from="1599094783837" duration="1300000" />
+      <workItem from="1599114470500" duration="721000" />
+      <workItem from="1599179589638" duration="833000" />
+      <workItem from="1599180796050" duration="24000" />
+      <workItem from="1599201515277" duration="164000" />
+      <workItem from="1599262805295" duration="7335000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -407,14 +420,18 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="51" y="574" key="#SQL_Dialects/0.58.3200.1742@0.58.3200.1742" timestamp="1598091817692" />
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598838877097">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599267661405">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598838877097" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599096250692">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599180552743">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599096250692" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599180552743" />
+    <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="1070" y="324" key="FileChooserDialogImpl/0.58.3200.1742@0.58.3200.1742" timestamp="1599267624340" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -435,10 +452,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598090216357" />
-    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog" timestamp="1599019009951">
+    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog" timestamp="1599263911896">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599019009951" />
+    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599263911896" />
     <state x="346" y="58" key="SettingsEditor" timestamp="1598308988394">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -447,6 +464,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1599019518418" />
+    <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599264277891">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
+    <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599264277891" />
     <state x="759" y="407" key="run.anything.popup" timestamp="1598331320039">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
