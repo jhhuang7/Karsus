@@ -48,23 +48,23 @@
                 </div>
                 <div class="form-group">
                     <label for="first">First Name</label>
-                    <input type="text" class="form-control" id="first" name="first" value="<?php echo $row['FirstName'] ?>">
+                    <input type="text" class="form-control" id="first" name="first" value="<?php echo $row['FirstName'] ?>" required/>
                 </div>
                 <div class="form-group">
                     <label for="last">Last Name</label>
-                    <input type="text" class="form-control" id="last" name="last" value="<?php echo $row['LastName'] ?>">
+                    <input type="text" class="form-control" id="last" name="last" value="<?php echo $row['LastName'] ?>" required/>
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $row['email'] ?>">
+                    <input type="email" class="form-control" id="email" name="email" value="<?php echo $row['email'] ?>" required/>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone number</label>
-                    <input type="number" class="form-control" id="phone" name="phone" value="<?php echo $row['phone'] ?>">
+                    <input type="number" class="form-control" id="phone" name="phone" value="<?php echo $row['phone'] ?>" required/>
                 </div>
                 <div class="form-group">
                     <label for="pw">Password</label>
-                    <input type="password" class="form-control" id="pw" name="pw" placeholder="Your Password">
+                    <input type="password" class="form-control" id="pw" name="pw" placeholder="Your Password" required>
                 </div>
                 <div class="form-group">
                     <label for="score" onclick="lockedParam();">Score</label>

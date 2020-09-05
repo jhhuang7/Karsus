@@ -39,7 +39,7 @@
 
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
             if ($row["num"] != 0) {
-                header("Location: ../index.html?status=badsignup");
+                header("Location: ../index.html?status=badsignup#signup");
                 exit();
             } else {
                 $insert = "INSERT INTO 

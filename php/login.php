@@ -40,7 +40,7 @@
                 header("Location: home.php");
                 exit();
             } else {
-                header("Location: ../index.html?status=badlogin");
+                header("Location: ../index.html?status=badlogin#login");
                 exit();
             }
         ?>

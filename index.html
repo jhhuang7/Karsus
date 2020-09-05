@@ -1,197 +1,146 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <style>
-  .navbar-brand {
-  display:block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-  }
+<html lang="en">
+      <head>
+          <style>
+              .navbar-brand {
+                  display:block;
+                  padding-top: .3125rem;
+                  padding-bottom: .3125rem;
+                  margin-right: 1rem;
+                  font-size: 1.25rem;
+                  line-height: inherit;
+                  white-space: nowrap;
+              }
 
-  body {font-family: "Arial", sans-serif}
-  .mySlides {display: none}
+              body {
+                  font-family: "Arial", sans-serif
+              }
+          </style>
+          <meta charset="UTF-8"/>
+          <title>Home</title>
+          <link rel="icon" type="image/x-icon" href="images/karsus.ico">
+          <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+          <link rel="stylesheet" href="css/style1.css">
+          <link rel="stylesheet" href="css/style3.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+      </head>
 
-  </style>
-  <head>
-    <meta charset="UTF-8"/>
-      <title>Home</title>
-      <link rel="icon" type="image/x-icon" href="images/karsus.ico">
-      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="css/style1.css">
-      <link rel="stylesheet" href="css/style3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+      <body>
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark"
+              style="position:fixed;right:0;left:0;z-index:1030;">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/karsus_logo.png" alt="Logo" style="width:40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbarcollapses">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigationbarcollapses">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#signup">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/karsus_logo.png" href="index.html" alt="Logo" style="width:40px; ">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbarcollapses">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navigationbarcollapses">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about" onclick="myFunction()">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#signup" onclick="myFunction()">Sign Up</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#login" onclick="myFunction()">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" onclick="myFunction()">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Page content -->
-      <div class="w3-content" style="max-width:2000px;">
-
-          <div class="w3-display-container w3-center">
-
-              <img src="images/home.png" style="width:100%;height:700px">
-              <div class="w3-text-white w3-hide-small w3-display-middle " style='font-size:120px; font-family: "Amatic SC", sans-serif;'>
-
-                  <strong>Hot Shots by Karsus</strong><br>
-                  <img src="images/logo_w.name.png" alt="Logo" style="width:205px; height:225px"><br>
-
+          <!-- Page content -->
+          <div class="w3-content" style="max-width:2000px;">
+              <div class="w3-display-container w3-center">
+                  <img src="images/home.png" alt="homes" style="width:100%;height:700px">
+                  <div class="w3-text-white w3-hide-small w3-display-middle " style='font-size:120px; font-family: "Amatic SC", sans-serif;'>
+                      <strong>Hot Shots by Karsus</strong><br>
+                      <img src="images/logo_w.name.png" alt="Logo" style="width:205px; height:225px"><br>
                   </div>
               </div>
-
-
           </div>
+
           <!-- The About Section -->
           <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
               <h2 class="w3-wide">ABOUT US</h2>
-              <p class="w3-opacity"><i>Your No. 1 Game-Based Learning Platform</i></p>
+              <p class="w3-opacity"><i>Your No.1 Game-Based Learning Platform</i></p>
               <p>Team Hot Shots proposes a gamified solution to improve classroom engagement.</p>
-              <div class="mySlides w3-display-container w3-center">
-                  <div class="w3-row w3-padding-32">
-                      <div class="w3-third">
-
-                          <img src="notty.png" class="w3-round w3-margin-bottom" alt="Avatar" style="width:60%">
-                      </div>
-                      <div class="w3-third">
-
-                          <img src="help.jpg" class="w3-round w3-margin-bottom" alt="Avatar" style="width:60%">
-                      </div>
-                      <div class="w3-third">
-
-                          <img src="monash.png" class="w3-round" alt="Avatar" style="width:60%">
-                      </div>
-                  </div>
-              </div>
-              <div class="mySlides w3-display-container w3-center">
-                  <div class="w3-row w3-padding-32">
-                      <div class="w3-third">
-
-                          <img src="oum.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-                      </div>
-                      <div class="w3-third">
-
-                          <img src="um.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-                      </div>
-                      <div class="w3-third">
-
-                          <img src="uum.png" class="w3-round" alt="Random Name" style="height:30%;width:30%">
-                      </div>
-                  </div>
-              </div>
-              <div class="mySlides w3-display-container w3-center">
-                  <div class="w3-row w3-padding-32">
-                      <div class="w3-third">
-
-                          <img src="uthm.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-                      </div>
-                      <div class="w3-third">
-
-                          <img src="usm.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-                      </div>
-                      <div class="w3-third">
-
-                          <img src="ytm.png" class="w3-round" alt="Random Name" style="width:60%">
-                      </div>
-                  </div>
-              </div>
           </div>
 
-          <!-- The Tour Section -->
+          <!-- The Sign up Section -->
           <div class="w3-cyan" id="signup">
               <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                   <h2 class="w3-wide w3-center">SIGN UP</h2>
-
                   <br>
                   <form action="php/signup.php" method="POST">
                     <div class="container p-3 my-3 bg-white border">
-                    <div class="form-group">
-                      <label for="sid2">Student ID</label>
-                      <input type="number" class="form-control" id="sid2" name="id2" style="color:black;"/>
-                    </div>
+                        <div class="form-group">
+                          <label for="sid2">Student ID</label>
+                          <input required type="number" class="form-control" id="sid2" name="id2" style="color:black;"/>
+                        </div>
 
-                    <!--        first-->
-                    <div class="form-group">
-                      <label for="first">First Name</label>
-                      <input type="text" class="form-control" id="first" name="first" style="color:black;"
-                      />
-                    </div>
+                        <!--        first-->
+                        <div class="form-group">
+                          <label for="first">First Name</label>
+                          <input required type="text" class="form-control" id="first" name="first" style="color:black;"
+                          />
+                        </div>
 
-                    <!--        last-->
-                    <div class="form-group">
-                      <label for="last">Last Name</label>
-                      <input type="text" class="form-control" id="last" name="last" style="color:black;"
-                      />
-                    </div>
+                        <!--        last-->
+                        <div class="form-group">
+                          <label for="last">Last Name</label>
+                          <input required type="text" class="form-control" id="last" name="last" style="color:black;"
+                          />
+                        </div>
 
-                    <!--        phone-->
-                    <div class="form-group">
-                      <label for="phone">Phone Number</label>
-                      <input type="number" class="form-control" id="phone" style="color:black;"
-                             name="phone"
-                      />
-                    </div>
+                        <!--        phone-->
+                        <div class="form-group">
+                          <label for="phone">Phone Number</label>
+                          <input type="number" class="form-control" id="phone" style="color:black;"
+                                 name="phone" required
+                          />
+                        </div>
 
-                    <!--        email-->
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" style="color:black;"
-                             name="email"
-                      />
-                    </div>
+                        <!--        email-->
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" style="color:black;"
+                                 name="email" required
+                          />
+                        </div>
 
-                    <div class="form-group">
-                      <label for="passwordInput2">Password</label>
-                      <input
-                          type="password"
-                          class="form-control"
-                          id="passwordInput2"
-                          name="pw2"
-                      />
-                    </div>
+                        <div class="form-group">
+                          <label for="passwordInput2">Password</label>
+                          <input
+                              type="password"
+                              class="form-control"
+                              id="passwordInput2"
+                              name="pw2"
+                              required
+                          />
+                        </div>
 
-                    <button type="submit" class="btn btn-primary">Sign up</button>
+                        <button type="submit" class="btn btn-primary">Sign up</button>
 
-                    <div
-                          class="form-group"
-                          id="badSignUp"
-                          style="visibility:hidden;"
-                    >
-                      <p style="color: red">
-                          Error: unable to sign up, please check your details!
-                      </p>
+                        <div
+                              class="form-group"
+                              id="badSignUp"
+                              style="visibility:hidden;"
+                        >
+                          <p style="color: red">
+                              Error: unable to sign up, please check your details!
+                          </p>
+                        </div>
                     </div>
                   </form>
-                </div>
-                </div>
               </div>
 
+        <!--              Log in Section-->
           <div class="w3-black" id="login">
-
               <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                   <h2 class="w3-wide w3-center">Login</h2>
 
@@ -204,6 +153,7 @@
                               class="form-control"
                               id="sid"
                               name="id"
+                              required
                           />
                       </div>
 
@@ -214,6 +164,7 @@
                               class="form-control"
                               id="passwordInput"
                               name="pw"
+                              required
                           />
                     </div>
 
@@ -241,7 +192,6 @@
                 </form>
                 </div>
                 </div>
-              </div>
           </div>
 
           <!-- Ticket Modal -->
@@ -255,31 +205,42 @@
               <p class="w3-opacity w3-center"><i>Got inquiries? Drop a note!</i></p>
               <div class="w3-row w3-padding-32">
                   <div class="w3-col m6 w3-large w3-margin-bottom">
-                      <i class="fa fa-map-marker" style="width:30px"></i> St Lucia, 4067<br>
-                      <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                      <i class="fa fa-envelope" style="width:30px"> </i> Email: uniQueensland@mail.com<br>
+                      <i class="fa fa-map-marker" style="width:30px"></i>St Lucia, 4067<br>
+                      <i class="fa fa-phone" style="width:30px"></i>Phone: 3365 1111<br>
+                      <i class="fa fa-envelope" style="width:30px"> </i>Email: s4553030@student.uq.edu.au<br>
                   </div>
                   <div class="w3-col m6">
-                      <form action="/action_page.php" target="_blank">
+                      <form action="php/contact.php" method="POST">
                           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                               <div class="w3-half">
-                                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                                  <label>
+                                      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                                  </label>
                               </div>
                               <div class="w3-half">
-                                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                                  <label>
+                                      <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                                  </label>
                               </div>
                           </div>
-                          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                          <label>
+                              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                          </label>
                           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                          <p id="contact-msg" style="visibility:hidden;"></p>
                       </form>
                   </div>
               </div>
           </div>
 
           <!-- End Page Content -->
-      </div>
+          <footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
 
-    </head>
+              <div class="footer-copyright text-center py-3">Copyright © 2020 Karsus
+                  <p>All Rights Reserved by Team Karsus</p>
+              </div>
+
+          </footer>
 
         <script>
             let params = {};
@@ -300,19 +261,27 @@
             } else if (params["status"] === "badsignup") {
                 document.getElementById("badSignUp").style.visibility
                         = "visible";
+            } else if (params["status"] === "badcontact") {
+                document.getElementById("contact-msg").style.visibility
+                    = "visible";
+                document.getElementById("contact-msg").style.color = "red";
+                document.getElementById("contact-msg").innerHTML
+                    = "Unable to send message, please try again!"
+
+            } else if (params["status"] === "goodcontact") {
+                document.getElementById("contact-msg").style.visibility
+                    = "visible";
+                document.getElementById("contact-msg").style.color = "green";
+                document.getElementById("contact-msg").innerHTML
+                    = "Message sent, please wait for our reply!"
             } else {
                 document.getElementById("errorDiv").style.visibility
                     = "hidden";
                 document.getElementById("badSignUp").style.visibility
                     = "hidden";
+                document.getElementById("contact-msg").style.visibility
+                    = "hidden";
             }
         </script>
     </body>
-    <footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
-
-  <div class="footer-copyright text-center py-3">Copyright © 2020 Karsus
-    <p>All Rights Reserved by Team Karsus</p>
-  </div>
-
-</footer>
 </html>
