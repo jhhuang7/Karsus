@@ -190,7 +190,7 @@
                     <h4 class="card-title">Tasks</h4>
                     <div class="container scroll">
                         <p class="card-text">
-                            <a href="task.php">
+                            <a>
                                 <button type="button" name="" id="" class="btn btn-secondary w-100 text-left">
                                     TODO Tasks
                                 </button>
@@ -213,7 +213,12 @@
                         </p>
                         <?php
                         for ($i = 0; $i < count($done); $i++) {
-                            echo '<p class="card-text"><button type="button" class="btn btn-info w-100 text-left">' . $done[$i]->getDisplayName() . '</button></p>';
+                            echo '<p class="card-text">
+                                <button type="button" 
+                                    class="btn btn-info w-100 text-left" 
+                                    style="background-color: forestgreen;"
+                                >' . $done[$i]->getDisplayName() . '
+                                </button></p>';
                         }
                         ?>
                     </div>

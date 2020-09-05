@@ -65,15 +65,15 @@ if (count($questions) == 0) {
         <form>
             <p class="h1">Task</p>
 
-            <p>
-                Task info:
-                title, course, description, due date,
-                who's completed this task.
-            </p>
+
 
             <?php
 
-            echo '<p>' . $title . ': ' . $ccode . '<br>' . $info . '<br>Due date: ' . $due . '</p>';
+            echo '<p>' . $title . ': ' . $ccode . '<br>' .
+                "Description: ".$info .
+                '<br>Due date: ' . $due . '<br>' .
+                "Who's completed this task: ???" .
+                '</p>';
 
             for ($i = 0; $i < count($questions); $i++) {
                 $num = $i + 1;
@@ -94,75 +94,11 @@ if (count($questions) == 0) {
             ?>
 
             <!--                Actual questions will be pulled from DB!-->
-            <!-- <div class="form-group">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <h2>1</h2>
-                        </div>
-                        <div class="col">
-                            <label for="q1">Would you like vanilla ice cream?</label>
-                            <textarea class="form-control" id="q1" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <h2>2</h2>
-                        </div>
-                        <div class="col">
-                            <label for="q2">Have you ever met Joe before?</label>
-                            <textarea class="form-control" id="q2" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <h2>3</h2>
-                        </div>
-                        <div class="col">
-                            <label for="q3">Where did you go to college?</label>
-                            <textarea class="form-control" id="q3" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <h2>4</h2>
-                        </div>
-                        <div class="col">
-                            <label for="q4">What is your best quality?</label>
-                            <textarea class="form-control" id="q4" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <h2>5</h2>
-                        </div>
-                        <div class="col">
-                            <label for="q5">Do you have a pet?</label>
-                            <textarea class="form-control" id="q5" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <button type="submit" class="btn btn-primary float-right" onclick="alert('Score based on length of answers.');">
+
+
+            <button class="btn btn-primary float-right" onclick="alert('Score based on length of answers.');">
                 Submit Answers
             </button>
-        </form>
     </div>
 
     <form action="home.php">
