@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
-      <change afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +120,7 @@
       <workItem from="1599179589638" duration="833000" />
       <workItem from="1599180796050" duration="24000" />
       <workItem from="1599201515277" duration="164000" />
-      <workItem from="1599262805295" duration="7559000" />
+      <workItem from="1599262805295" duration="7644000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -384,7 +381,28 @@
       <option name="project" value="LOCAL" />
       <updated>1599271055983</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Implemented Contact Us">
+      <created>1599271167532</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1599271167532</updated>
+    </task>
+    <task id="LOCAL-00039" summary="idea">
+      <created>1599271173669</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1599271173670</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Fixed navbar at top">
+      <created>1599271184382</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1599271184382</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,8 +421,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="index.html" />
-    <MESSAGE value="php config" />
     <MESSAGE value="Basic Login." />
     <MESSAGE value="Basic Signup." />
     <MESSAGE value="Remove some warnings (code smells!)" />
@@ -424,11 +440,13 @@
     <MESSAGE value="Added title and placeholder info" />
     <MESSAGE value="More placeholder info instead of hyperlinks" />
     <MESSAGE value="Includes class list and sorted tasks by due date" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Formatting changes" />
     <MESSAGE value="Added 'require' attribute for inputs" />
     <MESSAGE value="Minor presentation changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor presentation changes" />
+    <MESSAGE value="Implemented Contact Us" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="Fixed navbar at top" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed navbar at top" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -447,10 +465,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599271055806">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599271184280">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599271055806" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599271184280" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
