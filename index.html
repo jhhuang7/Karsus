@@ -44,7 +44,7 @@
             <a class="nav-link" href="#login" onclick="myFunction()">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="ServiceList.html" onclick="myFunction()">Contact Us</a>
+              <a class="nav-link" href="#contact" onclick="myFunction()">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -123,8 +123,7 @@
 
           <!-- The Tour Section -->
           <div class="w3-cyan" id="signup">
-            <div>
-              <div class="w3-container w3-content w3-padding-64" style="max-width:800px">\
+              <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
                   <h2 class="w3-wide w3-center">SIGN UP</h2>
 
                   <br>
@@ -132,28 +131,27 @@
                     <div class="container p-3 my-3 bg-white border">
                     <div class="form-group">
                       <label for="sid2">Student ID</label>
-                      <input type="number" class="form-control" id="sid2" name="id2"
-                      />
+                      <input type="number" class="form-control" id="sid2" name="id2" style="color:black;"/>
                     </div>
 
                     <!--        first-->
                     <div class="form-group">
                       <label for="first">First Name</label>
-                      <input type="text" class="form-control" id="first" name="first"
+                      <input type="text" class="form-control" id="first" name="first" style="color:black;"
                       />
                     </div>
 
                     <!--        last-->
                     <div class="form-group">
                       <label for="last">Last Name</label>
-                      <input type="text" class="form-control" id="last" name="last"
+                      <input type="text" class="form-control" id="last" name="last" style="color:black;"
                       />
                     </div>
 
                     <!--        phone-->
                     <div class="form-group">
                       <label for="phone">Phone Number</label>
-                      <input type="number" class="form-control" id="phone"
+                      <input type="number" class="form-control" id="phone" style="color:black;"
                              name="phone"
                       />
                     </div>
@@ -161,7 +159,7 @@
                     <!--        email-->
                     <div class="form-group">
                       <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email"
+                      <input type="email" class="form-control" id="email" style="color:black;"
                              name="email"
                       />
                     </div>
@@ -191,6 +189,59 @@
                 </div>
                 </div>
               </div>
+
+          <div class="w3-black" id="login">
+
+              <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                  <h2 class="w3-wide w3-center">Login</h2>
+
+                  <br>
+                  <form action="php/login.php" method="POST">
+                      <div class="form-group">
+                          <label for="sid">Student ID</label>
+                          <input
+                              type="number"
+                              class="form-control"
+                              id="sid"
+                              name="id"
+                          />
+                      </div>
+
+                      <div class="form-group">
+                          <label for="passwordInput">Password</label>
+                          <input
+                              type="password"
+                              class="form-control"
+                              id="passwordInput"
+                              name="pw"
+                          />
+                    </div>
+
+                    <div class="form-group form-check">
+                      <input
+                          type="checkbox"
+                          class="form-check-input" id="rememberChk"
+                      />
+                      <label class="form-check-label" for="rememberChk">
+                          Remember Me
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Log in</button>
+
+                    <div
+                        class="form-group"
+                        id="errorDiv"
+                        style="visibility:hidden;"
+                    >
+                        <p style="color: red">
+                            Error: your student id/ password was incorrect!
+                        </p>
+                    </div>
+                </form>
+                </div>
+                </div>
+              </div>
           </div>
 
           <!-- Ticket Modal -->
@@ -204,9 +255,9 @@
               <p class="w3-opacity w3-center"><i>Got inquiries? Drop a note!</i></p>
               <div class="w3-row w3-padding-32">
                   <div class="w3-col m6 w3-large w3-margin-bottom">
-                      <i class="fa fa-map-marker" style="width:30px"></i> Kuala Lumpur, 50100<br>
+                      <i class="fa fa-map-marker" style="width:30px"></i> St Lucia, 4067<br>
                       <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-                      <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                      <i class="fa fa-envelope" style="width:30px"> </i> Email: uniQueensland@mail.com<br>
                   </div>
                   <div class="w3-col m6">
                       <form action="/action_page.php" target="_blank">
@@ -228,138 +279,7 @@
           <!-- End Page Content -->
       </div>
 
-      <script>
-
-          // Automatic Slideshow - change image every 4 seconds
-          var myIndex = 0;
-          carousel();
-
-          function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";
-              }
-              myIndex++;
-              if (myIndex > x.length) {
-                  myIndex = 1
-              }
-              x[myIndex - 1].style.display = "block";
-              setTimeout(carousel, 4000);
-          }
-
-          // Used to toggle the menu on small screens when clicking on the menu button
-          function myFunction() {
-              var x = document.getElementById("navDemo");
-              if (x.className.indexOf("w3-show") == -1) {
-                  x.className += " w3-show";
-              } else {
-                  x.className = x.className.replace(" w3-show", "");
-              }
-          }
-
-          // When the user clicks anywhere outside of the modal, close it
-          var modal = document.getElementById('ticketModal');
-          window.onclick = function (event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          }
-          function includeHTML() {
-              var z, i, elmnt, file, xhttp;
-              /* Loop through a collection of all HTML elements: */
-              z = document.getElementsByTagName("*");
-              for (i = 0; i < z.length; i++) {
-                  elmnt = z[i];
-                  /*search for elements with a certain atrribute:*/
-                  file = elmnt.getAttribute("w3-include-html");
-                  if (file) {
-                      /* Make an HTTP request using the attribute value as the file name: */
-                      xhttp = new XMLHttpRequest();
-                      xhttp.onreadystatechange = function () {
-                          if (this.readyState == 4) {
-                              if (this.status == 200) {
-                                  elmnt.innerHTML = this.responseText;
-                              }
-                              if (this.status == 404) {
-                                  elmnt.innerHTML = "Page not found.";
-                              }
-                              /* Remove the attribute, and call this function once more: */
-                              elmnt.removeAttribute("w3-include-html");
-                              includeHTML();
-                          }
-                      }
-                      xhttp.open("GET", file, true);
-                      xhttp.send();
-                      /* Exit the function: */
-                      return;
-                  }
-              }
-          }
-          includeHTML();
-      </script>
-      <script src="bootstrap/js/bootstrap.min.js"></script>
-
     </head>
-
-      <body>
-          <div
-              class="container"
-              style="margin-top: 50px; margin-bottom: 50px; max-width: 500px;"
-          >
-
-              <p class="h1" style="margin-bottom: 50px;">Hot Shots by Karsus</p>
-
-              <!--      Log in part-->
-              <h2>Log in</h2>
-              <form action="php/login.php" method="POST">
-                  <div class="form-group">
-                      <label for="sid">Student ID</label>
-                      <input
-                          type="number"
-                          class="form-control"
-                          id="sid"
-                          name="id"
-                      />
-                  </div>
-
-                  <div class="form-group">
-                      <label for="passwordInput">Password</label>
-                      <input
-                          type="password"
-                          class="form-control"
-                          id="passwordInput"
-                          name="pw"
-                      />
-                </div>
-
-                <div class="form-group form-check">
-                  <input
-                      type="checkbox"
-                      class="form-check-input" id="rememberChk"
-                  />
-                  <label class="form-check-label" for="rememberChk">
-                      Remember Me
-                  </label>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Log in</button>
-
-                <div
-                    class="form-group"
-                    id="errorDiv"
-                    style="visibility:hidden;"
-                >
-                    <p style="color: red">
-                        Error: your student id/ password was incorrect!
-                    </p>
-                </div>
-            </form>
-
-            <hr>
-
-
-        </div>
 
         <script>
             let params = {};
