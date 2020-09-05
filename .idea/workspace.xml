@@ -24,14 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
       <change afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/queries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +123,7 @@
       <workItem from="1599179589638" duration="833000" />
       <workItem from="1599180796050" duration="24000" />
       <workItem from="1599201515277" duration="164000" />
-      <workItem from="1599262805295" duration="7335000" />
+      <workItem from="1599262805295" duration="7559000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -363,7 +356,35 @@
       <option name="project" value="LOCAL" />
       <updated>1599019500493</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="idea">
+      <created>1599270893940</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1599270893940</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Formatting changes">
+      <created>1599270959235</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1599270959235</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added 'require' attribute for inputs">
+      <created>1599271003620</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1599271003620</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Minor presentation changes">
+      <created>1599271055983</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1599271055983</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +403,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="idea files" />
     <MESSAGE value="index.html" />
     <MESSAGE value="php config" />
     <MESSAGE value="Basic Login." />
@@ -405,7 +425,10 @@
     <MESSAGE value="More placeholder info instead of hyperlinks" />
     <MESSAGE value="Includes class list and sorted tasks by due date" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="Formatting changes" />
+    <MESSAGE value="Added 'require' attribute for inputs" />
+    <MESSAGE value="Minor presentation changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor presentation changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -424,10 +447,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599180552743">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599271055806">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599180552743" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599271055806" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
