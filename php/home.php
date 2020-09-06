@@ -262,7 +262,7 @@
             <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Customise</h4>
-                    <a href="customise.php">
+                    <a href="customise_new.php">
                         <img src="../images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">
                     </a>
                 </div>

@@ -31,6 +31,7 @@
             border: 3px solid white;
             border-radius: 5px;
             margin-bottom: 5px;
+            margin-right: 5px;
         }
 
         .shop-item img {
@@ -86,6 +87,105 @@
     </style>
 </head>
 
+<?php
+
+class ShopItem
+{
+    public string $imgsrc = "Default";
+    public bool $purchased = false;
+    public bool $amWearing = false;
+    public int $cost = 0;
+}
+
+$items = array(
+    "arms" => array(),
+    "body" => array(),
+    "eyes" => array(),
+    "hair" => array(),
+    "hat" => array(),
+    "mouth" => array(),
+    "pants" => array()
+);
+
+// Default avatar look, replaced with items the user is wearing
+$wearing = array(
+    "arms" => 'arms-female-grey-pale.png',
+    "body" => 'body-female-grey.png',
+    "eyes" => 'eyes-normal.png',
+    "hair" => 'hair-female-normal-pale.png',
+    "hat" => 'hat-christmas.png',
+    "mouth" => 'mouth-smile.png',
+    "pants" => 'pant-female-black.png'
+);
+
+session_start();
+$id = $_SESSION["id"];
+
+$SQL_GET_PURCHASED = "select * from Purchase p inner join Inventory i on p.item = i.name where p.student=" . $id;
+$SQL_GET_NOT_PURCHASED = "select * from Inventory p where p.name not in
+(select item from Purchase p inner join Inventory i on p.item = i.name where student = " . $id . ")";
+
+$serverName = "tcp:karsus.database.windows.net,1433";
+$connectionOptions = array(
+    "UID" => "karsus", "PWD" => "K@rth0us",
+    "Database" => "Karsus", "LoginTimeout" => 30,
+    "Encrypt" => 1, "TrustServerCertificate" => 0
+);
+
+$conn = sqlsrv_connect($serverName, $connectionOptions);
+
+$query = sqlsrv_query($conn, $SQL_GET_PURCHASED);
+while ($row = sqlsrv_fetch_array(
+    $query,
+    SQLSRV_FETCH_ASSOC
+)) {
+    $shopItem = new ShopItem;
+    $shopItem->purchased = true;
+    $shopItem->imgsrc = $row['imgsrc'];
+    $shopItem->cost = $row['cost'];
+    if ($row['wearing'] == 'Y') {
+        $shopItem->amWearing = true;
+        $wearing[$row['type']] = $row['imgsrc'];
+    }
+    array_push($items[$row['type']], $shopItem);
+}
+
+$query = sqlsrv_query($conn, $SQL_GET_NOT_PURCHASED);
+while ($row = sqlsrv_fetch_array(
+    $query,
+    SQLSRV_FETCH_ASSOC
+)) {
+    $shopItem = new ShopItem;
+    $shopItem->imgsrc = $row['imgsrc'];
+    $shopItem->cost = $row['cost'];
+    array_push($items[$row['type']], $shopItem);
+}
+
+function getItemPanel($type)
+{
+    global $items;
+    $itemList = $items[$type];
+    for ($i = 0; $i < count($itemList); $i++) {
+        $currentItem = $itemList[$i];
+        echo
+            "<div class='shop-item'>" .
+                "<img class='shop-item mx-auto' src='../images/" . $type . "/" . $currentItem->imgsrc . "'>
+            <div class='text-center'>";
+        if ($currentItem->purchased) {
+            if ($currentItem->amWearing) {
+                echo "<a class='btn btn-primary disabled' href='#' role='button'>Equipped</a>";
+            } else {
+                echo "<a class='btn btn-success' href='#' role='button'>Equip</a>";
+            }
+        } else {
+            echo "<a class='btn btn-primary' href='#' role='button'>Buy " . $currentItem->cost . "KC</a>";
+        }
+        echo "</div></div>";
+    }
+}
+
+?>
+
 <body>
     <h1>
         Customise
@@ -95,13 +195,15 @@
         <div class="row">
             <div class="col-md">
                 <div class="avatar">
-                    <img id='hat' src='../images/hat/hat-christmas.png'>
-                    <img id='hair' src='../images/hair/hair-female-normal-pale.png'>
-                    <img id='eyes' src='../images/eyes/eyes-normal.png'>
-                    <img id='mouth' src='../images/mouth/mouth-smile.png'>
-                    <img id='body_img' src='../images/body/body-female-grey.png'>
-                    <img id='arms' src='../images/arms/arms-female-grey-pale.png'>
-                    <img id='pants' src='../images/pants/pant-female-black.png'>
+                    <?php
+                        echo "<img id='hat' src='../images/hat/" . $wearing['hat'] ."'>
+                        <img id='hair' src='../images/hair/" . $wearing['hair'] ."'>
+                        <img id='eyes' src='../images/eyes/" . $wearing['eyes'] ."'>
+                        <img id='mouth' src='../images/mouth/" . $wearing['mouth'] ."'>
+                        <img id='body_img' src='../images/body/" . $wearing['body'] ."'>
+                        <img id='arms' src='../images/arms/" . $wearing['arms'] ."'>
+                        <img id='pants' src='../images/pants/" . $wearing['pants'] ."'>";
+                    ?>
                 </div>
             </div>
             <div class="col-md">
@@ -117,186 +219,39 @@
 
                 <div class="tab-content" style="background-color: #dcdcdc; padding:15px; border: 0px; border-radius:10px;">
                     <div id="tab-arms" class="tab-pane active">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/arms/arms-female-grey-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("arms")
+                        ?>
                     </div>
                     <div id="tab-body" class="tab-pane fade">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/body/body-female-black.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/body/body-female-grey.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/body/body-female-white.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/body/body-male-black.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/body/body-male-grey.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/body/body-male-white.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("body")
+                        ?>
                     </div>
                     <div id="tab-eyes" class="tab-pane fade">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/eyes/eyes-confuse.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/eyes/eyes-normal.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/eyes/eyes-smile.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("eyes")
+                        ?>
                     </div>
                     <div id="tab-hair" class="tab-pane fade">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hair/hair-female-blue-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hair/hair-female-brown-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hair/hair-female-normal-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hair/hair-male-normal-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hair/hair-male-wave-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hair/hair-male-waveBrown-pale.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("hair")
+                        ?>
                     </div>
                     <div id="tab-hat" class="tab-pane fade">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hat/hat-christmas.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/hat/hat-graduate.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("hat")
+                        ?>
                     </div>
                     <div id="tab-mouth" class="tab-pane fade">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/mouth/mouth-normal.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/mouth/mouth-serious.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/mouth/mouth-smile.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/mouth/mouth-surprise.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("mouth")
+                        ?>
                     </div>
                     <div id="tab-pants" class="tab-pane fade">
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/pants/pant-female-black.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/pants/pant-female-grey.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/pants/pant-female-white.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/pants/pant-male-black.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/pants/pant-male-grey.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
-                        <div class='shop-item'>
-                            <img class='shop-item mx-auto' src='../images/pants/pant-male-white.png'>
-                            <div class="text-center">
-                                <a class="btn btn-primary" href="#" role="button">Buy 100KC</a>
-                            </div>
-                        </div>
+                        <?php
+                        getItemPanel("pants")
+                        ?>
                     </div>
                 </div>
             </div>
