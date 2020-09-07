@@ -99,11 +99,10 @@ if (count($questions) == 0) {
             <button class="btn btn-primary float-right" onclick="alert('Score based on length of answers.');">
                 Submit Answers
             </button>
+            <a name="" id="" class="btn btn-primary" href="home.php" role="button">Back to Home</a>
     </div>
-
-    <form action="home.php">
-        <button>Back to Home</button>
-    </form>
+    
+    
 </body>
 
 </html>
