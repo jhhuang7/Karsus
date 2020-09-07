@@ -5,6 +5,7 @@
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <style>
@@ -14,7 +15,6 @@
           h1{
             font-family:"Merriweather";
             text-decoration: underline;
-            text-align: center;
           }
         </style>
 
@@ -64,7 +64,7 @@
       </head>
     <body>
       <br>
-      <h1>Edit Profile</h1>
+      <h1 class="w3-center w3-animate-top w3-animate-left">Edit Profile</h1>
         <div class="container">
             <form action="update.php" method="POST">
                 <div class="form-group">
