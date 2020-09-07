@@ -109,13 +109,13 @@ $items = array(
 
 // Default avatar look, replaced with items the user is wearing
 $wearing = array(
-    "arms" => 'arms-female-grey-pale.png',
-    "body" => 'body-female-grey.png',
+    "arms" => 'arms-female-normal-pale.png',
+    "body" => 'body-female-normalBlack.png',
     "eyes" => 'eyes-normal.png',
-    "hair" => 'hair-female-normal-pale.png',
+    "hair" => 'hair-female-normalBrown-pale.png',
     "hat" => 'hat-christmas.png',
     "mouth" => 'mouth-smile.png',
-    "pants" => 'pant-female-black.png'
+    "pants" => 'pant-female-normalBlack.png'
 );
 
 session_start();
