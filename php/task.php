@@ -72,8 +72,10 @@ if (count($questions) == 0) {
             echo '<p>' . $title . ': ' . $ccode . '<br>' .
                 "Description: ".$info .
                 '<br>Due date: ' . $due . '<br>' .
-                "Who's completed this task: ???" .
+
                 '</p>';
+
+//            "Who's completed this task: ???" .
 
             for ($i = 0; $i < count($questions); $i++) {
                 $num = $i + 1;
