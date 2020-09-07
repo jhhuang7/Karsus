@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.5.1.js"></script>
     <style>
@@ -14,6 +16,10 @@
 
         .card-deck {
             margin-bottom: 30px
+        }
+
+        body{
+          background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,76,1));
         }
     </style>
 </head>
@@ -112,7 +118,7 @@
         array_push($classes, $row['class']);
     }
 
-    $lbSql = "select top 50 FirstName, LastName, score 
+    $lbSql = "select top 50 FirstName, LastName, score
                 from Students order by score desc, LastName, FirstName";
     $getResults = sqlsrv_query($conn, $lbSql);
     $lboard = array();
@@ -156,15 +162,15 @@
         <div class="col text-right">
             <?php
             echo '<span style="color:gold; font-size:25px">'.
-                $gold .' <img 
-                            src="../images/Karsus_coin.png" 
-                            alt="profile" width=40 height=40 
+                $gold .' <img
+                            src="../images/Karsus_coin.png"
+                            alt="profile" width=40 height=40
                         />'.
 
                 '<a href="profile.php">
-                        <img 
-                            src="../images/profile.png" 
-                            alt="profile" width=40 height=40 
+                        <img
+                            src="../images/profile.png"
+                            alt="profile" width=40 height=40
                         />
                         </a></span>';
             ?>
@@ -183,11 +189,11 @@
                         <?php
                         for ($i = 0; $i < count($classes); $i++) {
                             echo '<p class="card-text">
-                                        <form 
-                                            action="class.php" 
+                                        <form
+                                            action="class.php"
                                             method="POST">
-                                            <input 
-                                                type="submit" 
+                                            <input
+                                                type="submit"
                                                 class="btn btn-primary w-100"
                                                 name="course"
                                                 value="' . $classes[$i] . '"
@@ -204,8 +210,8 @@
                     <div class="container scroll">
                         <p class="card-text">
                             <a>
-                                <button type="button" name="" id="" class="btn btn-secondary w-100 text-left">
-                                    TODO Tasks
+                                <button type="button" name="" id="" class="btn btn-info w-100 text-left">
+                                  <i class="fas fa-clipboard-list"></i>  TODO Tasks
                                 </button>
                             </a>
                         </p>
@@ -227,8 +233,8 @@
                         <?php
                         for ($i = 0; $i < count($done); $i++) {
                             echo '<p class="card-text">
-                                <button type="button" 
-                                    class="btn btn-info w-100 text-left" 
+                                <button type="button"
+                                    class="btn btn-info w-100 text-left"
                                     style="background-color: forestgreen;"
                                 >' . $done[$i]->getDisplayName() . '
                                 </button></p>';
@@ -301,5 +307,12 @@
         }
     </script>
 </body>
+<!-- End Page Content -->
+<footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
 
+    <div class="footer-copyright text-center py-3">Copyright © 2020 Karsus
+        <p>All Rights Reserved by Team Karsus</p>
+    </div>
+
+</footer>
 </html>
