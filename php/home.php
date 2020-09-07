@@ -248,10 +248,10 @@
             <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Leaderboard</h4>
-                    <select>
-                        <option>Filter options:</option>
-                        <option>Needs to be implemented!</option>
-                    </select>
+<!--                    <select>-->
+<!--                        <option>Filter options:</option>-->
+<!--                        <option>Needs to be implemented!</option>-->
+<!--                    </select>-->
                     <div class="container scroll">
                         <table class="table">
                             <thead>

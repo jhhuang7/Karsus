@@ -29,9 +29,9 @@
             $q1 = "SELECT * FROM Class WHERE code ='" . $course . "';";
             $results1 = sqlsrv_query($conn, $q1);
 
-            $q2 = "SELECT COUNT(*) as num FROM Enrollment 
-                WHERE class ='" . $course . "';";
-            $results2 = sqlsrv_query($conn, $q2);
+//            $q2 = "SELECT COUNT(*) as num FROM Enrollment
+//                WHERE class ='" . $course . "';";
+//            $results2 = sqlsrv_query($conn, $q2);
 
             $q3 = "SELECT S.FirstName, S.LastName FROM Students S, Enrollment E 
                 WHERE E.class ='" . $course . "' AND E.student=S.id 
@@ -42,7 +42,7 @@
                 FROM Task WHERE ccode ='" . $course . "' ORDER BY due;";
             $results4 = sqlsrv_query($conn, $q4);
 
-            if ($results1 == false or $results2 == false
+            if ($results1 == false
                     or $results3 == false or $results4 == false) {
                 // Query problem
                 header("Location: home.php");
@@ -56,9 +56,9 @@
             echo "Course Description: " . $row1["info"];
             echo "<br>";
 
-            $row2 = sqlsrv_fetch_array($results2, SQLSRV_FETCH_ASSOC);
-            echo "Number of People: " . $row2["num"];
-            echo "<br>";
+//            $row2 = sqlsrv_fetch_array($results2, SQLSRV_FETCH_ASSOC);
+//            echo "Number of People: " . $row2["num"];
+//            echo "<br>";
 
             echo "Class List: <br><ul>";
             while ($row3 = sqlsrv_fetch_array($results3,

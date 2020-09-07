@@ -258,6 +258,10 @@ function getItemPanel($type)
         </div>
     </div>
 
+    <form action="home.php">
+        <hr>
+        <button>Back to Home</button>
+    </form>
 
 </body>
 
