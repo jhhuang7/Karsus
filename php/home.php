@@ -138,8 +138,16 @@
     $gold = $row["Balance"];
     ?>
 
-    <div class="row w-100">
-        <div class="col">
+    <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;position:fixed;right:0;left:0;z-index:1030;">
+        <div>
+            <?php
+            echo '<a class="navbar-brand" href="home.php">
+            <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
+            </a>'
+            ?>
+        </div>
+
+        <div class="col" style="color:white">
             <?php
             echo '<h2>Welcome ' . $name . '!</h1>';
             ?>
@@ -147,8 +155,12 @@
 
         <div class="col text-right">
             <?php
-            echo '<span style="color:gold; font-size:25px;">' .
-                $gold . 'KC   ' .
+            echo '<span style="color:gold; font-size:25px">'.
+                $gold .' <img 
+                            src="../images/Karsus_coin.png" 
+                            alt="profile" width=40 height=40 
+                        />'.
+
                 '<a href="profile.php">
                         <img 
                             src="../images/profile.png" 
@@ -158,8 +170,9 @@
             ?>
         </div>
     </div>
-    <hr>
-    <div class="container">
+
+
+    <div class="container" style = "padding-top:100px">
         <div class="card-deck">
             <div class="card bg-light">
                 <div class="card-body">
@@ -262,7 +275,7 @@
             <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Customise</h4>
-                    <a href="customise_new.php">
+                    <a href="customise.php">
                         <img src="../images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">
                     </a>
                 </div>
