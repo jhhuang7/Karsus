@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Task</title>
+    <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
+    <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -61,6 +64,26 @@ if (count($questions) == 0) {
 ?>
 
 <body>
+    <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
+        <div>
+            <a class="navbar-brand" href="home.php">
+                <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
+            </a>
+        </div>
+
+        <div class="col" style="color:white">
+            <h2>Task</h2>
+        </div>
+
+        <div class="col text-right">
+
+            <a href="profile.php">
+                <img src="../images/profile.png" alt="profile" width=40 height=40 />
+            </a>
+
+        </div>
+    </div>
+
     <div class="container" style="margin-top: 50px; margin-bottom: 50px">
         <form>
             <p class="h1">Task</p>
@@ -70,12 +93,12 @@ if (count($questions) == 0) {
             <?php
 
             echo '<p>' . $title . ': ' . $ccode . '<br>' .
-                "Description: ".$info .
+                "Description: " . $info .
                 '<br>Due date: ' . $due . '<br>' .
 
                 '</p>';
 
-//            "Who's completed this task: ???" .
+            //            "Who's completed this task: ???" .
 
             for ($i = 0; $i < count($questions); $i++) {
                 $num = $i + 1;
@@ -101,10 +124,9 @@ if (count($questions) == 0) {
             <button class="btn btn-primary float-right" onclick="alert('Score based on length of answers.');">
                 Submit Answers
             </button>
-            <a name="" id="" class="btn btn-primary" href="home.php" role="button">Back to Home</a>
     </div>
-    
-    
+
+
 </body>
 
 </html>

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
+    <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
     <script>
         function switchHat(h) {
             document.getElementById('hat').src = '../images/avatars/' + h;
@@ -187,11 +189,29 @@ function getItemPanel($type)
 ?>
 
 <body>
-    <h1>
-        Customise
-    </h1>
 
-    <div class="container">
+    <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
+        <div>
+            <a class="navbar-brand" href="home.php">
+                <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
+            </a>
+
+        </div>
+
+        <div class="col" style="color:white">
+            <h2>Customise</h2>
+        </div>
+
+        <div class="col text-right">
+
+            <a href="profile.php">
+                <img src="../images/profile.png" alt="profile" width=40 height=40 />
+            </a>';
+
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 50px;">
         <div class="row">
             <div class="col-md">
                 <div class="avatar">
@@ -217,7 +237,7 @@ function getItemPanel($type)
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-pants">Pants</a></li>
                 </ul>
 
-                <div class="tab-content" style="background-color: #dcdcdc; padding:15px; border: 0px; border-radius:10px;">
+                <div class="tab-content" style="background-color: #dcdcdc; padding:15px; border: 0px; border-radius:0 0 10px 10px;">
                     <div id="tab-arms" class="tab-pane active">
                         <?php
                         getItemPanel("arms")
@@ -257,12 +277,6 @@ function getItemPanel($type)
             </div>
         </div>
     </div>
-
-    <form action="home.php">
-        <hr>
-        <button>Back to Home</button>
-    </form>
-
 </body>
 
 </html>

@@ -18,8 +18,8 @@
             margin-bottom: 30px
         }
 
-        body{
-          background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,76,1));
+        body {
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 76, 1));
         }
     </style>
 </head>
@@ -161,11 +161,11 @@
 
         <div class="col text-right">
             <?php
-            echo '<span style="color:gold; font-size:25px">'.
-                $gold .' <img
+            echo '<span style="color:gold; font-size:25px">' .
+                $gold . ' <img
                             src="../images/Karsus_coin.png"
                             alt="profile" width=40 height=40
-                        />'.
+                        />' .
 
                 '<a href="profile.php">
                         <img
@@ -178,7 +178,7 @@
     </div>
 
 
-    <div class="container" style = "padding-top:100px">
+    <div class="container" style="padding-top:100px">
         <div class="card-deck">
             <div class="card bg-light">
                 <div class="card-body">
@@ -189,16 +189,10 @@
                         <?php
                         for ($i = 0; $i < count($classes); $i++) {
                             echo '<p class="card-text">
-                                        <form
-                                            action="class.php"
-                                            method="POST">
-                                            <input
-                                                type="submit"
-                                                class="btn btn-primary w-100"
-                                                name="course"
-                                                value="' . $classes[$i] . '"
-                                            />
-                                        </form></p>';
+                                        <a
+                                            class="btn btn-primary w-100"
+                                            href ="class.php?course=' . $classes[$i] . '">' . $classes[$i] .
+                                '</a></p>';
                         }
                         ?>
                     </div>
@@ -211,7 +205,7 @@
                         <p class="card-text">
                             <a>
                                 <button type="button" name="" id="" class="btn btn-info w-100 text-left">
-                                  <i class="fas fa-clipboard-list"></i>  TODO Tasks
+                                    <i class="fas fa-clipboard-list"></i> TODO Tasks
                                 </button>
                             </a>
                         </p>
@@ -248,10 +242,10 @@
             <div class="card bg-light">
                 <div class="card-body">
                     <h4 class="card-title">Leaderboard</h4>
-<!--                    <select>-->
-<!--                        <option>Filter options:</option>-->
-<!--                        <option>Needs to be implemented!</option>-->
-<!--                    </select>-->
+                    <!--                    <select>-->
+                    <!--                        <option>Filter options:</option>-->
+                    <!--                        <option>Needs to be implemented!</option>-->
+                    <!--                    </select>-->
                     <div class="container scroll">
                         <table class="table">
                             <thead>
@@ -315,4 +309,5 @@
     </div>
 
 </footer>
+
 </html>
