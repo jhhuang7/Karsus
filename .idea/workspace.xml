@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="Quick update for MVP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/customise_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise_new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,12 @@
       <workItem from="1599368665901" duration="431000" />
       <workItem from="1599439743672" duration="568000" />
       <workItem from="1599478978498" duration="395000" />
-      <workItem from="1599517553530" duration="1842000" />
+      <workItem from="1599517553530" duration="3335000" />
+      <workItem from="1599536127105" duration="744000" />
+      <workItem from="1599556984525" duration="314000" />
+      <workItem from="1599615567596" duration="521000" />
+      <workItem from="1599647573786" duration="144000" />
+      <workItem from="1599703995747" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -420,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599271197722</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Quick update for MVP">
+      <created>1599520655577</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1599520655577</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +447,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic Login." />
     <MESSAGE value="Basic Signup." />
     <MESSAGE value="Remove some warnings (code smells!)" />
     <MESSAGE value="New Ralph Lauren shirts!" />
@@ -464,7 +471,8 @@
     <MESSAGE value="Implemented Contact Us" />
     <MESSAGE value="Fixed navbar at top" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="Quick update for MVP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quick update for MVP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -483,10 +491,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599271197613">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599537194077">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599271197613" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599537194077" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -519,10 +527,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1599271285112">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1599520662028">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1599271285112" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1599520662028" />
     <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599264277891">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
