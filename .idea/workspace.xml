@@ -22,8 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="Quick update for MVP">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
+      <change afterPath="$PROJECT_DIR$/php/answer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/completed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/todo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +138,15 @@
       <workItem from="1599556984525" duration="314000" />
       <workItem from="1599615567596" duration="521000" />
       <workItem from="1599647573786" duration="144000" />
-      <workItem from="1599703995747" duration="621000" />
+      <workItem from="1599703995747" duration="854000" />
+      <workItem from="1599741910784" duration="177000" />
+      <workItem from="1599786304218" duration="353000" />
+      <workItem from="1599815685559" duration="98000" />
+      <workItem from="1599873515216" duration="79000" />
+      <workItem from="1599910753152" duration="88000" />
+      <workItem from="1599961460057" duration="76000" />
+      <workItem from="1599993991519" duration="113000" />
+      <workItem from="1600051384286" duration="11027000" />
     </task>
     <task id="LOCAL-00001" summary="idea files">
       <created>1597628643224</created>
@@ -428,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599520655577</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="idea">
+      <created>1599705418245</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1599705418245</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,9 +491,9 @@
     <MESSAGE value="Minor presentation changes" />
     <MESSAGE value="Implemented Contact Us" />
     <MESSAGE value="Fixed navbar at top" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Quick update for MVP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quick update for MVP" />
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -491,10 +512,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1599537194077">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600051417507">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1599537194077" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600051417507" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -519,26 +540,26 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1598090216357" />
-    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog" timestamp="1599263911896">
+    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog" timestamp="1600059848814">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599263911896" />
+    <state x="1143" y="745" width="914" height="368" key="NewPhpFileDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1600059848814" />
     <state x="346" y="58" key="SettingsEditor" timestamp="1598308988394">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1599520662028">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600051423146">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1599520662028" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600051423146" />
     <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599264277891">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599264277891" />
-    <state x="759" y="407" key="run.anything.popup" timestamp="1598331320039">
+    <state x="759" y="407" key="run.anything.popup" timestamp="1600062465141">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="759" y="407" key="run.anything.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1598331320039" />
+    <state x="759" y="407" key="run.anything.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1600062465141" />
     <state x="688" y="58" width="1906" height="1736" key="search.everywhere.popup" timestamp="1598178998480">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
