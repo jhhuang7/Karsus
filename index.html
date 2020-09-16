@@ -78,9 +78,19 @@
                   <br>
                   <form action="php/signup.php" method="POST">
                     <div class="container p-3 my-3 bg-white border">
+                        <!--        ID-->
                         <div class="form-group">
-                          <label for="sid2">Student ID</label>
+                          <label for="sid2">ID</label>
                           <input required type="number" class="form-control" id="sid2" name="id2" style="color:black;"/>
+                        </div>
+
+                        <!--        User type-->
+                        <div class="form-group">
+                            <label for="type">User Type</label>
+                            <select required  class="form-control" id="type" name="type" style="color:black;">
+                                <option value="S">Student</option>
+                                <option value="T">Teacher</option>
+                            </select>
                         </div>
 
                         <!--        first-->
@@ -147,7 +157,7 @@
                   <br>
                   <form action="php/login.php" method="POST">
                       <div class="form-group">
-                          <label for="sid">Student ID</label>
+                          <label for="sid">ID</label>
                           <input
                               type="number"
                               class="form-control"

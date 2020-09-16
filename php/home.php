@@ -124,11 +124,12 @@
 
     if ($filter == "" or $filter == "Global") {
         $lbSql = "select top 50 id, FirstName, LastName, score
-                from Students order by score desc, LastName, FirstName";
+                from Students where type='S' order by score desc, LastName, FirstName";
     } else {
         $lbSql = "select S.id, S.FirstName, S.LastName, S.score
                 from Students S, Enrollment E
                 where S.id=E.student
+                and S.type='S'
                 and E.class='" . $filter . "'
                 order by S.score desc, LastName, FirstName;";
     }

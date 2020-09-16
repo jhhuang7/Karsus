@@ -13,6 +13,7 @@
             $last = $_POST["last"];
             $email = $_POST["email"];
             $phone = $_POST["phone"];
+            $type = $_POST["type"];
 
             $hashed_password = password_hash($pw, PASSWORD_DEFAULT);
 
@@ -43,10 +44,10 @@
                 exit();
             } else {
                 $insert = "INSERT INTO 
-                    Students(id, FirstName, LastName, email, phone, pw, score) 
+                    Students(id, FirstName, LastName, email, phone, pw, score, type) 
                     VALUES(" . $id . ", '" . $first . "', '" . $last . "', '" .
                     $email . "', '" . $phone . "', '" .
-                    $hashed_password . "', 0);";
+                    $hashed_password . "', 0, '" . $type . "');";
                 $stmt = sqlsrv_prepare($conn, $insert);
                 if (!sqlsrv_execute($stmt)) {
                     // Insert problem
@@ -56,7 +57,11 @@
 
                 session_start();
                 $_SESSION["id"] = $id;
-                header("Location: home.php");
+                if ($type === "S") {
+                    header("Location: home.php");
+                } else {
+                    header("Location: home2.php");
+                }
                 exit();
             }
         ?>

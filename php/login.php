@@ -22,7 +22,7 @@
                 exit();
             }
 
-            $tsql = "SELECT pw FROM Students WHERE id = " . $id . ";";
+            $tsql = "SELECT pw, type FROM Students WHERE id = " . $id . ";";
             $getResults = sqlsrv_query($conn, $tsql);
 
             if ($getResults == FALSE) {
@@ -33,11 +33,16 @@
 
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
             $hash = $row["pw"];
+            $type = $row["type"];
             
             if (password_verify($pw, $hash)) {
                 session_start();
                 $_SESSION["id"] = $id;
-                header("Location: home.php");
+                if ($type === "S") {
+                    header("Location: home.php");
+                } else {
+                    header("Location: home2.php");
+                }
                 exit();
             } else {
                 header("Location: ../index.html?status=badlogin#login");
