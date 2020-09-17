@@ -25,7 +25,10 @@
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/completed.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/completed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/todo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,28 +151,7 @@
       <workItem from="1600149075282" duration="79000" />
       <workItem from="1600218788025" duration="3434000" />
       <workItem from="1600249517540" duration="196000" />
-      <workItem from="1600301199556" duration="1686000" />
-    </task>
-    <task id="LOCAL-00005" summary="index.html">
-      <created>1597804182225</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1597804182226</updated>
-    </task>
-    <task id="LOCAL-00006" summary="php config">
-      <created>1597901306691</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1597901306691</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Basic Login.">
-      <created>1598094912993</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1598094912993</updated>
+      <workItem from="1600301199556" duration="5164000" />
     </task>
     <task id="LOCAL-00008" summary="Basic Signup.">
       <created>1598181449328</created>
@@ -493,7 +475,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600225244045</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="idea">
+      <created>1600302908517</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1600302908519</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added course coordinator">
+      <created>1600302964664</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1600302964664</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Hopefully removes error">
+      <created>1600302984461</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1600302984461</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,8 +515,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Probably could be deleted if not needed" />
-    <MESSAGE value="Uncommented reference file" />
     <MESSAGE value="Class page created, waiting to be filled" />
     <MESSAGE value="jQuery (may not be needed)" />
     <MESSAGE value="Removed blanks lines" />
@@ -535,9 +536,11 @@
     <MESSAGE value="Leaderboard filtering" />
     <MESSAGE value="Changed around potential risky SQL statement" />
     <MESSAGE value="Changed feedback box into textarea" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Started teacher accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started teacher accounts" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="Added course coordinator" />
+    <MESSAGE value="Hopefully removes error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hopefully removes error" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -556,10 +559,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600225243868">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600302984198">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600225243868" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600302984198" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -592,10 +595,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600225281499">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600309436060">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600225281499" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600309436060" />
     <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599264277891">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
