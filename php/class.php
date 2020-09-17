@@ -38,16 +38,19 @@
         }
 
         $q1 = "SELECT * FROM Class C, Students S 
-            WHERE C.teacher=S.id and C.code ='" . $course . "';";
+            WHERE C.teacher=S.id and C.code ='" . $course . "'
+            AND C.sem>=GETDATE();";
         $results1 = sqlsrv_query($conn, $q1);
 
         $q3 = "SELECT S.FirstName, S.LastName FROM Students S, Enrollment E 
-                        WHERE E.class ='" . $course . "' AND E.student=S.id 
+                        WHERE E.class ='" . $course . "' AND E.student=S.id
+                        AND E.sem>=GETDATE()
                         ORDER BY S.score DESC, S.LastName;";
         $results3 = sqlsrv_query($conn, $q3);
 
         $q4 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date 
-                        FROM Task WHERE ccode ='" . $course . "' ORDER BY due;";
+                        FROM Task T WHERE ccode ='" . $course . "' 
+                        and sem>=GETDATE() ORDER BY due;";
         $results4 = sqlsrv_query($conn, $q4);
 
         if ($results1 == false
@@ -59,7 +62,8 @@
 
         $row1 = sqlsrv_fetch_array($results1, SQLSRV_FETCH_ASSOC);
         $courseInfo = $row1["info"];
-        $teacher = $row1["FirstName"] . " " . $row1["LastName"];
+        $teacher = $row1["FirstName"] . " " . $row1["LastName"] .
+            " (" . $row1["email"] . ")";
 
         $students = array();
         while ($row3 = sqlsrv_fetch_array(
@@ -119,7 +123,7 @@
                     ?>
                 </ul>
 
-            <p class="h3">Tasks</p>
+            <p class="h3">Tasks (<?php echo count($tasks) ?>)</p>
             <div class="list-group">
                 <?php
                     for ($i = 0; $i < count($tasks); $i++) {

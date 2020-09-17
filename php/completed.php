@@ -39,7 +39,7 @@
 
         $doneSql = "SELECT * from Works W, Task T where W.student=" .
             $id . " and W.status='C' and W.ccode=T.ccode and W.thing=T.title
-                    order by T.due";
+                    and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
         $getResults2 = sqlsrv_query($conn, $doneSql);
         $done = array();
 

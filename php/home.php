@@ -72,7 +72,7 @@
 
     $taskSql = "SELECT top 3 thing, T.ccode, info, W.status, FORMAT(due, 'dd/MM/yyyy') as date from Works W, Task T where W.student=" .
         $id . " and W.status='I' and W.ccode=T.ccode and W.thing=T.title
-                order by T.due";
+        and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
     $getResults = sqlsrv_query($conn, $taskSql);
     $tasks = array();
 
@@ -92,7 +92,7 @@
 
     $doneSql = "SELECT top 3 * from Works W, Task T where W.student=" .
         $id . " and W.status='C' and W.ccode=T.ccode and W.thing=T.title
-                order by T.due";
+        and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
     $getResults2 = sqlsrv_query($conn, $doneSql);
     $done = array();
 
@@ -108,7 +108,8 @@
         }
     }
 
-    $classSql = "select class from Enrollment where student = " . $id;
+    $classSql = "select class from Enrollment 
+        where sem>=GETDATE() and student = " . $id;
     $getResults = sqlsrv_query($conn, $classSql);
     $classes = array();
 
@@ -135,6 +136,7 @@
                 where S.id=E.student
                 and S.type='S'
                 and E.class='" . $filter . "'
+                and E.sem>=GETDATE()
                 order by S.score desc, LastName, FirstName;";
     }
 

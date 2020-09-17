@@ -40,7 +40,7 @@
         $taskSql = "SELECT thing, T.ccode, info, W.status, 
             FORMAT(due, 'dd/MM/yyyy') as date from Works W, Task T 
             where W.student=" . $id . " and W.status='I' and W.ccode=T.ccode 
-            and W.thing=T.title order by T.due";
+            and W.thing=T.title and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
         $getResults = sqlsrv_query($conn, $taskSql);
         $tasks = array();
 

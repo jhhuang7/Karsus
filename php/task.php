@@ -38,7 +38,7 @@
         }
 
         $tsql = "select * from Questions where title = '" . $title .
-            "' and ccode = '" . $ccode . "' order by qid";
+            "' and ccode = '" . $ccode . "' and sem>=GETDATE() order by qid";
         $getResults = sqlsrv_query($conn, $tsql);
 
         $questions = array();
@@ -59,7 +59,8 @@
         $people = array();
         $galaxy = "Select S.email from Students S, Works W 
                 WHERE S.id=W.student AND W.ccode='" . $ccode . "' 
-                AND W.thing='" . $title . "' AND W.status='C';";
+                AND W.thing='" . $title . "' AND W.status='C'
+                AND W.sem>=GETDATE();";
         $brain = sqlsrv_query($conn, $galaxy);
         while ($row = sqlsrv_fetch_array(
                 $brain, SQLSRV_FETCH_ASSOC)) {
