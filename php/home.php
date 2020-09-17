@@ -120,7 +120,13 @@
     }
 
     $lbSql = "";
-    $filter = $_GET["filter"];
+    $filter = "";
+
+    try {
+        $filter = $_GET["filter"];
+    } catch(Exception $e) {
+        $filter = "";
+    }
 
     if ($filter == "" or $filter == "Global") {
         $lbSql = "select top 50 id, FirstName, LastName, score

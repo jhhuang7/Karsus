@@ -213,11 +213,12 @@ function getItemPanel($type)
     </div>
 
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
+        <div class="row" >
             <div class="col-md">
                 <div class="avatar">
                     <?php
-                        echo "<img id='hat' src='../images/hat/600-" . $wearing['hat'] ."'>
+                        echo "<img src='../images/stage1.png' style = 'padding-left:15px'>
+                        <img id='hat' src='../images/hat/600-" . $wearing['hat'] ."'>
                         <img id='hair' src='../images/hair/600-" . $wearing['hair'] ."'>
                         <img id='eyes' src='../images/eyes/600-" . $wearing['eyes'] ."'>
                         <img id='mouth' src='../images/mouth/600-" . $wearing['mouth'] ."'>
