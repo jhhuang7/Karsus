@@ -111,13 +111,13 @@ $items = array(
 
 // Default avatar look, replaced with items the user is wearing
 $wearing = array(
-    "arms" => 'arms-female-normal-pale.png',
-    "body" => 'body-female-normalBlack.png',
-    "eyes" => 'eyes-normal.png',
-    "hair" => 'hair-female-normalBrown-pale.png',
-    "hat" => 'hat-christmas.png',
-    "mouth" => 'mouth-smile.png',
-    "pants" => 'pant-female-normalBlack.png'
+    "arms" => '600-arms-female-normal-pale.png',
+    "body" => '600-body-female-normalBlack.png',
+    "eyes" => '600-eyes-normal.png',
+    "hair" => '600-hair-female-normalBrown-pale.png',
+    "hat" => '600-hat-christmas.png',
+    "mouth" => '600-mouth-smile.png',
+    "pants" => '600-pant-female-normalBlack.png'
 );
 
 session_start();
@@ -212,11 +212,12 @@ function getItemPanel($type)
     </div>
 
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
+        <div class="row" >
             <div class="col-md">
                 <div class="avatar">
                     <?php
-                        echo "<img id='hat' src='../images/hat/" . $wearing['hat'] ."'>
+                        echo "<img src='../images/stage1.png' style = 'padding-left:15px'>
+                        <img id='hat' src='../images/hat/" . $wearing['hat'] ."'>
                         <img id='hair' src='../images/hair/" . $wearing['hair'] ."'>
                         <img id='eyes' src='../images/eyes/" . $wearing['eyes'] ."'>
                         <img id='mouth' src='../images/mouth/" . $wearing['mouth'] ."'>
