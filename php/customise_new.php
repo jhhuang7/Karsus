@@ -22,7 +22,8 @@
             position: relative;
             top: 0;
             left: 0;
-            min-height: 300px;
+            min-height: 620px;
+            min-width: 600px;
         }
 
         .shop-item {
@@ -171,7 +172,7 @@ function getItemPanel($type)
         $currentItem = $itemList[$i];
         echo
             "<div class='shop-item'>" .
-                "<img class='shop-item mx-auto' src='../images/" . $type . "/" . $currentItem->imgsrc . "'>
+                "<img class='shop-item mx-auto' src='../images/" . $type . "/icon-" . $currentItem->imgsrc . "'>
             <div class='text-center'>";
         if ($currentItem->purchased) {
             if ($currentItem->amWearing) {
@@ -216,13 +217,13 @@ function getItemPanel($type)
             <div class="col-md">
                 <div class="avatar">
                     <?php
-                        echo "<img id='hat' src='../images/hat/" . $wearing['hat'] ."'>
-                        <img id='hair' src='../images/hair/" . $wearing['hair'] ."'>
-                        <img id='eyes' src='../images/eyes/" . $wearing['eyes'] ."'>
-                        <img id='mouth' src='../images/mouth/" . $wearing['mouth'] ."'>
-                        <img id='body_img' src='../images/body/" . $wearing['body'] ."'>
-                        <img id='arms' src='../images/arms/" . $wearing['arms'] ."'>
-                        <img id='pants' src='../images/pants/" . $wearing['pants'] ."'>";
+                        echo "<img id='hat' src='../images/hat/600-" . $wearing['hat'] ."'>
+                        <img id='hair' src='../images/hair/600-" . $wearing['hair'] ."'>
+                        <img id='eyes' src='../images/eyes/600-" . $wearing['eyes'] ."'>
+                        <img id='mouth' src='../images/mouth/600-" . $wearing['mouth'] ."'>
+                        <img id='body_img' src='../images/body/600-" . $wearing['body'] ."'>
+                        <img id='arms' src='../images/arms/600-" . $wearing['arms'] ."'>
+                        <img id='pants' src='../images/pants/600-" . $wearing['pants'] ."'>";
                     ?>
                 </div>
             </div>
