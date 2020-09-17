@@ -120,8 +120,12 @@
     }
 
     $lbSql = "";
-    $filter = $_GET["filter"];
+    $filter = "";
 
+    if (isset($_GET["filter"])) {
+        $filter = $_GET["filter"];
+    }
+    
     if ($filter == "" or $filter == "Global") {
         $lbSql = "select top 50 id, FirstName, LastName, score
                 from Students where type='S' order by score desc, LastName, FirstName";

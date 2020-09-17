@@ -41,7 +41,8 @@
             exit();
         }
 
-        $q1 = "SELECT * FROM Class WHERE code ='" . $course . "';";
+        $q1 = "SELECT * FROM Class C, Students S 
+            WHERE C.teacher=S.id and C.code ='" . $course . "';";
         $results1 = sqlsrv_query($conn, $q1);
 
         $q3 = "SELECT S.FirstName, S.LastName FROM Students S, Enrollment E
@@ -62,6 +63,7 @@
 
         $row1 = sqlsrv_fetch_array($results1, SQLSRV_FETCH_ASSOC);
         $courseInfo = $row1["info"];
+        $teacher = $row1["FirstName"] . " " . $row1["LastName"];
 
         $students = array();
         while ($row3 = sqlsrv_fetch_array(
@@ -110,6 +112,9 @@
         <div class="container" style="margin-top: 50px;">
             <p class="h2">Class Description</p>
             <p><?php echo $courseInfo ?></p>
+
+            <p class="h2">Course Coordinator</p>
+            <p><?php echo $teacher ?></p>
 
             <p class="h3">
                 Members (<?php echo count($students) ?>)

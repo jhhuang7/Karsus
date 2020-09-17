@@ -23,12 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/home2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,21 +146,9 @@
       <workItem from="1600081092568" duration="40000" />
       <workItem from="1600123234254" duration="2589000" />
       <workItem from="1600149075282" duration="79000" />
-      <workItem from="1600218788025" duration="3316000" />
-    </task>
-    <task id="LOCAL-00003" summary="idea files">
-      <created>1597705365623</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1597705365623</updated>
-    </task>
-    <task id="LOCAL-00004" summary="idea files">
-      <created>1597745472788</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1597745472788</updated>
+      <workItem from="1600218788025" duration="3434000" />
+      <workItem from="1600249517540" duration="196000" />
+      <workItem from="1600301199556" duration="1686000" />
     </task>
     <task id="LOCAL-00005" summary="index.html">
       <created>1597804182225</created>
@@ -494,7 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600126237811</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="idea">
+      <created>1600225201847</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1600225201849</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Started teacher accounts">
+      <created>1600225244045</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1600225244045</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +512,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Displaying more from DB" />
     <MESSAGE value="Probably could be deleted if not needed" />
     <MESSAGE value="Uncommented reference file" />
     <MESSAGE value="Class page created, waiting to be filled" />
@@ -535,10 +533,11 @@
     <MESSAGE value="Separate page to display full list of tasks" />
     <MESSAGE value="Minor display info changes" />
     <MESSAGE value="Leaderboard filtering" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Changed around potential risky SQL statement" />
     <MESSAGE value="Changed feedback box into textarea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed feedback box into textarea" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="Started teacher accounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started teacher accounts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -557,10 +556,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600126237616">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600225243868">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600126237616" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600225243868" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -593,10 +592,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600126268872">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600225281499">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600126268872" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600225281499" />
     <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599264277891">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
