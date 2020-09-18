@@ -29,7 +29,7 @@
                 exit();
             }
 
-            $tsql = "SELECT COUNT(*) as num FROM Students
+            $tsql = "SELECT COUNT(*) as num FROM Users
                 WHERE id =" . $id . ";";
             $getResults = sqlsrv_query($conn, $tsql);
             if ($getResults == FALSE) {
@@ -44,7 +44,7 @@
                 exit();
             } else {
                 $insert = "INSERT INTO 
-                    Students(id, FirstName, LastName, email, phone, pw, score, type) 
+                    Users(id, FirstName, LastName, email, phone, pw, score, type) 
                     VALUES(" . $id . ", '" . $first . "', '" . $last . "', '" .
                     $email . "', '" . $phone . "', '" .
                     $hashed_password . "', 0, '" . $type . "');";

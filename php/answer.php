@@ -45,8 +45,9 @@
             }
 
             // Set the task for the student to be Completed
-            $update = "UPDATE Works SET status='C' WHERE student=" . $id .
-                " AND ccode='" . $ccode . "' AND thing='" . $title . "';";
+            $update = "UPDATE Work SET status='C' WHERE student=" . $id .
+                " AND ccode='" . $ccode . "' AND thing='" . $title .
+                "' and sem>=GETDATE();";
             $stmt = sqlsrv_prepare($conn, $update);
             if (!sqlsrv_execute($stmt)) {
                 // Update problem
@@ -55,7 +56,7 @@
             }
 
             // Update student's new score
-            $update2 = "UPDATE Students SET score=score+$score 
+            $update2 = "UPDATE Users SET score=score+$score 
                 WHERE id=" . $id . ";";
             $stmt2 = sqlsrv_prepare($conn, $update2);
             if (!sqlsrv_execute($stmt2)) {

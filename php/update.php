@@ -31,7 +31,7 @@
                 exit();
             }
 
-            $update = "UPDATE Students SET FirstName='" . $first .
+            $update = "UPDATE Users SET FirstName='" . $first .
                 "', LastName='" . $last . "', email='" . $email .
                 "', phone='" . $phone . "', " . "pw='" . $hashed_password .
                 "' WHERE id=" . $id . ";";

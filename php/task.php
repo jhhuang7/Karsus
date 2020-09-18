@@ -37,7 +37,7 @@
             exit();
         }
 
-        $tsql = "select * from Questions where title = '" . $title .
+        $tsql = "select * from Question where title = '" . $title .
             "' and ccode = '" . $ccode . "' and sem>=GETDATE() order by qid";
         $getResults = sqlsrv_query($conn, $tsql);
 
@@ -57,7 +57,7 @@
         }
 
         $people = array();
-        $galaxy = "Select S.email from Students S, Works W 
+        $galaxy = "Select S.email from Users S, Work W 
                 WHERE S.id=W.student AND W.ccode='" . $ccode . "' 
                 AND W.thing='" . $title . "' AND W.status='C'
                 AND W.sem>=GETDATE();";

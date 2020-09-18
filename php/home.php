@@ -64,13 +64,14 @@
         exit();
     }
 
-    $tsql = "SELECT FirstName FROM Students WHERE id =" . $id . ";";
+    $tsql = "SELECT FirstName FROM Users WHERE id =" . $id . ";";
     $getResults = sqlsrv_query($conn, $tsql);
 
     $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
     $name = $row["FirstName"];
 
-    $taskSql = "SELECT top 3 thing, T.ccode, info, W.status, FORMAT(due, 'dd/MM/yyyy') as date from Works W, Task T where W.student=" .
+    $taskSql = "SELECT top 3 thing, T.ccode, info, W.status, FORMAT(due, 'dd/MM/yyyy') as date 
+        from Work W, Tasks T where W.student=" .
         $id . " and W.status='I' and W.ccode=T.ccode and W.thing=T.title
         and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
     $getResults = sqlsrv_query($conn, $taskSql);
@@ -90,7 +91,7 @@
         }
     }
 
-    $doneSql = "SELECT top 3 * from Works W, Task T where W.student=" .
+    $doneSql = "SELECT top 3 * from Work W, Tasks T where W.student=" .
         $id . " and W.status='C' and W.ccode=T.ccode and W.thing=T.title
         and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
     $getResults2 = sqlsrv_query($conn, $doneSql);
@@ -108,7 +109,7 @@
         }
     }
 
-    $classSql = "select class from Enrollment 
+    $classSql = "select class from Enrollments
         where sem>=GETDATE() and student = " . $id;
     $getResults = sqlsrv_query($conn, $classSql);
     $classes = array();
@@ -129,10 +130,10 @@
     
     if ($filter == "" or $filter == "Global") {
         $lbSql = "select top 50 id, FirstName, LastName, score
-                from Students where type='S' order by score desc, LastName, FirstName";
+                from Users where type='S' order by score desc, LastName, FirstName";
     } else {
         $lbSql = "select S.id, S.FirstName, S.LastName, S.score
-                from Students S, Enrollment E
+                from Users S, Enrollments E
                 where S.id=E.student
                 and S.type='S'
                 and E.class='" . $filter . "'
@@ -156,10 +157,10 @@
 
     $goldSql = "select  SUM(score)/COUNT(*) - SUM(cost)
                 as [Balance]
-                from Students
-                inner join Purchase on Students.id = Purchase.student
+                from Users
+                inner join Purchase on Users.id = Purchase.student
                 inner join Inventory on Purchase.item = Inventory.name
-                where Students.id = " . $id;
+                where Users.id = " . $id;
     $getResults = sqlsrv_query($conn, $goldSql);
     $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
     $gold = $row["Balance"];

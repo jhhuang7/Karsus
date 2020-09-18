@@ -17,10 +17,10 @@
             }
             echo "Connected!" . "<br>";
 
-            $tsql = "SELECT * FROM Students;";
+            $tsql = "SELECT * FROM Users;";
             $getResults = sqlsrv_query($conn, $tsql);
 
-            echo "Reading id data from table Students:" . "<br>";
+            echo "Reading id data from table Users:" . "<br>";
             if ($getResults == FALSE) {
                 die(print_r(sqlsrv_errors(), true));
             }

@@ -22,7 +22,7 @@
                 exit();
             }
 
-            $tsql = "SELECT pw, type FROM Students WHERE id = " . $id . ";";
+            $tsql = "SELECT pw, type FROM Users WHERE id = " . $id . ";";
             $getResults = sqlsrv_query($conn, $tsql);
 
             if ($getResults == FALSE) {

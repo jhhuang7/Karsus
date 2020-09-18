@@ -37,7 +37,7 @@
             exit();
         }
 
-        $doneSql = "SELECT * from Works W, Task T where W.student=" .
+        $doneSql = "SELECT * from Work W, Tasks T where W.student=" .
             $id . " and W.status='C' and W.ccode=T.ccode and W.thing=T.title
                     and W.sem=T.sem and W.sem>=GETDATE() order by T.due";
         $getResults2 = sqlsrv_query($conn, $doneSql);

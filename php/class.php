@@ -37,19 +37,19 @@
             exit();
         }
 
-        $q1 = "SELECT * FROM Class C, Students S 
+        $q1 = "SELECT * FROM Classes C, Users S 
             WHERE C.teacher=S.id and C.code ='" . $course . "'
             AND C.sem>=GETDATE();";
         $results1 = sqlsrv_query($conn, $q1);
 
-        $q3 = "SELECT S.FirstName, S.LastName FROM Students S, Enrollment E 
+        $q3 = "SELECT S.FirstName, S.LastName FROM Users S, Enrollments E 
                         WHERE E.class ='" . $course . "' AND E.student=S.id
                         AND E.sem>=GETDATE()
                         ORDER BY S.score DESC, S.LastName;";
         $results3 = sqlsrv_query($conn, $q3);
 
         $q4 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date 
-                        FROM Task T WHERE ccode ='" . $course . "' 
+                        FROM Tasks T WHERE ccode ='" . $course . "' 
                         and sem>=GETDATE() ORDER BY due;";
         $results4 = sqlsrv_query($conn, $q4);
 
