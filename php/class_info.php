@@ -39,7 +39,7 @@
             </h3>
             <form action="add_students.php" method="POST">
                 <label>
-                    <input name="students" class="form-control" placeholder="Students to be added" required />
+                    <input name="students" class="form-control" placeholder="Students to be added (CSV)" required />
                 </label>
                 <button  class="btn btn-success">Add +</button>
             </form>
