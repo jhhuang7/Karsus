@@ -16,6 +16,7 @@
             $last = $_POST["last"];
             $email = $_POST["email"];
             $phone = $_POST["phone"];
+            $type = $_POST["type"];
 
             $hashed_password = password_hash($pw, PASSWORD_DEFAULT);
 
@@ -43,7 +44,11 @@
                 exit();
             }
 
-            header("Location: home.php?status=updated");
+            if ($type === 'S') {
+                header("Location: home.php?status=updated");
+            } else {
+                header("Location: home2.php?status=updated");
+            }
             exit();
         ?>
     </body>

@@ -46,13 +46,18 @@
         }
 
         $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
+
+        $type = $row["type"];
     ?>
     <div class="navbar navbar-expand-md bg-dark navbar-dark">
         <div>
             <?php
-            echo '<a class="navbar-brand" href="home.php">
-            <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
-            </a>'
+                if ($type === 'S') {
+                    echo '<a class="navbar-brand" href="home.php">';
+                } else {
+                    echo '<a class="navbar-brand" href="home2.php">';
+                }
+                echo '<img src="../images/karsus_logo.png" alt="Logo" style="width:55px"></a>';
             ?>
         </div>
           <ul class="navbar-nav ml-auto">
@@ -97,11 +102,18 @@
                 </div>
                 <div class="form-group">
                     <label for="type" onclick="lockedParam();">Account Type</label>
-                    <input type="text" class="form-control" id="type" value="<?php echo $row['type'] ?>" disabled >
+                    <input type="text" class="form-control" id="type" name="type" value="<?php echo $row['type'] ?>" disabled >
                 </div>
                 <button type="submit" class="btn btn-success float-right">Update Details</button>
             </form>
-            <a class="btn btn-primary float-right" href="home.php" role="button"><i class="fas fa-home"></i> Back to Home</a>
+            <?php
+                if ($type === 'S') {
+                    echo '<a class="btn btn-primary float-right" href="home.php" role="button">';
+                } else {
+                    echo '<a class="btn btn-primary float-right" href="home2.php" role="button">';
+                }
+                echo '<i class="fas fa-home"></i> Back to Home</a>';
+            ?>
           </div>
             <script>
                 function lockedParam() {
