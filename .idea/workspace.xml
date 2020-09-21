@@ -23,16 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/add_class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/add_students.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/add_task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/append_class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/class_info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Karsus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Karsus.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home2.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/add_students.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_students.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/add_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class_info.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,28 +154,9 @@
       <workItem from="1600420152186" duration="100000" />
       <workItem from="1600567490284" duration="368000" />
       <workItem from="1600598024612" duration="69000" />
-      <workItem from="1600650822877" duration="8004000" />
-    </task>
-    <task id="LOCAL-00012" summary="idea">
-      <created>1598334467987</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1598334467987</updated>
-    </task>
-    <task id="LOCAL-00013" summary="auxiliary commenting">
-      <created>1598334514891</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1598334514891</updated>
-    </task>
-    <task id="LOCAL-00014" summary="README">
-      <created>1598334529786</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1598334529786</updated>
+      <workItem from="1600650822877" duration="8301000" />
+      <workItem from="1600679928968" duration="86000" />
+      <workItem from="1600727815152" duration="1956000" />
     </task>
     <task id="LOCAL-00015" summary="More account functionality">
       <created>1598334590244</created>
@@ -505,7 +480,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600412660557</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="idea">
+      <created>1600669682506</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1600669682508</updated>
+    </task>
+    <task id="LOCAL-00062" summary="idea">
+      <created>1600669698654</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1600669698654</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Started basic teacher dashboard functionality">
+      <created>1600669723768</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1600669723769</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +520,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed blanks lines" />
     <MESSAGE value="Added 'back to home' button" />
     <MESSAGE value="Now displaying class specific information" />
     <MESSAGE value="Added back 'locked up' message" />
@@ -547,9 +542,10 @@
     <MESSAGE value="Added course coordinator" />
     <MESSAGE value="Hopefully removes error" />
     <MESSAGE value="Integrated semester info into DB" />
-    <MESSAGE value="idea" />
     <MESSAGE value="New DB configs and a bit more" />
-    <option name="LAST_COMMIT_MESSAGE" value="New DB configs and a bit more" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="Started basic teacher dashboard functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started basic teacher dashboard functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -568,10 +564,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600412660352">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600669723623">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600412660352" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600669723623" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -608,10 +604,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600412692199">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600669831308">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600412692199" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600669831308" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
