@@ -48,13 +48,14 @@
             position: absolute;
             top: 16px;
             left: 0;
-            z-index: 98;
+            z-index: 96;
         }
 
         #body_img {
             position: absolute;
             top: 16px;
             left: 0;
+            z-index: 98
         }
 
         #eyes {
@@ -86,6 +87,13 @@
             position: absolute;
             top: 14px;
             left: 0;
+            z-index: 30;
+        }
+        #legs {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            z-index: 29;
         }
     </style>
 </head>
@@ -107,7 +115,8 @@ $items = array(
     "hair" => array(),
     "hat" => array(),
     "mouth" => array(),
-    "pants" => array()
+    "pants" => array(),
+    "legs" => array()
 );
 
 // Default avatar look, replaced with items the user is wearing
@@ -118,7 +127,8 @@ $wearing = array(
     "hair" => 'hair-female-normalBrown-pale.png',
     "hat" => 'hat-christmas.png',
     "mouth" => 'mouth-smile.png',
-    "pants" => 'pant-female-normalBlack.png'
+    "pants" => 'pant-female-normalBlack.png',
+    "legs" => 'legs-human-normal-pale.png'
 );
 
 session_start();
@@ -186,7 +196,6 @@ function getItemPanel($type)
         echo "</div></div>";
     }
 }
-
 ?>
 
 <body>
@@ -224,7 +233,9 @@ function getItemPanel($type)
                         <img id='mouth' src='../images/mouth/600-" . $wearing['mouth'] ."'>
                         <img id='body_img' src='../images/body/600-" . $wearing['body'] ."'>
                         <img id='arms' src='../images/arms/600-" . $wearing['arms'] ."'>
-                        <img id='pants' src='../images/pants/600-" . $wearing['pants'] ."'>";
+                        <img id='pants' src='../images/pants/600-" . $wearing['pants'] ."'>
+                        <img id='legs' src='../images/legs/600-" . $wearing['legs'] ."'>";
+
                     ?>
                 </div>
             </div>
@@ -237,6 +248,7 @@ function getItemPanel($type)
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-hat">Hat</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-mouth">Mouth</a></li>
                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-pants">Pants</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-legs">Legs</a></li>
                 </ul>
 
                 <div class="tab-content" style="background-color: #dcdcdc; padding:15px; border: 0px; border-radius:0 0 10px 10px;">
@@ -273,6 +285,11 @@ function getItemPanel($type)
                     <div id="tab-pants" class="tab-pane fade">
                         <?php
                         getItemPanel("pants")
+                        ?>
+                    </div>
+                    <div id="tab-legs" class="tab-pane fade">
+                        <?php
+                        getItemPanel("legs")
                         ?>
                     </div>
                 </div>
