@@ -8,15 +8,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
     <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
-    <script>
-        function switchHat(h) {
-            document.getElementById('hat').src = '../images/avatars/' + h;
-        }
-
-        function switchOutfit(o) {
-            document.getElementById('outfit').src = '../images/avatars/' + o;
-        }
-    </script>
+    
     <style>
         .avatar {
             position: relative;
@@ -89,6 +81,7 @@
             left: 0;
             z-index: 30;
         }
+
         #legs {
             position: absolute;
             top: 15px;
@@ -103,6 +96,7 @@
 class ShopItem
 {
     public string $imgsrc = "Default";
+    public string $itemName = "Default";
     public bool $purchased = false;
     public bool $amWearing = false;
     public int $cost = 0;
@@ -128,7 +122,7 @@ $wearing = array(
     "hat" => 'hat-christmas.png',
     "mouth" => 'mouth-smile.png',
     "pants" => 'pant-female-normalBlack.png',
-    "legs" => 'legs-human-normal-pale.png'
+    "legs" => 'legs-chicken.png'
 );
 
 session_start();
@@ -156,6 +150,7 @@ while ($row = sqlsrv_fetch_array(
     $shopItem->purchased = true;
     $shopItem->imgsrc = $row['imgsrc'];
     $shopItem->cost = $row['cost'];
+    $shopItem->itemName = $row['name'];
     if ($row['wearing'] == 'Y') {
         $shopItem->amWearing = true;
         $wearing[$row['type']] = $row['imgsrc'];
@@ -171,6 +166,7 @@ while ($row = sqlsrv_fetch_array(
     $shopItem = new ShopItem;
     $shopItem->imgsrc = $row['imgsrc'];
     $shopItem->cost = $row['cost'];
+    $shopItem->itemName = $row['name'];
     array_push($items[$row['type']], $shopItem);
 }
 
@@ -180,15 +176,24 @@ function getItemPanel($type)
     $itemList = $items[$type];
     for ($i = 0; $i < count($itemList); $i++) {
         $currentItem = $itemList[$i];
+        $item_id = $type . '_' . $i;
+        $js_img_src = "../images/" . $type . "/600-" . $currentItem->imgsrc;
+        $onclick_fn = 'change_outfit("' . $type . '", "' . $item_id . '", "' . $js_img_src . '")';
         echo
             "<div class='shop-item'>" .
                 "<img class='shop-item mx-auto' src='../images/" . $type . "/icon-" . $currentItem->imgsrc . "'>
             <div class='text-center'>";
         if ($currentItem->purchased) {
             if ($currentItem->amWearing) {
-                echo "<a class='btn btn-primary disabled' href='#' role='button'>Equipped</a>";
+                echo "<a class='btn btn-primary disabled " . $type . "' 
+                id='" . $item_id . "' href='#' role='button' 
+                onclick='" . $onclick_fn . "' 
+                data-outfit-name='" . $currentItem->itemName . "'>Equipped</a>";
             } else {
-                echo "<a class='btn btn-success' href='#' role='button'>Equip</a>";
+                echo "<a class='btn btn-success " . $type . "' 
+                id='" . $item_id . "' href='#' role='button' 
+                onclick='" . $onclick_fn . "' 
+                data-outfit-name='" . $currentItem->itemName . "'>Equip</a>";
             }
         } else {
             echo "<a class='btn btn-primary' href='#' role='button'>Buy " . $currentItem->cost . "KC</a>";
@@ -222,21 +227,23 @@ function getItemPanel($type)
     </div>
 
     <div class="container" style="margin-top: 50px;">
-        <div class="row" >
+        <div class="row">
             <div class="col-md">
                 <div class="avatar">
                     <?php
-                        echo "<img src='../images/stage1.png' style = 'padding-left:15px'>
-                        <img id='hat' src='../images/hat/600-" . $wearing['hat'] ."'>
-                        <img id='hair' src='../images/hair/600-" . $wearing['hair'] ."'>
-                        <img id='eyes' src='../images/eyes/600-" . $wearing['eyes'] ."'>
-                        <img id='mouth' src='../images/mouth/600-" . $wearing['mouth'] ."'>
-                        <img id='body_img' src='../images/body/600-" . $wearing['body'] ."'>
-                        <img id='arms' src='../images/arms/600-" . $wearing['arms'] ."'>
-                        <img id='pants' src='../images/pants/600-" . $wearing['pants'] ."'>
-                        <img id='legs' src='../images/legs/600-" . $wearing['legs'] ."'>";
-
+                    echo "<img src='../images/stage1.png' style = 'padding-left:15px'>
+                        <img id='hat' src='../images/hat/600-" . $wearing['hat'] . "'>
+                        <img id='hair' src='../images/hair/600-" . $wearing['hair'] . "'>
+                        <img id='eyes' src='../images/eyes/600-" . $wearing['eyes'] . "'>
+                        <img id='mouth' src='../images/mouth/600-" . $wearing['mouth'] . "'>
+                        <img id='body_img' src='../images/body/600-" . $wearing['body'] . "'>
+                        <img id='arms' src='../images/arms/600-" . $wearing['arms'] . "'>
+                        <img id='pants' src='../images/pants/600-" . $wearing['pants'] . "'>
+                        <img id='legs' src='../images/legs/600-" . $wearing['legs'] . "'>";
                     ?>
+                </div>
+                <div>
+                    <a class="btn btn-primary" href='#' onclick='save_outfit()'>Save Outfit</a>
                 </div>
             </div>
             <div class="col-md">
@@ -297,5 +304,75 @@ function getItemPanel($type)
         </div>
     </div>
 </body>
+
+<script>
+        function change_outfit(type, id, img) {
+            let items = document.getElementsByClassName(type);
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].innerHTML === "Equipped") {
+                    items[i].innerHTML = "Equip";
+                    items[i].classList.remove("disabled");
+                    items[i].classList.remove("btn-primary");
+                    items[i].classList.add("btn-success");
+                }
+            }
+            var itemToEquip = document.getElementById(id);
+            itemToEquip.innerHTML = "Equipped";
+            itemToEquip.classList.add("disabled")
+            itemToEquip.classList.remove("btn-success");
+            itemToEquip.classList.add("btn-primary");
+            var avatar = document.getElementById(type);
+            avatar.src = img;
+        }
+
+        function save_outfit() {
+            let types = [
+                "arms",
+                "body",
+                "eyes",
+                "hair",
+                "hat",
+                "mouth",
+                "pants",
+                "legs"
+            ]
+
+            let equipped = [];
+
+            for (let i = 0; i < types.length; i++) {
+                let type = types[i];
+                let items = document.getElementsByClassName(type);
+                let equippedItem = "";
+                for (let j = 0; j < items.length; j++) {
+                    if (items[j].innerHTML === "Equipped") {
+                        equippedItem = items[j].getAttribute("data-outfit-name");
+                    }
+                }
+                if (equippedItem != '') {
+                    equipped.push(equippedItem);
+                }
+            }
+
+            let equipped_str = equipped.join(",");
+
+            let xhttp;
+
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    let response = this.responseText;
+                    if (response == "1") { // Success
+                        console.log("Equipping succeeded");
+                    } else {
+                        console.log("Equipping failed");
+                    }
+                }
+            };
+            if (equipped.length > 0) {
+                xhttp.open("GET", "save_customisation.php?equipped=" + equipped_str, true);
+                xhttp.send();
+            }  
+        }
+    </script>
 
 </html>
