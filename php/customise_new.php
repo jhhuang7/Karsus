@@ -43,7 +43,7 @@
             z-index: 96;
         }
 
-        #body_img {
+        #body {
             position: absolute;
             top: 16px;
             left: 0;
@@ -262,7 +262,7 @@ function getItemPanel($type)
                         <img id='hair' src='../images/hair/600-" . $wearing['hair'] . "'>
                         <img id='eyes' src='../images/eyes/600-" . $wearing['eyes'] . "'>
                         <img id='mouth' src='../images/mouth/600-" . $wearing['mouth'] . "'>
-                        <img id='body_img' src='../images/body/600-" . $wearing['body'] . "'>
+                        <img id='body' src='../images/body/600-" . $wearing['body'] . "'>
                         <img id='arms' src='../images/arms/600-" . $wearing['arms'] . "'>
                         <img id='pants' src='../images/pants/600-" . $wearing['pants'] . "'>
                         <img id='legs' src='../images/legs/600-" . $wearing['legs'] . "'>";
