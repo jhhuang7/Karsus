@@ -13,7 +13,7 @@
             background-color: #F0FFFF;
           }
           h1{
-            font-family:"Merriweather";
+              font-family: "Merriweather", serif;
             text-decoration: underline;
           }
         </style>
@@ -64,7 +64,7 @@
             <li class="nav-item">
               <a class="nav-link" href="../index.html?status=loggedout" style="font-size:22px;"><i class="fas fa-sign-out-alt fa-md"></i>  Log Out</a>
             </li>
-            <ul>
+            </ul>
       </div>
       </head>
     <body>
@@ -98,11 +98,11 @@
                 </div>
                 <div class="form-group">
                     <label for="score" onclick="lockedParam();">Score</label>
-                    <input type="text" class="form-control" id="score" value="<?php echo $row['score'] ?>" disabled >
+                    <input type="text" class="form-control" id="score" value="<?php echo $row['score'] ?>" disabled>
                 </div>
                 <div class="form-group">
                     <label for="type" onclick="lockedParam();">Account Type</label>
-                    <input type="text" class="form-control" id="type" name="type" value="<?php echo $row['type'] ?>" disabled >
+                    <input type="text" class="form-control" id="type" name="type" value="<?php echo $row['type'] ?>" readonly>
                 </div>
                 <button type="submit" class="btn btn-success float-right">Update Details</button>
             </form>
@@ -121,8 +121,8 @@
                 }
             </script>
     </body>
-  </br>
-</br>
+  <br>
+<br>
     <!-- End Page Content -->
     <footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
 
