@@ -8,7 +8,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
     <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
-    
+
     <style>
         .avatar {
             position: relative;
@@ -170,6 +170,16 @@ while ($row = sqlsrv_fetch_array(
     array_push($items[$row['type']], $shopItem);
 }
 
+$goldSql = "select  SUM(score)/COUNT(*) - SUM(cost)
+                as [Balance]
+                from Users
+                inner join Purchase on Users.id = Purchase.student
+                inner join Inventory on Purchase.item = Inventory.name
+                where Users.id = " . $id;
+$getResults = sqlsrv_query($conn, $goldSql);
+$row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
+$gold = $row["Balance"];
+
 function getItemPanel($type)
 {
     global $items;
@@ -178,7 +188,8 @@ function getItemPanel($type)
         $currentItem = $itemList[$i];
         $item_id = $type . '_' . $i;
         $js_img_src = "../images/" . $type . "/600-" . $currentItem->imgsrc;
-        $onclick_fn = 'change_outfit("' . $type . '", "' . $item_id . '", "' . $js_img_src . '")';
+        $change_outfit_function = 'change_outfit("' . $type . '", "' . $item_id . '", "' . $js_img_src . '")';
+        $purchase_outfit_function = 'purchase_outfit("' . $currentItem->itemName . '", "' . $item_id . '", "' . $type . '", "' . $js_img_src . '")';
         echo
             "<div class='shop-item'>" .
                 "<img class='shop-item mx-auto' src='../images/" . $type . "/icon-" . $currentItem->imgsrc . "'>
@@ -187,16 +198,19 @@ function getItemPanel($type)
             if ($currentItem->amWearing) {
                 echo "<a class='btn btn-primary disabled " . $type . "' 
                 id='" . $item_id . "' href='#' role='button' 
-                onclick='" . $onclick_fn . "' 
+                onclick='" . $change_outfit_function . "' 
                 data-outfit-name='" . $currentItem->itemName . "'>Equipped</a>";
             } else {
                 echo "<a class='btn btn-success " . $type . "' 
                 id='" . $item_id . "' href='#' role='button' 
-                onclick='" . $onclick_fn . "' 
+                onclick='" . $change_outfit_function . "' 
                 data-outfit-name='" . $currentItem->itemName . "'>Equip</a>";
             }
         } else {
-            echo "<a class='btn btn-primary' href='#' role='button'>Buy " . $currentItem->cost . "KC</a>";
+            echo "<a class='btn btn-primary " . $type . "' 
+            id='" . $item_id . "' href='#' role='button' 
+            onclick='" . $purchase_outfit_function . "' 
+            data-outfit-name='" . $currentItem->itemName . "'>Buy " . $currentItem->cost . "KC</a>";
         }
         echo "</div></div>";
     }
@@ -219,9 +233,21 @@ function getItemPanel($type)
 
         <div class="col text-right">
 
-            <a href="profile.php">
-                <img src="../images/profile.png" alt="profile" width=40 height=40 />
-            </a>';
+            <?php
+            echo '<span style="color:gold; font-size:25px">' .
+                '<span id="gold_counter">' .
+                $gold . '</span> <img
+                            src="../images/Karsus_coin.png"
+                            alt="profile" width=40 height=40
+                        />' .
+
+                '<a href="profile.php">
+                        <img
+                            src="../images/profile.png"
+                            alt="profile" width=40 height=40
+                        />
+                        </a></span>';
+            ?>
 
         </div>
     </div>
@@ -306,73 +332,113 @@ function getItemPanel($type)
 </body>
 
 <script>
-        function change_outfit(type, id, img) {
+    function change_outfit(type, id, img) {
+        let items = document.getElementsByClassName(type);
+        for (let i = 0; i < items.length; i++) {
+            if (items[i].innerHTML === "Equipped") {
+                items[i].innerHTML = "Equip";
+                items[i].classList.remove("disabled");
+                items[i].classList.remove("btn-primary");
+                items[i].classList.add("btn-success");
+            }
+        }
+        var itemToEquip = document.getElementById(id);
+        itemToEquip.innerHTML = "Equipped";
+        itemToEquip.classList.add("disabled")
+        itemToEquip.classList.remove("btn-success");
+        itemToEquip.classList.add("btn-primary");
+        var avatar = document.getElementById(type);
+        avatar.src = img;
+    }
+
+    function subtract_coins(n) {
+        let element = document.getElementById('gold_counter');
+        let goldStr = element.innerHTML;
+        let gold = parseInt(goldStr);
+        gold -= n;
+        element.innerHTML = gold.toString();
+    }
+
+    function show_equip_button(id, type, img, name) {
+        let element = document.getElementById(id);
+        element.innerHTML = "Equip";
+        element.classList.remove("btn-primary");
+        element.classList.add("btn-success");
+        element.onclick = function() {
+            change_outfit(type, id, img);
+        }
+    }
+
+    function purchase_outfit(itemName, id, type, img) {
+        let xhttp;
+
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                let response = this.responseText;
+                if (response === "-2") {
+                    console.log("Purchase failed: not enough coins");
+                } else if (response == "-1") {
+                    console.log("Purchase failed: unknown reason");
+                } else {
+                    console.log("Purchase succeeded");
+                    show_equip_button(id, type, img, itemName);
+                    subtract_coins(100);
+                }
+            }
+        };
+        xhttp.open("GET", "purchase.php?item=" + itemName, true);
+        xhttp.send();
+    }
+
+    function save_outfit() {
+        let types = [
+            "arms",
+            "body",
+            "eyes",
+            "hair",
+            "hat",
+            "mouth",
+            "pants",
+            "legs"
+        ]
+
+        let equipped = [];
+
+        for (let i = 0; i < types.length; i++) {
+            let type = types[i];
             let items = document.getElementsByClassName(type);
-            for (let i = 0; i < items.length; i++) {
-                if (items[i].innerHTML === "Equipped") {
-                    items[i].innerHTML = "Equip";
-                    items[i].classList.remove("disabled");
-                    items[i].classList.remove("btn-primary");
-                    items[i].classList.add("btn-success");
+            let equippedItem = "";
+            for (let j = 0; j < items.length; j++) {
+                if (items[j].innerHTML === "Equipped") {
+                    equippedItem = items[j].getAttribute("data-outfit-name");
                 }
             }
-            var itemToEquip = document.getElementById(id);
-            itemToEquip.innerHTML = "Equipped";
-            itemToEquip.classList.add("disabled")
-            itemToEquip.classList.remove("btn-success");
-            itemToEquip.classList.add("btn-primary");
-            var avatar = document.getElementById(type);
-            avatar.src = img;
+            if (equippedItem != '') {
+                equipped.push(equippedItem);
+            }
         }
 
-        function save_outfit() {
-            let types = [
-                "arms",
-                "body",
-                "eyes",
-                "hair",
-                "hat",
-                "mouth",
-                "pants",
-                "legs"
-            ]
+        let equipped_str = equipped.join(",");
 
-            let equipped = [];
+        let xhttp;
 
-            for (let i = 0; i < types.length; i++) {
-                let type = types[i];
-                let items = document.getElementsByClassName(type);
-                let equippedItem = "";
-                for (let j = 0; j < items.length; j++) {
-                    if (items[j].innerHTML === "Equipped") {
-                        equippedItem = items[j].getAttribute("data-outfit-name");
-                    }
-                }
-                if (equippedItem != '') {
-                    equipped.push(equippedItem);
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                let response = this.responseText;
+                if (response === "1") { // Success
+                    console.log("Equipping succeeded");
+                } else {
+                    console.log("Equipping failed");
                 }
             }
-
-            let equipped_str = equipped.join(",");
-
-            let xhttp;
-
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    let response = this.responseText;
-                    if (response == "1") { // Success
-                        console.log("Equipping succeeded");
-                    } else {
-                        console.log("Equipping failed");
-                    }
-                }
-            };
-            if (equipped.length > 0) {
-                xhttp.open("GET", "save_customisation.php?equipped=" + equipped_str, true);
-                xhttp.send();
-            }  
+        };
+        if (equipped.length > 0) {
+            xhttp.open("GET", "save_customisation.php?equipped=" + equipped_str, true);
+            xhttp.send();
         }
-    </script>
+    }
+</script>
 
 </html>

@@ -4,7 +4,16 @@ session_start();
 $id = $_SESSION["id"];
 $item = $_GET["item"];
 
-$SQL_PURCHASE_ITEM = "insert into Purchase values(" . $id . ", " . $item . ", N)";
+$SQL_GET_PURCHASE_PRICE = "SELECT cost FROM Inventory WHERE name = '" . $item . "'";
+
+$SQL_GET_USER_GOLD = "SELECT  SUM(score)/COUNT(*) - SUM(cost)
+                as [Balance]
+                from Users
+                inner join Purchase on Users.id = Purchase.student
+                inner join Inventory on Purchase.item = Inventory.name
+                where Users.id = " . $id;
+
+$SQL_PURCHASE_ITEM = "INSERT into Purchase values(" . $id . ", '" . $item . "', 'N')";
 
 $serverName = "tcp:karsus.database.windows.net,1433";
 $connectionOptions = array(
@@ -15,9 +24,23 @@ $connectionOptions = array(
 
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 
-$stmt = sqlsrv_prepare($conn, $SQL_PURCHASE_ITEM);
-sqlsrv_execute($stmt);
+$getResults = sqlsrv_query($conn, $SQL_GET_PURCHASE_PRICE);
+$row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
+$price = $row["cost"];
 
-header("Location: customise_new.php")
+$getResults = sqlsrv_query($conn, $SQL_GET_USER_GOLD);
+$row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
+$gold = $row["Balance"];
+
+if ($gold >= $price) {
+    $stmt = sqlsrv_prepare($conn, $SQL_PURCHASE_ITEM);
+    if (sqlsrv_execute($stmt)) {
+        echo "" . $price; // send back price of item
+    } else {
+        echo "-1"; // Update failed
+    }
+} else {
+    echo "-2";     // not enough gold
+}
 
 ?>

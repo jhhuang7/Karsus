@@ -137,7 +137,7 @@
 
             if (params["status"] === "updated") {
                 alert("Your details have been successfully updated!");
-            } else if params["status"] === "added") {
+            } else if (params["status"] === "added") {
                 alert("You have successfully added a new class!");
             }
         </script>
