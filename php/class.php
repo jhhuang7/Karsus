@@ -127,9 +127,6 @@
             <div class="list-group">
                 <?php
                     for ($i = 0; $i < count($tasks); $i++) {
-                        // Not sure if tasks should link to their page as tasks couple be completed
-                        // href="task.php?title=' . $tasks[$i]->title . '&ccode=' . $course . '&info=' . $tasks[$i]->info . '&due=' . $tasks[$i]->dueDate . '"
-
                         echo '<a class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
                                 <h5 class="mb-1">' . $tasks[$i]->title . '</h5>

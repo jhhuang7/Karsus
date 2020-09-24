@@ -45,7 +45,7 @@
 
                 <label for="id">Coordinator Id</label>
                 <?php
-                    echo '<input type="text" class="form-control" id="id" name="id" value="' . $id . '" disabled />';
+                    echo '<input type="text" class="form-control" id="id" name="id" value="' . $id . '" readonly />';
                 ?>
 
                 <br>
