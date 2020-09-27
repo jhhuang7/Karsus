@@ -6,7 +6,6 @@
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
-        <script src="../js/jquery-3.5.1.js"></script>
     </head>
 
     <?php

@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <script src="../js/jquery-3.5.1.js"></script>
     </head>
 
     <body>
@@ -14,6 +13,7 @@
             session_start();
             $id = $_SESSION["id"];
         ?>
+
         <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
             <div>
                 <a class="navbar-brand" href="home2.php">
