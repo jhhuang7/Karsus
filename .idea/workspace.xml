@@ -22,16 +22,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="Some placeholders for teacher's functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/Karsus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Karsus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/base2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/cap_student.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/cap_student2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/coat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/jacket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/rlblue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/rlpink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/rlred.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/suit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/tophat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/avatars/witch-hat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.5.1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/php/add_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/add_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/append_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/append_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/answer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/class_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/completed.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/completed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/customise.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/customise_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise_new.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/databaseconnect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home2.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/phpinfopage.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/purchase.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/purchase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/save_customisation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/save_customisation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/queries.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,28 +191,10 @@
       <workItem from="1600679928968" duration="86000" />
       <workItem from="1600727815152" duration="2124000" />
       <workItem from="1600825745366" duration="137000" />
-      <workItem from="1600905168795" duration="6196000" />
-    </task>
-    <task id="LOCAL-00017" summary="idea">
-      <created>1598399414861</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1598399414861</updated>
-    </task>
-    <task id="LOCAL-00018" summary="idea">
-      <created>1598497542792</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1598497542792</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Probably could be deleted if not needed">
-      <created>1598497584532</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1598497584532</updated>
+      <workItem from="1600905168795" duration="6338000" />
+      <workItem from="1601007821344" duration="768000" />
+      <workItem from="1601099533359" duration="210000" />
+      <workItem from="1601176854404" duration="4670000" />
     </task>
     <task id="LOCAL-00020" summary="Uncommented reference file">
       <created>1598497619777</created>
@@ -508,7 +518,28 @@
       <option name="project" value="LOCAL" />
       <updated>1600730508244</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="idea">
+      <created>1600911617118</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1600911617120</updated>
+    </task>
+    <task id="LOCAL-00067" summary="idea">
+      <created>1600911631083</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1600911631083</updated>
+    </task>
+    <task id="LOCAL-00068" summary="More teacher's functionality">
+      <created>1600911647431</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1600911647431</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +558,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Now displaying class specific information" />
     <MESSAGE value="Added back 'locked up' message" />
     <MESSAGE value="Added title and placeholder info" />
     <MESSAGE value="More placeholder info instead of hyperlinks" />
@@ -550,9 +580,10 @@
     <MESSAGE value="Integrated semester info into DB" />
     <MESSAGE value="New DB configs and a bit more" />
     <MESSAGE value="Started basic teacher dashboard functionality" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Some placeholders for teacher's functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some placeholders for teacher's functionality" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="More teacher's functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="More teacher's functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -571,10 +602,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600911109864">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1600911647279">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600911109864" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1600911647279" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -611,10 +642,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600730613925">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1600911692859">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600730613925" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1600911692859" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>

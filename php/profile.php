@@ -9,13 +9,13 @@
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <style>
-          body{
-            background-color: #F0FFFF;
-          }
-          h1{
-              font-family: "Merriweather", serif;
-            text-decoration: underline;
-          }
+              body{
+                background-color: #F0FFFF;
+              }
+              h1{
+                  font-family: "Merriweather", serif;
+                text-decoration: underline;
+              }
         </style>
 
     <?php
