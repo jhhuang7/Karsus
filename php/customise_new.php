@@ -383,7 +383,7 @@ function getItemPanel($type)
                 } else {
                     console.log("Purchase succeeded");
                     show_equip_button(id, type, img, itemName);
-                    subtract_coins(100);
+                    subtract_coins(parseInt(response));
                 }
             }
         };
