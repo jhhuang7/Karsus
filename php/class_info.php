@@ -47,7 +47,7 @@
             $q2 = "SELECT * FROM Enrollments E, Users U
                     WHERE E.student=U.id AND E.class ='" . $course . "'
                     AND E.sem>=GETDATE() 
-                    ORDER BY U.LastName, U.FirstName, U.id;";
+                    ORDER BY U.score desc, U.LastName, U.FirstName, U.id;";
             $results2 = sqlsrv_query($conn, $q2);
             if ($results2 == false) {
                 // Query problem
@@ -155,5 +155,29 @@
                 }
             ?>
         </div>
+
+        <script>
+            let params = {};
+
+            window.location.search
+                .slice(1)
+                .split("&")
+                .forEach((elm) => {
+                    if (elm === "") return;
+                    let spl = elm.split("=");
+                    const d = decodeURIComponent;
+                    params[d(spl[0])] = spl.length >= 2 ? d(spl[1]) : true;
+                });
+
+            if (params["status"] === "good-enroll") {
+                alert("You have successfully added students to this class.");
+            } else if (params["status"] === "bad-enroll") {
+                alert("There was an issue when adding students, please check and try again.");
+            } else if (params["status"] === "good-task") {
+                alert("You have successfully added a task to this class.");
+            } else if (params["status"] === "bad-task") {
+                alert("There was an issue when adding a task, please check and try again.");
+            }
+        </script>
     </body>
 </html>

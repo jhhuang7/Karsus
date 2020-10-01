@@ -21,26 +21,31 @@
     $conn = sqlsrv_connect($serverName, $connectionOptions);
     if ($conn == false) {
         // Connection problem
-        header("Location: class_info.php");
+        header("Location: class_info.php?course=" . $course);
         exit();
     }
 
     // Get the tasks for this course
     $tasks = array();
-    $tsql1 = "SELECT * FROM Tasks WHERE ccode='" . $course . "' AND sem>=GETDATE();";
+    $tsql1 = "SELECT title, FORMAT(sem, 'yyyy-MM-dd') as semester, info, 
+        FORMAT(due, 'yyyy-MM-dd') as date
+        FROM Tasks WHERE ccode='" . $course . "' AND sem>=GETDATE();";
     $getResults1 = sqlsrv_query($conn, $tsql1);
+
     if ($getResults1 == false) {
         // Query problem
-        header("Location: class_info.php");
+        header("Location: class_info.php?course=" . $course);
         exit();
     }
+
     while ($row1 = sqlsrv_fetch_array($getResults1,
             SQLSRV_FETCH_ASSOC)) {
+
         $task = new Task;
         $task->title = $row1["title"];
         $task->info = $row1["info"];
-        $task->dueDate = $row1["due"];
-        $task->sem = $row1["sem"];
+        $task->dueDate = $row1["date"];
+        $task->sem = $row1["semester"];
         array_push($tasks, $task);
     }
 
@@ -74,5 +79,5 @@
         }
     }
 
-    header("Location: home2.php?status=" . $enroll);
+    header("Location: class_info.php?course=" . $course . "&status=" . $enroll);
     exit();
