@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <script src="../js/jquery-3.5.1.js"></script>
         <style>
             .scroll {
                 max-height: 300px;
@@ -59,8 +58,6 @@
                 header("Location: ../index.html");
                 exit();
             }
-
-
 
             while ($row1 = sqlsrv_fetch_array($getResults1,
                 SQLSRV_FETCH_ASSOC)) {
@@ -137,7 +134,7 @@
 
             if (params["status"] === "updated") {
                 alert("Your details have been successfully updated!");
-            } else if params["status"] === "added") {
+            } else if (params["status"] === "added") {
                 alert("You have successfully added a new class!");
             }
         </script>

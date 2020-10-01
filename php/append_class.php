@@ -2,9 +2,7 @@
     $code = $_POST["code"];
     $sem = $_POST["sem"];
     $title = $_POST["title"];
-
-    session_start();
-    $id = $_SESSION["id"];
+    $id = $_POST["id"];
 
     $serverName = "tcp:karsus.database.windows.net,1433";
     $connectionOptions = array("UID" => "karsus", "PWD" => "K@rth0us",
