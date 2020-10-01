@@ -6,6 +6,10 @@
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
+        <script src="../js/jquery-3.5.1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <?php
@@ -36,19 +40,19 @@
             exit();
         }
 
-        $q1 = "SELECT * FROM Classes C, Users S 
+        $q1 = "SELECT * FROM Classes C, Users S
             WHERE C.teacher=S.id and C.code ='" . $course . "'
             AND C.sem>=GETDATE();";
         $results1 = sqlsrv_query($conn, $q1);
 
-        $q3 = "SELECT S.FirstName, S.LastName FROM Users S, Enrollments E 
+        $q3 = "SELECT S.FirstName, S.LastName FROM Users S, Enrollments E
                         WHERE E.class ='" . $course . "' AND E.student=S.id
                         AND E.sem>=GETDATE()
                         ORDER BY S.score DESC, S.LastName;";
         $results3 = sqlsrv_query($conn, $q3);
 
-        $q4 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date 
-                        FROM Tasks T WHERE ccode ='" . $course . "' 
+        $q4 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date
+                        FROM Tasks T WHERE ccode ='" . $course . "'
                         and sem>=GETDATE() ORDER BY due;";
         $results4 = sqlsrv_query($conn, $q4);
 
@@ -86,24 +90,27 @@
     ?>
 
     <body>
-        <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
-            <div>
-                <a class="navbar-brand" href="home.php">
-                    <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
-                </a>
+      <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
+          <div>
+              <a class="navbar-brand" href="home.php">
+                  <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
+              </a>
 
-            </div>
+          </div>
 
-            <div class="col" style="color:white">
-                <h2><?php echo $course ?></h2>
-            </div>
-
-            <div class="col text-right">
-                <a href="profile.php">
-                    <img src="../images/profile.png" alt="profile" width=40 height=40 />
-                </a>';
-            </div>
+          <div class="col" style="color:white">
+              <h2><?php echo $course ?></h2>
+          </div>
+          <div class="dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+            <img src="../images/profile.png" alt="profile" width=30 height=30 />
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="profile.php">Edit Profile</a>
+              <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+          </div>
         </div>
+      </div>
 
         <div class="container" style="margin-top: 50px;">
             <p class="h2">Class Description</p>
@@ -122,20 +129,34 @@
                     ?>
                 </ul>
 
-            <p class="h3">Tasks (<?php echo count($tasks) ?>)</p>
-            <div class="list-group">
-                <?php
-                    for ($i = 0; $i < count($tasks); $i++) {
-                        echo '<a class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">' . $tasks[$i]->title . '</h5>
-                                <small>' . $tasks[$i]->dueDate . '</small>
-                            </div>
-                            <p class="mb-1">' . $tasks[$i]->info . '</p>
-                            </a>';
-                    }
-                ?>
-            </div>
+                <p class="h3">List of Tasks(<?php echo count($tasks) ?>)</p>
+                <div class="list-group">
+                    <?php
+                    echo "<table class='table table-hover table-bordered'>
+                    <thead>
+                    <tr>
+                    <th>Assessment Task</th>
+                    <th style='text-align:center;'>Due Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>";
+                        for ($i = 0; $i < count($tasks); $i++) {
+                            // Not sure if tasks should link to their page as tasks couple be completed
+                            // href="task.php?title=' . $tasks[$i]->title . '&ccode=' . $course . '&info=' . $tasks[$i]->info . '&due=' . $tasks[$i]->dueDate . '"
+                            echo '
+                            <tr>
+                            <td><h6 style="color:blue;">'. $tasks[$i]->title . '</h6><p>' . $tasks[$i]->info . '</p></td>
+                            <td><h6 style="color:red; text-align:center;">' . $tasks[$i]->dueDate . '</h6></td>
+                            </tr>
+                            ';
+                          }
+                          echo '
+                          </tbody>
+                          </table>
+                          ';
+                    ?>
+                </div>
+
         </div>
     </body>
 </html>
