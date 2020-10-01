@@ -104,12 +104,12 @@
             <h3>
                 <b>Class Members</b>
             </h3>
-            <form action="add_students.php" method="POST">
+            <?php echo '<form action="add_students.php?course=' . $course . '" method="POST">'; ?>
                 <label>
-                    <input name="students" class="form-control" placeholder="Students to be added (CSV)" required />
+                    <input name="students" class="form-control" placeholder="Student IDs (CSV)" required />
                 </label>
                 <button  class="btn btn-success">Add +</button>
-            </form>
+            <?php echo "</form>"; ?>
             <h4>List of members:</h4>
             <?php
                 if (count($students) == 0) {

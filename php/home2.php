@@ -59,10 +59,13 @@
                 exit();
             }
 
+            $semester = "";
             while ($row1 = sqlsrv_fetch_array($getResults1,
                 SQLSRV_FETCH_ASSOC)) {
-                array_push($classes, $row1['code']);
+                array_push($classes, $row1["code"]);
+                $semester = $row1["sem"];
             }
+            $_SESSION["sem"] = $semester;
         ?>
 
         <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;position:fixed;right:0;left:0;z-index:1030;">
