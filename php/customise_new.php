@@ -228,7 +228,6 @@
             </div>
 
             <div class="col text-right">
-
                 <?php
                 echo '<span style="color:gold; font-size:25px">' .
                     '<span id="gold_counter">' .

@@ -6,6 +6,9 @@
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <?php
@@ -79,10 +82,14 @@
                 <h2>Task</h2>
             </div>
 
-            <div class="col text-right">
-                <a href="profile.php">
-                    <img src="../images/profile.png" alt="profile" width=40 height=40/>
-                </a>
+            <div class="dropdown">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                    <img src="../images/profile.png" alt="profile" width=30 height=30 />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.php">Edit Profile</a>
+                    <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+                </div>
             </div>
         </div>
 
