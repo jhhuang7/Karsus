@@ -22,17 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class_info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/completed.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/completed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/customise_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise_new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/todo.php" afterDir="false" />
-    </list>
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,21 +162,7 @@
       <workItem from="1601509538108" duration="12283000" />
       <workItem from="1601597362383" duration="127000" />
       <workItem from="1601705251531" duration="47000" />
-      <workItem from="1601767631634" duration="6541000" />
-    </task>
-    <task id="LOCAL-00031" summary="More placeholder info instead of hyperlinks">
-      <created>1598917489353</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1598917489353</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Includes class list and sorted tasks by due date">
-      <created>1598917523811</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1598917523811</updated>
+      <workItem from="1601767631634" duration="6855000" />
     </task>
     <task id="LOCAL-00033" summary="idea">
       <created>1599019500493</created>
@@ -517,7 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601773188243</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="idea">
+      <created>1601784206203</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1601784206204</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Consistent profile dropdown button">
+      <created>1601784234236</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1601784234237</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +526,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor presentation changes" />
     <MESSAGE value="Implemented Contact Us" />
     <MESSAGE value="Fixed navbar at top" />
     <MESSAGE value="Quick update for MVP" />
@@ -559,9 +548,10 @@
     <MESSAGE value="Some code clean up" />
     <MESSAGE value="Adding students for teachers" />
     <MESSAGE value="Add students and add task" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Added new inventory items to shop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new inventory items to shop" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="Consistent profile dropdown button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consistent profile dropdown button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -580,10 +570,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601773187970">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601784234000">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601773187970" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601784234000" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
