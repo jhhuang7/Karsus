@@ -23,15 +23,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/append_task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Karsus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Karsus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add_students.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_students.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/class_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class_info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home2.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Stage1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arms/arms-female-normal-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/arms/arms-male-normal-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/background/icon-background-mountainspng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/body/body-female-normalBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/body/body-female-normalGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/body/body-female-normalWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/body/body-male-normalBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/body/body-male-normalGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/body/body-male-normalWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eyes/eyes-confused.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eyes/eyes-normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/eyes/eyes-smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hair/hair-female-normalBlack-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hair/hair-female-normalBlue-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hair/hair-female-normalBrown-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hair/hair-male-normalBlack-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hair/hair-male-waveBlack-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hair/hair-male-waveBrown-pale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hat/hat-christmas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hat/hat-graduate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mouth/mouth-normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mouth/mouth-serious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mouth/mouth-smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mouth/mouth-surprise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pants/pant-female-normalBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pants/pant-female-normalGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pants/pant-female-normalWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pants/pant-male-normalBlack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pants/pant-male-normalGrey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pants/pant-male-normalWhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/customise_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise_new.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,21 +193,10 @@
       <workItem from="1601176854404" duration="4859000" />
       <workItem from="1601271764646" duration="598000" />
       <workItem from="1601442240616" duration="74000" />
-      <workItem from="1601509538108" duration="12190000" />
-    </task>
-    <task id="LOCAL-00027" summary="Now displaying class specific information">
-      <created>1598841235246</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1598841235246</updated>
-    </task>
-    <task id="LOCAL-00028" summary="idea">
-      <created>1598917405819</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1598917405819</updated>
+      <workItem from="1601509538108" duration="12283000" />
+      <workItem from="1601597362383" duration="127000" />
+      <workItem from="1601705251531" duration="47000" />
+      <workItem from="1601767631634" duration="4145000" />
     </task>
     <task id="LOCAL-00029" summary="Added back 'locked up' message">
       <created>1598917429805</created>
@@ -514,7 +527,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601514091383</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="idea">
+      <created>1601529298161</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1601529298161</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Add students and add task">
+      <created>1601529324741</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1601529324741</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +560,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Formatting changes" />
     <MESSAGE value="Added 'require' attribute for inputs" />
     <MESSAGE value="Minor presentation changes" />
     <MESSAGE value="Implemented Contact Us" />
@@ -556,9 +582,10 @@
     <MESSAGE value="Removed auxiliary files" />
     <MESSAGE value="README update" />
     <MESSAGE value="Some code clean up" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Adding students for teachers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding students for teachers" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="Add students and add task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add students and add task" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -577,10 +604,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601514091135">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601529324607">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601514091135" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601529324607" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -617,10 +644,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601182182494">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601529348297">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601182182494" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601529348297" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
