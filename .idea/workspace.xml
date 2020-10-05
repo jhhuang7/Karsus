@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,14 +166,7 @@
       <workItem from="1601705251531" duration="47000" />
       <workItem from="1601767631634" duration="6940000" />
       <workItem from="1601896701232" duration="76000" />
-      <workItem from="1601938374002" duration="296000" />
-    </task>
-    <task id="LOCAL-00035" summary="Formatting changes">
-      <created>1599270959235</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1599270959235</updated>
+      <workItem from="1601938374002" duration="1555000" />
     </task>
     <task id="LOCAL-00036" summary="Added 'require' attribute for inputs">
       <created>1599271003620</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601938668340</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="idea">
+      <created>1601938673948</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1601938673949</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,10 +574,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601784286917">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601938673778">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601784286917" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601938673778" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -598,10 +598,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state width="2109" height="421" key="GridCell.Tab.0.right/0.58.3200.1742@0.58.3200.1742" timestamp="1598092373695" />
-    <state x="702" y="336" key="MultipleFileMergeDialog" timestamp="1600311712284">
+    <state x="702" y="336" key="MultipleFileMergeDialog" timestamp="1601938696912">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="702" y="336" key="MultipleFileMergeDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1600311712284" />
+    <state x="702" y="336" key="MultipleFileMergeDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1601938696912" />
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog" timestamp="1598090216357">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -614,10 +614,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601784291304">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601938681398">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601784291304" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601938681398" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
