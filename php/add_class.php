@@ -4,11 +4,13 @@
         <title>Add Class</title>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400;1,900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     </head>
 
     <body>

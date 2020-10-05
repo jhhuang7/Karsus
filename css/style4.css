@@ -10,7 +10,7 @@ Colours
 
 body{
     background-color: #B5D6A7;
-}
+    font-family: 'Lato', sans-serif;}
 
 .card{
     background-color: transparent;
@@ -19,7 +19,8 @@ body{
 }
     .card-title{
         font-size: 2rem;
-    }
+        font-family: 'Roboto', 'Lato', sans-serif;
+}
 
     .card-body{
         color: white;

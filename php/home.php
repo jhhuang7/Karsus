@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="../css/style1.css"/>
         <link rel="stylesheet" href="../css/style3.css"/>
         <link rel="stylesheet" href="../css/style4.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <style>
