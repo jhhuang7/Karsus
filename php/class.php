@@ -5,6 +5,10 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"
+        <link rel="stylesheet" href="../css/style1.css"/>
+        <link rel="stylesheet" href="../css/style3.css"/>
+        <link rel="stylesheet" href="../css/style4.css"/>
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../js/jquery-3.5.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -90,74 +94,95 @@
     ?>
 
     <body>
-      <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
-          <div>
+        <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
+            <div>
               <a class="navbar-brand" href="home.php">
                   <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
               </a>
+            </div>
 
-          </div>
+            <div class="col" style="color:white">
+                <h2><?php echo $course ?></h2>
+            </div>
 
-          <div class="col" style="color:white">
-              <h2><?php echo $course ?></h2>
-          </div>
-
-          <div class="dropdown">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                  <img src="../images/profile.png" alt="profile" width=30 height=30 />
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="profile.php">Edit Profile</a>
-                  <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
-              </div>
-          </div>
-      </div>
-
+            <div class="dropdown">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                    <img src="../images/profile.png" alt="profile" width=30 height=30 />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.php">Edit Profile</a>
+                    <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+                </div>
+            </div>
+        </div>
         <div class="container" style="margin-top: 50px;">
-            <p class="h2">Class Description</p>
-            <p><?php echo $courseInfo ?></p>
-
-            <p class="h2">Course Coordinator</p>
-            <p><?php echo $teacher ?></p>
-
-            <p class="h3">
-                Members (<?php echo count($students) ?>)
-                <ul>
-                    <?php
-                        for ($i = 0; $i < count($students); $i++) {
-                            echo '<li>' . $students[$i]->firstName . ' ' . $students[$i]->lastName . '</li>';
-                        }
-                    ?>
-                </ul>
-
-                <p class="h3">List of Tasks (<?php echo count($tasks) ?>)</p>
-                <div class="list-group">
-                    <?php
-                    echo "<table class='table table-hover table-bordered'>
-                    <thead>
-                    <tr>
-                    <th>Assessment Task</th>
-                    <th style='text-align:center;'>Due Date</th>
-                    </tr>
-                    </thead>
-                    <tbody>";
-                        for ($i = 0; $i < count($tasks); $i++) {
-                            // Not sure if tasks should link to their page as tasks couple be completed
-                            // href="task.php?title=' . $tasks[$i]->title . '&ccode=' . $course . '&info=' . $tasks[$i]->info . '&due=' . $tasks[$i]->dueDate . '"
-                            echo '
-                            <tr>
-                            <td><h6 style="color:blue;">'. $tasks[$i]->title . '</h6><p>' . $tasks[$i]->info . '</p></td>
-                            <td><h6 style="color:red; text-align:center;">' . $tasks[$i]->dueDate . '</h6></td>
-                            </tr>
-                            ';
-                          }
-                          echo '
-                          </tbody>
-                          </table>
-                          ';
-                    ?>
+            <div class="classes">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Class Description</div>
+                            <p><?php echo $courseInfo ?></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Course Coordinator</div>
+                            <p><?php echo $teacher ?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                Members (<?php echo count($students) ?>)
+                            </div>
+                            <ul>
+                            <?php
+                                for ($i = 0; $i < count($students); $i++) {
+                                    echo '<li>' . $students[$i]->firstName . ' ' . $students[$i]->lastName . '</li>';
+                                }
+                            ?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">List of Tasks (<?php echo count($tasks) ?>)</p>
+                                <div class="list-group">
+                                    <?php
+                                    echo "<table class='table table-hover table-bordered'>
+                                    <thead>
+                                    <tr>
+                                    <th>Assessment Task</th>
+                                    <th style='text-align:center;'>Due Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>";
+                                        for ($i = 0; $i < count($tasks); $i++) {
+                                            // Not sure if tasks should link to their page as tasks couple be completed
+                                            // href="task.php?title=' . $tasks[$i]->title . '&ccode=' . $course . '&info=' . $tasks[$i]->info . '&due=' . $tasks[$i]->dueDate . '"
+                                            echo '
+                                            <tr>
+                                            <td><h6 style="color:blue;">'. $tasks[$i]->title . '</h6><p>' . $tasks[$i]->info . '</p></td>
+                                            <td><h6 style="color:red; text-align:center;">' . $tasks[$i]->dueDate . '</h6></td>
+                                            </tr>
+                                            ';
+                                          }
+                                          echo '
+                                          </tbody>
+                                          </table>
+                                          ';
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

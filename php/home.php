@@ -3,7 +3,10 @@
         <meta charset="UTF-8">
         <title>Home</title>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"
+        <link rel="stylesheet" href="../css/style1.css"/>
+        <link rel="stylesheet" href="../css/style3.css"/>
+        <link rel="stylesheet" href="../css/style4.css"/>
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <style>
@@ -17,7 +20,6 @@
             }
 
             body {
-                background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 76, 1));
             }
         </style>
     </head>
@@ -196,8 +198,8 @@
 
         <div class="container" style="padding-top:100px">
             <div class="card-deck">
-                <div class="card bg-light">
-                    <div class="card-body">
+                <div class="card">
+                    <div class="card-body" id="classes-card-body">
                         <h4 class="card-title">
                             Classes
                         </h4>
@@ -214,8 +216,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-light">
-                    <div class="card-body">
+                <div class="card">
+                    <div class="card-body" id="tasks-card-body">
                         <h4 class="card-title">Tasks</h4>
                         <div class="container scroll">
                             <p class="card-text">
@@ -257,8 +259,8 @@
                 </div>
             </div>
             <div class="card-deck">
-                <div class="card bg-light">
-                    <div class="card-body">
+                <div class="card">
+                    <div class="card-body" id="leaderboard-card-body">
                         <h4 class="card-title">Leaderboard</h4>
                             <?php
                                 echo "<select id='filter' onchange='filter();'> 
@@ -285,7 +287,7 @@
                                 <?php
                                     for ($i = 0; $i < count($lboard); $i++) {
                                         if ($id == $lboard[$i]->id) {
-                                            echo '<tr style="background:yellow">';
+                                            echo '<tr style="background: #74D14C">';
                                         } else {
                                             '<tr>';
                                         }
@@ -300,8 +302,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-light">
-                    <div class="card-body">
+                <div class="card">
+                    <div class="card-body" id="customise-card-body">
                         <h4 class="card-title">Customise</h4>
                         <a href="customise_new.php">
                             <img src="../images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">

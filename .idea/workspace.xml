@@ -22,7 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="" />
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/style4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Karsus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Karsus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -56,6 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sql/queries.sql" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -610,6 +619,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1601853597730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1601853597730" />
     <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601773222163">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -622,13 +635,18 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="1264" y="58" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599264277891" />
+    <state x="1920" y="-29" width="1066" height="1027" key="dock-window-1" timestamp="1601860851816">
+      <screen x="1920" y="-603" width="1080" height="1880" />
+    </state>
+    <state x="1920" y="-29" width="1066" height="1027" key="dock-window-1/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1601860851816" />
     <state x="759" y="407" key="run.anything.popup" timestamp="1600667116942">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="759" y="407" key="run.anything.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1600667116942" />
-    <state x="688" y="58" width="1906" height="1736" key="search.everywhere.popup" timestamp="1600908782863">
-      <screen x="0" y="58" width="3200" height="1742" />
+    <state x="641" y="124" width="1144" height="710" key="search.everywhere.popup" timestamp="1601860827467">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="641" y="124" width="1144" height="710" key="search.everywhere.popup/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1601860827467" />
     <state x="688" y="58" width="1906" height="1736" key="search.everywhere.popup/0.58.3200.1742@0.58.3200.1742" timestamp="1600908782863" />
     <state x="1027" y="720" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597627909684">
       <screen x="0" y="58" width="3200" height="1742" />

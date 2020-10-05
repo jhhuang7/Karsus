@@ -1,0 +1,102 @@
+/*
+Colours
+    #74D14C logo Green
+    #65D136 Green
+    #60A1D1 Blue
+    #D136C6 Purple
+    #D19741 Orange
+ */
+
+
+body{
+    background-color: #B5D6A7;
+}
+
+.card{
+    background-color: transparent;
+    border-radius: 2rem;
+    max-height: 30rem;
+}
+    .card-title{
+        font-size: 2rem;
+    }
+
+    .card-body{
+        color: white;
+        background-color: black;
+        border-radius: 2rem;
+    }
+    /*
+    These 4 id's are specifically for the home page
+     */
+    #classes-card-body{
+        background-color: #60A1D1;
+    }
+
+    #tasks-card-body{
+        background-color: #74D14C;
+    }
+
+    #leaderboard-card-body{
+        background-color: #D136C6;
+    }
+        /* The filter within leaderboard*/
+        #filter{
+            background-color: #74D14C;
+            border: transparent;
+            border-radius: 0.8rem;
+            margin:0.5rem;
+            color: white;
+            padding: 0.2rem;
+        }
+        /* trying to edit scroll bar NOTE: scroll needs to be removed from container id leaderboard
+        #leaderboard {
+            overflow: auto;
+            max-height: 22rem;
+            scrollbar-track-color: #00bcd4;
+        }
+         */
+    #customise-card-body{
+        background-color: #D19741;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+        #customise-card-body img{
+            border-radius: 100rem;
+            border: 2rem #60A1D1;
+        }
+
+
+/* Modifications on the cards used in classes compared to standard cards*/
+.classes .card-body{
+    background-color: #60A1D1;
+}
+
+.classes .card{
+    max-height: none;
+}
+
+.class-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    color: white;
+    background: #60A1D1;
+    border: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+
+footer{
+    /*
+    todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result
+     in the scroll breaking
+    */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
