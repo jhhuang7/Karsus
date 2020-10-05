@@ -4,6 +4,11 @@
         <title>Home</title>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <style>
@@ -17,12 +22,10 @@
             }
 
             body {
-                background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 76, 1));
+                background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(116, 209, 76, 1));
             }
-        </style>
-    </head>
+            </style>
 
-    <body>
         <?php
             session_start();
             $id = $_SESSION["id"];
@@ -64,38 +67,58 @@
                 array_push($classes, $row1['code']);
             }
         ?>
-
-        <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;position:fixed;right:0;left:0;z-index:1030;">
+        <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
             <div>
-                <?php
-                    echo '<a class="navbar-brand" href="home2.php">
+                <a class="navbar-brand" href="home.php">
                     <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
-                    </a>'
-                ?>
+                </a>
+
             </div>
 
             <div class="col" style="color:white">
-                <?php
+                <h2><?php
                     echo '<h2>Welcome ' . $name . '!</h1>';
-                ?>
+                ?></h2>
             </div>
-
-            <div class="col text-right">
-                <?php
-                    echo '<span style="color:gold; font-size:25px">
-                            <a href="profile.php">
-                                <img
-                                    src="../images/profile.png"
-                                    alt="profile" width=40 height=40
-                                />
-                                </a></span>';
-                ?>
+            <div class="dropdown">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+              <img src="../images/profile.png" alt="profile" width=30 height=30 />
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="profile.php">Edit Profile</a>
+                <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
             </div>
+          </div>
         </div>
-
-        <div class="container" style="padding-top:100px">
+        <div class="w3-sidebar w3-bar-block w3-black " style="width:10%">
+          <a href="home2.php" class="w3-bar-item w3-button">Dashboard</a>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-black">My Courses</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <?php
+                for ($i = 0; $i < count($classes); $i++) {
+                    echo '<p class="card-text">
+                            <a
+                                class="btn btn-link w-100"
+                                href ="class_info.php?course=' . $classes[$i] . '">' . $classes[$i] .
+                        '</a></p>';
+                }
+            ?>
+          </div>
+        </div>
+          <a href="profile.php" class="w3-bar-item w3-button">Edit Profile</a>
+          <a href="../index.html?status=loggedout" class="w3-bar-item w3-button w3-hover-red">Log Out</a>
+        </div>
+        </head>
+        <body>
+        <div style="margin-left:10%">
+        <div class="w3-container " style="padding-top:20px" >
+          <h2 style="font-weight:bold; font-family:Lato, sans-serif">Dashboard</h2>
             <div class="card-deck">
                 <div class="card bg-light">
+                  <div class="card-header" style="background-color:#248280;">
+                  <h4 style="color:white; font-weight:bold;">My Courses</h4>
+                  </div>
                     <div class="card-body">
                         <div class="container scroll">
                             <?php
@@ -109,7 +132,7 @@
                             ?>
 
                             <a href="add_class.php">
-                                <button class="btn btn-success float-left">
+                                <button class="btn btn-danger float-right">
                                     Add Class
                                 </button>
                             </a>
@@ -117,8 +140,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="card-deck">
+                <div class="card bg-light">
+                  <div class="card-header" style="background-color:#248280;">
+                  <h4 style="color:white; font-weight:bold;">My Profile</h4>
+                  </div>
+                    <div class="card-body">
 
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+        </body>
         <script>
             let params = {};
 
