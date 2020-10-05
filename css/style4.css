@@ -1,0 +1,219 @@
+/*
+Colours
+    #74D14C logo Green
+    #65D136 Green
+    #60A1D1 Blue
+    #D136C6 Purple
+    #D19741 Orange
+ */
+
+
+body{
+    background-color: #B5D6A7;
+    font-family: 'Lato', sans-serif;}
+
+.card{
+    background-color: transparent;
+    border-radius: 2rem;
+    max-height: 30rem;
+    padding: 0.5rem;
+    border: transparent;
+}
+    .card-title{
+        font-size: 2rem;
+        font-family: 'Roboto', 'Lato', sans-serif;
+}
+
+    .card-body{
+        color: white;
+        background-color: transparent;
+        border-radius: 2rem;
+    }
+    /*
+    These 4 id's are specifically for the home page
+     */
+    #classes-card-body{
+        background-color: #60A1D1;
+    }
+
+    #tasks-card-body{
+        background-color: #74D14C;
+    }
+
+    #leaderboard-card-body{
+        background-color: #D136C6;
+    }
+        /* The filter within leaderboard*/
+        #filter{
+            background-color: #74D14C;
+            border: transparent;
+            border-radius: 0.8rem;
+            margin:0.5rem;
+            color: white;
+            padding: 0.2rem;
+        }
+        /* trying to edit scroll bar NOTE: scroll needs to be removed from container id leaderboard
+        #leaderboard {
+            overflow: auto;
+            max-height: 22rem;
+            scrollbar-track-color: #00bcd4;
+        }
+         */
+    #customise-card-body{
+        background-color: #D19741;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+        #customise-card-body img{
+            border-radius: 100rem;
+            border: 2rem #60A1D1;
+        }
+
+
+/* Modifications on the cards used in classes */
+.classes .card{
+    max-height: none;
+}
+.classes .card-body{
+    background-color: #60A1D1;
+}
+.class-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    color: white;
+    background: #60A1D1;
+    border: 1rem;
+    border-radius: 1rem;
+}
+
+
+/* Modification on the cards used by customise */
+
+.customise .card{
+    max-height: none;
+}
+
+.customise .card-body{
+    background-color: #D19741;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+    /*The Shop customisation*/
+    .customise .card-body a{
+    }
+
+    .customise .card-body a:link{
+        color: black;
+        background-color: #60A1D1;
+    }
+
+    .customise .card-body a:hover{
+        background-color: #74D14C;
+        border-color: transparent;
+
+    }
+    .customise .card-body a:active{
+        background-color: #60A1D1;
+    }
+
+    .customise .btn{
+        background-color: #60A1D1;
+        border-color: transparent;
+        border-radius: 25rem;
+    }
+
+    .shop-item {
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+        display: inline-block;
+        border: 3px solid white;
+        border-radius: 25rem;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        background-color: white;
+    }
+
+    /*Customise avatar */
+
+    .avatar img{
+        width: 100%;
+    }
+    .avatar {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .shop-item img {
+        width: 90px;
+        height: 90px;
+        display: block;
+        border: none;
+    }
+    #background {
+        border-radius: 3rem;
+    }
+    #hat {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    #arms {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        z-index: 96;
+    }
+    #body {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        z-index: 98
+    }
+    #eyes {
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+    #hair {
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+    #mouth {
+        position: absolute;
+        top: 6px;
+        left: 0;
+    }
+    #pants {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        z-index: 30;
+    }
+    #legs {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        z-index: 29;
+    }
+
+
+/*Footer*/
+footer{
+    /*
+    todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result
+     in the scroll breaking
+
+     https://css-tricks.com/snippets/css/sticky-footer/
+    */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
