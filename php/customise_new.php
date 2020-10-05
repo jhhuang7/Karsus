@@ -12,86 +12,6 @@
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
-        <style>
-            .avatar {
-                position: relative;
-                top: 0;
-                left: 0;
-                min-height: 620px;
-                min-width: 600px;
-            }
-
-            .shop-item {
-                width: 150px;
-                height: 150px;
-                padding: 5px;
-                display: inline-block;
-                border: 3px solid white;
-                border-radius: 5px;
-                margin-bottom: 5px;
-                margin-right: 5px;
-            }
-
-            .shop-item img {
-                width: 90px;
-                height: 90px;
-                display: block;
-                border: none;
-            }
-
-            #hat {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 99;
-            }
-
-            #arms {
-                position: absolute;
-                top: 16px;
-                left: 0;
-                z-index: 96;
-            }
-
-            #body {
-                position: absolute;
-                top: 16px;
-                left: 0;
-                z-index: 98
-            }
-
-            #eyes {
-                position: absolute;
-                top: 5px;
-                left: 0;
-            }
-
-            #hair {
-                position: absolute;
-                top: 5px;
-                left: 0;
-            }
-
-            #mouth {
-                position: absolute;
-                top: 6px;
-                left: 0;
-            }
-
-            #pants {
-                position: absolute;
-                top: 14px;
-                left: 0;
-                z-index: 30;
-            }
-
-            #legs {
-                position: absolute;
-                top: 15px;
-                left: 0;
-                z-index: 29;
-            }
-        </style>
     </head>
 
     <?php
@@ -253,86 +173,94 @@
         </div>
 
         <div class="container" style="margin-top: 50px;">
-            <div class="row">
-                <div class="col-md">
-                    <div class="avatar">
-                        <?php
-                        echo "<img alt='bg' id='background' src='../images/background/600-" . $wearing['background'] . "' style = 'padding-left:15px'>
-                                <img alt='hat' id='hat' src='../images/hat/600-" . $wearing['hat'] . "'>
-                                <img alt='hair' id='hair' src='../images/hair/600-" . $wearing['hair'] . "'>
-                                <img alt='eyes' id='eyes' src='../images/eyes/600-" . $wearing['eyes'] . "'>
-                                <img alt='mouth' id='mouth' src='../images/mouth/600-" . $wearing['mouth'] . "'>
-                                <img alt='body' id='body' src='../images/body/600-" . $wearing['body'] . "'>
-                                <img alt='arms' id='arms' src='../images/arms/600-" . $wearing['arms'] . "'>
-                                <img alt='pants' id='pants' src='../images/pants/600-" . $wearing['pants'] . "'>
-                                <img alt='legs' id='legs' src='../images/legs/600-" . $wearing['legs'] . "'>";
-                        ?>
-                    </div>
-
-                </div>
-                <div class="col-md">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-arms">Arms</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-body">Outfit</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-eyes">Eyes</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-hair">Hair</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-hat">Hat</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-mouth">Mouth</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-pants">Pants</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-legs">Legs</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-bg">Background</a></li>
-                    </ul>
-
-                    <div class="tab-content" style="background-color: #dcdcdc; padding:15px; border: 0; border-radius:0 0 10px 10px;">
-                        <div id="tab-arms" class="tab-pane active">
-                            <?php
-                            getItemPanel("arms")
-                            ?>
-                        </div>
-                        <div id="tab-body" class="tab-pane fade">
-                            <?php
-                            getItemPanel("body")
-                            ?>
-                        </div>
-                        <div id="tab-eyes" class="tab-pane fade">
-                            <?php
-                            getItemPanel("eyes")
-                            ?>
-                        </div>
-                        <div id="tab-hair" class="tab-pane fade">
-                            <?php
-                            getItemPanel("hair")
-                            ?>
-                        </div>
-                        <div id="tab-hat" class="tab-pane fade">
-                            <?php
-                            getItemPanel("hat")
-                            ?>
-                        </div>
-                        <div id="tab-mouth" class="tab-pane fade">
-                            <?php
-                            getItemPanel("mouth")
-                            ?>
-                        </div>
-                        <div id="tab-pants" class="tab-pane fade">
-                            <?php
-                            getItemPanel("pants")
-                            ?>
-                        </div>
-                        <div id="tab-legs" class="tab-pane fade">
-                            <?php
-                            getItemPanel("legs")
-                            ?>
-                        </div>
-                        <div id="tab-bg" class="tab-pane fade">
-                            <?php
-                            getItemPanel("background")
-                            ?>
+            <div class="customise">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Your Avatar</div>
+                            <div class="avatar">
+                                <?php
+                                echo "<img alt='background' id='background' src='../images/background/600-" . $wearing['background'] . "' style = 'padding-left:15px'>
+                                                <img alt='hat' id='hat' src='../images/hat/600-" . $wearing['hat'] . "'>
+                                                <img alt='hair' id='hair' src='../images/hair/600-" . $wearing['hair'] . "'>
+                                                <img alt='eyes' id='eyes' src='../images/eyes/600-" . $wearing['eyes'] . "'>
+                                                <img alt='mouth' id='mouth' src='../images/mouth/600-" . $wearing['mouth'] . "'>
+                                                <img alt='body' id='body' src='../images/body/600-" . $wearing['body'] . "'>
+                                                <img alt='arms' id='arms' src='../images/arms/600-" . $wearing['arms'] . "'>
+                                                <img alt='pants' id='pants' src='../images/pants/600-" . $wearing['pants'] . "'>
+                                                <img alt='legs' id='legs' src='../images/legs/600-" . $wearing['legs'] . "'>";
+                                ?>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <br>
-                        <a class="btn btn-primary" href='#' onclick='save_outfit()'>Save Outfit</a>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Shop</div>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-arms">Arms</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-body">Outfit</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-eyes">Eyes</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-hair">Hair</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-hat">Hat</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-mouth">Mouth</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-pants">Pants</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-legs">Legs</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-bg">Background</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="tab-arms" class="tab-pane active">
+                                    <?php
+                                    getItemPanel("arms")
+                                    ?>
+                                </div>
+                                <div id="tab-body" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("body")
+                                    ?>
+                                </div>
+                                <div id="tab-eyes" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("eyes")
+                                    ?>
+                                </div>
+                                <div id="tab-hair" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("hair")
+                                    ?>
+                                </div>
+                                <div id="tab-hat" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("hat")
+                                    ?>
+                                </div>
+                                <div id="tab-mouth" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("mouth")
+                                    ?>
+                                </div>
+                                <div id="tab-pants" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("pants")
+                                    ?>
+                                </div>
+                                <div id="tab-legs" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("legs")
+                                    ?>
+                                </div>
+                                <div id="tab-bg" class="tab-pane fade">
+                                    <?php
+                                    getItemPanel("background")
+                                    ?>
+                                </div>
+                            </div>
+                            <div>
+                                <br>
+                                <a class="btn btn-primary" href='#' onclick='save_outfit()'>Save Outfit</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

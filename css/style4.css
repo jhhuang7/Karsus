@@ -71,15 +71,13 @@ body{
         }
 
 
-/* Modifications on the cards used in classes compared to standard cards*/
-.classes .card-body{
-    background-color: #60A1D1;
-}
-
+/* Modifications on the cards used in classes */
 .classes .card{
     max-height: none;
 }
-
+.classes .card-body{
+    background-color: #60A1D1;
+}
 .class-info{
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +90,94 @@ body{
 }
 
 
+/* Modification on the cards used by customise */
+
+.customise .card{
+    max-height: none;
+}
+
+.customise .card-body{
+    background-color: #D19741;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.shop-item {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+/*Customise shop */
+.avatar img{
+    width: 100%;
+}
+.avatar {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.shop-item img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border: none;
+}
+#background {
+    border-radius: 3rem;
+}
+#hat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#arms {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: 96;
+}
+#body {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: 98
+}
+#eyes {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+#hair {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+#mouth {
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+#pants {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: 30;
+}
+#legs {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 29;
+}
 
 
 footer{
