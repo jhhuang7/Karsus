@@ -16,6 +16,8 @@ body{
     background-color: transparent;
     border-radius: 2rem;
     max-height: 30rem;
+    padding: 0.5rem;
+    border: transparent;
 }
     .card-title{
         font-size: 2rem;
@@ -24,7 +26,7 @@ body{
 
     .card-body{
         color: white;
-        background-color: black;
+        background-color: transparent;
         border-radius: 2rem;
     }
     /*
@@ -96,6 +98,8 @@ footer{
     /*
     todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result
      in the scroll breaking
+
+     https://css-tricks.com/snippets/css/sticky-footer/
     */
     position: absolute;
     width: 100%;
