@@ -6,7 +6,7 @@
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
-        <script src="../js/jquery-3.5.1.js"></script>
+        <script src="../js/jquery-3.5.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -101,15 +101,16 @@
           <div class="col" style="color:white">
               <h2><?php echo $course ?></h2>
           </div>
+
           <div class="dropdown">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-            <img src="../images/profile.png" alt="profile" width=30 height=30 />
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="profile.php">Edit Profile</a>
-              <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                  <img src="../images/profile.png" alt="profile" width=30 height=30 />
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="profile.php">Edit Profile</a>
+                  <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+              </div>
           </div>
-        </div>
       </div>
 
         <div class="container" style="margin-top: 50px;">
@@ -129,7 +130,7 @@
                     ?>
                 </ul>
 
-                <p class="h3">List of Tasks(<?php echo count($tasks) ?>)</p>
+                <p class="h3">List of Tasks (<?php echo count($tasks) ?>)</p>
                 <div class="list-group">
                     <?php
                     echo "<table class='table table-hover table-bordered'>

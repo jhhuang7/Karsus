@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -47,7 +50,7 @@
             $q2 = "SELECT * FROM Enrollments E, Users U
                     WHERE E.student=U.id AND E.class ='" . $course . "'
                     AND E.sem>=GETDATE() 
-                    ORDER BY U.LastName, U.FirstName, U.id;";
+                    ORDER BY U.score desc, U.LastName, U.FirstName, U.id;";
             $results2 = sqlsrv_query($conn, $q2);
             if ($results2 == false) {
                 // Query problem
@@ -93,10 +96,14 @@
                 <h2><?php echo $course . " - " . $title; ?></h2>
             </div>
 
-            <div class="col text-right">
-                <a href="profile.php">
-                    <img src="../images/profile.png" alt="profile" width=40 height=40 />
-                </a>
+            <div class="dropdown">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                    <img src="../images/profile.png" alt="profile" width=30 height=30 />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.php">Edit Profile</a>
+                    <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+                </div>
             </div>
         </div>
 
@@ -104,12 +111,12 @@
             <h3>
                 <b>Class Members</b>
             </h3>
-            <form action="add_students.php" method="POST">
+            <?php echo '<form action="add_students.php?course=' . $course . '" method="POST">'; ?>
                 <label>
-                    <input name="students" class="form-control" placeholder="Students to be added (CSV)" required />
+                    <input name="students" class="form-control" placeholder="Student IDs (CSV)" required />
                 </label>
                 <button  class="btn btn-success">Add +</button>
-            </form>
+            <?php echo "</form>"; ?>
             <h4>List of members:</h4>
             <?php
                 if (count($students) == 0) {
@@ -155,5 +162,29 @@
                 }
             ?>
         </div>
+
+        <script>
+            let params = {};
+
+            window.location.search
+                .slice(1)
+                .split("&")
+                .forEach((elm) => {
+                    if (elm === "") return;
+                    let spl = elm.split("=");
+                    const d = decodeURIComponent;
+                    params[d(spl[0])] = spl.length >= 2 ? d(spl[1]) : true;
+                });
+
+            if (params["status"] === "good-enroll") {
+                alert("You have successfully added students to this class.");
+            } else if (params["status"] === "bad-enroll") {
+                alert("There was an issue when adding students, please check and try again.");
+            } else if (params["status"] === "good-task") {
+                alert("You have successfully added a task to this class.");
+            } else if (params["status"] === "bad-task") {
+                alert("There was an issue when adding a task, please check and try again.");
+            }
+        </script>
     </body>
 </html>

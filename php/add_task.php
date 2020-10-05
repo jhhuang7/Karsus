@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
@@ -17,35 +20,41 @@
             </div>
 
             <div class="col" style="color:white">
-                <h2>Add Task</h2>
+                <h2>Add Task For <?php $course = $_GET["course"]; echo $course; ?></h2>
             </div>
 
-            <div class="col text-right">
-                <a href="profile.php">
-                    <img src="../images/profile.png" alt="profile" width=40 height=40 />
-                </a>
+            <div class="dropdown">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                    <img src="../images/profile.png" alt="profile" width=30 height=30 />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.php">Edit Profile</a>
+                    <a class="dropdown-item" href="../index.html?status=loggedout">Log Out</a>
+                </div>
             </div>
         </div>
 
-        <?php
-            $course = $_GET["course"];
-            // Will need to get the semester as well
+        <div class="container" style="margin-top: 50px;">
+            <form action="append_task.php" method="POST">
+                <?php echo '<input type="hidden" name="course" value="' . $course . '"/>'; ?>
 
-            echo "<h2>Title</h2>";
-            echo "<input />";
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" required />
 
-            echo "<h2>Due date</h2>";
-            echo "<input />";
+                <label for="due">Due Date</label>
+                <input type="date" class="form-control" id="due" name="due" required />
 
-            echo "<h2>Description</h2>";
-            echo "<input />";
+                <label for="des">Description</label>
+                <input type="text" class="form-control" id="des" name="des" required />
 
-            echo "<h2>Questions</h2>";
-            echo "<textarea></textarea>";
+                <label for="qs">Questions</label>
+                <textarea type="text" class="form-control" id="qs" name="qs" required>
+                    Placeholder for now, need to handle multiple questions.
+                </textarea>
 
-            echo "<hr>";
-            echo "<a href='class_info.php'><button>Submit</button></a>";
-            echo "(Tries to add task then return to class_info.php with status.)";
-        ?>
+                <br>
+                <button type="submit" class="btn btn-success float-right">Submit</button>
+            </form>
+        </div>
     </body>
 </html>

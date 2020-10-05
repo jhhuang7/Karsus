@@ -18,7 +18,7 @@
 
 
     $insert = "INSERT INTO Classes(code, sem, info, teacher)
-        Values('$code". "', '". $sem ."', '" . $title . "', $id)";
+        Values('" . $code . "', '" . $sem . "', '" . $title . "', $id)";
     $stmt = sqlsrv_prepare($conn, $insert);
 
     if (!sqlsrv_execute($stmt)) {

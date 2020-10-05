@@ -106,7 +106,8 @@
             "hat" => array(),
             "mouth" => array(),
             "pants" => array(),
-            "legs" => array()
+            "legs" => array(),
+            "background" => array()
         );
 
         // Default avatar look, replaced with items the user is wearing
@@ -118,7 +119,8 @@
             "hat" => 'hat-christmas.png',
             "mouth" => 'mouth-smile.png',
             "pants" => 'pant-female-normalBlack.png',
-            "legs" => 'legs-chicken.png'
+            "legs" => 'legs-chicken.png',
+            "background" => 'background-stage1.png'
         );
 
         session_start();
@@ -226,7 +228,6 @@
             </div>
 
             <div class="col text-right">
-
                 <?php
                 echo '<span style="color:gold; font-size:25px">' .
                     '<span id="gold_counter">' .
@@ -251,7 +252,7 @@
                 <div class="col-md">
                     <div class="avatar">
                         <?php
-                        echo "<img alt='Stage1' src='../images/Stage1.png' style = 'padding-left:15px'>
+                        echo "<img alt='bg' id='background' src='../images/background/600-" . $wearing['background'] . "' style = 'padding-left:15px'>
                                 <img alt='hat' id='hat' src='../images/hat/600-" . $wearing['hat'] . "'>
                                 <img alt='hair' id='hair' src='../images/hair/600-" . $wearing['hair'] . "'>
                                 <img alt='eyes' id='eyes' src='../images/eyes/600-" . $wearing['eyes'] . "'>
@@ -274,6 +275,7 @@
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-mouth">Mouth</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-pants">Pants</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-legs">Legs</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-bg">Background</a></li>
                     </ul>
 
                     <div class="tab-content" style="background-color: #dcdcdc; padding:15px; border: 0; border-radius:0 0 10px 10px;">
@@ -315,6 +317,11 @@
                         <div id="tab-legs" class="tab-pane fade">
                             <?php
                             getItemPanel("legs")
+                            ?>
+                        </div>
+                        <div id="tab-bg" class="tab-pane fade">
+                            <?php
+                            getItemPanel("background")
                             ?>
                         </div>
                     </div>
@@ -396,7 +403,8 @@
                 "hat",
                 "mouth",
                 "pants",
-                "legs"
+                "legs",
+                "background"
             ]
 
             let equipped = [];

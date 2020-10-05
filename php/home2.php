@@ -54,7 +54,8 @@
             $name = $row["FirstName"];
 
             $classes = array();
-            $tsql1 = "SELECT * FROM Classes WHERE teacher=" . $id . " AND sem>=GETDATE();";
+            $tsql1 = "SELECT code, FORMAT(sem, 'yyyy-MM-dd') as semester 
+                FROM Classes WHERE teacher=" . $id . " AND sem>=GETDATE();";
             $getResults1 = sqlsrv_query($conn, $tsql1);
             if ($getResults1 == false) {
                 // Query problem
@@ -62,10 +63,13 @@
                 exit();
             }
 
+            $semester = "";
             while ($row1 = sqlsrv_fetch_array($getResults1,
                 SQLSRV_FETCH_ASSOC)) {
-                array_push($classes, $row1['code']);
+                array_push($classes, $row1["code"]);
+                $semester = $row1["semester"];
             }
+            $_SESSION["sem"] = $semester;
         ?>
         <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
             <div>
