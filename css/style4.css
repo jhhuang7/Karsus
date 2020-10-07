@@ -15,7 +15,7 @@ body{
 .card{
     background-color: transparent;
     border-radius: 2rem;
-    max-height: 30rem;
+    max-height: 40rem;
     padding: 0.5rem;
     border: transparent;
 }
@@ -206,14 +206,14 @@ body{
 
 
 /*Footer*/
-footer{
-    /*
-    todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result
-     in the scroll breaking
+/*footer{*/
+/*    !**/
+/*    todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result*/
+/*     in the scroll breaking*/
 
-     https://css-tricks.com/snippets/css/sticky-footer/
-    */
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+/*     https://css-tricks.com/snippets/css/sticky-footer/*/
+/*    *!*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    bottom: 0;*/
+/*}*/
