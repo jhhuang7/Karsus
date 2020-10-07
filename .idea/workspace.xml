@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style4.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,14 +167,9 @@
       <workItem from="1601705251531" duration="47000" />
       <workItem from="1601767631634" duration="6940000" />
       <workItem from="1601896701232" duration="76000" />
-      <workItem from="1601938374002" duration="1555000" />
-    </task>
-    <task id="LOCAL-00036" summary="Added 'require' attribute for inputs">
-      <created>1599271003620</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271003620</updated>
+      <workItem from="1601938374002" duration="1616000" />
+      <workItem from="1601983443835" duration="191000" />
+      <workItem from="1602044021600" duration="984000" />
     </task>
     <task id="LOCAL-00037" summary="Minor presentation changes">
       <created>1599271055983</created>
@@ -511,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601938673949</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="idea">
+      <created>1601940016324</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1601940016325</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,10 +577,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601938673778">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601940016116">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601938673778" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601940016116" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -614,10 +617,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601938681398">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601940047923">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601938681398" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601940047923" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
