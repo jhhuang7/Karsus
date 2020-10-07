@@ -102,7 +102,12 @@ body{
     flex-wrap: wrap;
     align-content: flex-start;
 }
-
+.customise #save{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -10px;
+}
     /*The Shop customisation*/
     .customise .card-body a{
     }
@@ -126,7 +131,6 @@ body{
         border-color: transparent;
         border-radius: 25rem;
     }
-
     .shop-item {
         width: 150px;
         height: 150px;
@@ -137,6 +141,12 @@ body{
         margin-bottom: 5px;
         margin-right: 5px;
         background-color: white;
+    }
+    .shop-item .disabled{
+        background-color: #74D14C;
+    }
+    .shop-item .btn-success{
+        background-color: #74D14C;
     }
 
     /*Customise avatar */
