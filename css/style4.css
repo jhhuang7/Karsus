@@ -30,15 +30,24 @@ body{
         border-radius: 2rem;
     }
     /*
-    These 4 id's are specifically for the home page
+    Home page
      */
     #classes-card-body{
         background-color: #60A1D1;
     }
+        #classes-card-body .btn{
+            background-color: #D19741;
+            border-color: transparent;
+        }
+
+        #classes-card-body a:hover{
+            background-color: lightgray;
+        }
 
     #tasks-card-body{
         background-color: #74D14C;
     }
+
 
     #leaderboard-card-body{
         background-color: #D136C6;
@@ -67,11 +76,19 @@ body{
     }
         #customise-card-body img{
             border-radius: 100rem;
-            border: 2rem #60A1D1;
+            border: #60A1D1;
+            background-color: #60A1D1;
+        }
+
+        #customise-card-body img:hover{
+            background-color: lightgray;
         }
 
 
-/* Modifications on the cards used in classes */
+/*
+Class Page
+Modifications on the cards used in classes
+*/
 .classes .card{
     max-height: none;
 }
