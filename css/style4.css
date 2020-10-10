@@ -15,7 +15,7 @@ body{
 .card{
     background-color: transparent;
     border-radius: 2rem;
-    max-height: 30rem;
+    max-height: 40rem;
     padding: 0.5rem;
     border: transparent;
 }
@@ -119,7 +119,12 @@ Modifications on the cards used in classes
     flex-wrap: wrap;
     align-content: flex-start;
 }
-
+.customise #save{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -10px;
+}
     /*The Shop customisation*/
     .customise .card-body a{
     }
@@ -143,7 +148,6 @@ Modifications on the cards used in classes
         border-color: transparent;
         border-radius: 25rem;
     }
-
     .shop-item {
         width: 150px;
         height: 150px;
@@ -154,6 +158,12 @@ Modifications on the cards used in classes
         margin-bottom: 5px;
         margin-right: 5px;
         background-color: white;
+    }
+    .shop-item .disabled{
+        background-color: #74D14C;
+    }
+    .shop-item .btn-success{
+        background-color: #74D14C;
     }
 
     /*Customise avatar */
@@ -223,14 +233,14 @@ Modifications on the cards used in classes
 
 
 /*Footer*/
-footer{
-    /*
-    todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result
-     in the scroll breaking
+/*footer{*/
+/*    !**/
+/*    todo this is an issue as when the page is not full it will always be halfway up the page but fixing it will result*/
+/*     in the scroll breaking*/
 
-     https://css-tricks.com/snippets/css/sticky-footer/
-    */
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+/*     https://css-tricks.com/snippets/css/sticky-footer/*/
+/*    *!*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    bottom: 0;*/
+/*}*/

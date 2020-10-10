@@ -191,6 +191,9 @@
                                                 <img alt='legs' id='legs' src='../images/legs/600-" . $wearing['legs'] . "'>";
                                 ?>
                             </div>
+                            <div id= "save">
+                                <a class="btn btn-primary" href='#' onclick='save_outfit()'>Save Outfit</a>
+                            </div>
                         </div>
                     </div>
 
@@ -256,10 +259,7 @@
                                     ?>
                                 </div>
                             </div>
-                            <div>
-                                <br>
-                                <a class="btn btn-primary" href='#' onclick='save_outfit()'>Save Outfit</a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
