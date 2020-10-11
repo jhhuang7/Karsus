@@ -94,6 +94,10 @@ Modifications on the cards used in classes
 }
 .classes .card-body{
     background-color: #60A1D1;
+    color: black;
+}
+.classes .card-body .card-title{
+    color: white;
 }
 .class-info{
     display: flex;
@@ -105,8 +109,39 @@ Modifications on the cards used in classes
     border: 1rem;
     border-radius: 1rem;
 }
+.classes .card-body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+    /*The table of tasks within class*/
+    .classes th{
+        border: none;
+        border-bottom: 5px solid #D19741;
+    }
+    .classes tr:nth-child(even) {
+        background-color: #A5C3D9;}
 
+    .classes .list-group h5{
+        text-align: center;
+        color: white;
+    }
+    .classes tbody{
+        text-align: center;
+    }
+    .classes h6{
+        color: white;
+    }
+    #due-date{
+        color: black;
+    }
+    /*todo this links up to the date to change depending on current date */
+    .tasks-past{
+        color: #D19741;
+    }
 /* Modification on the cards used by customise */
 
 .customise .card{
