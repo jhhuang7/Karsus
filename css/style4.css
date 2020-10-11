@@ -142,8 +142,12 @@ Modifications on the cards used in classes
     .tasks-past{
         color: #D19741;
     }
-/* Modification on the cards used by customise */
+/*Tasks formatting*/
 
+
+
+
+/* Modification on the cards used by customise */
 .customise .card{
     max-height: none;
 }
