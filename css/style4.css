@@ -70,7 +70,6 @@ body{
             border: 2rem #60A1D1;
         }
 
-
 /* Modifications on the cards used in classes */
 .classes .card{
     max-height: none;
@@ -92,6 +91,17 @@ body{
 
 /* Modification on the cards used by customise */
 
+#CC img{
+    margin-top: 15%;
+    margin-left: 20%;
+    width:60%;
+    border-radius: 3rem;
+}
+#background-H{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .customise .card{
     max-height: none;
 }
@@ -109,8 +119,6 @@ body{
     margin-bottom: -10px;
 }
     /*The Shop customisation*/
-    .customise .card-body a{
-    }
 
     .customise .card-body a:link{
         color: black;
