@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Customise</title>
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="../css/style1.css"/>
         <link rel="stylesheet" href="../css/style3.css"/>
         <link rel="stylesheet" href="../css/style4.css"/>
