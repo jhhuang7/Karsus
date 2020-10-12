@@ -156,7 +156,7 @@
                             <div class="card-title">List of Tasks (<?php echo count($tasks) ?>)</p>
                                 <div class="list-group">
                                     <?php
-                                    echo "<table class='table table-hover table-bordered'>
+                                    echo "<table>
                                     <thead>
                                     <tr>
                                     <th>Assessment Task</th>
@@ -165,12 +165,24 @@
                                     </thead>
                                     <tbody>";
                                         for ($i = 0; $i < count($tasks); $i++) {
+//                                        for ($i = 0; $i < count($tasks); $i++) {
+//                                            //trying to change the colour based on data
+//                                            //todo will or harry to check
+//                                            try {
+//                                                $date = new DateTime($tasks[$i]->dueDate);
+//                                            } catch (Exception $e) {
+//                                            }
+//                                            $now = new DateTime();
+//                                            $date_class = "";
+//                                            if($date < $now) {
+//                                                $date_class = "tasks-past";
+//                                            }
                                             // Not sure if tasks should link to their page as tasks couple be completed
                                             // href="task.php?title=' . $tasks[$i]->title . '&ccode=' . $course . '&info=' . $tasks[$i]->info . '&due=' . $tasks[$i]->dueDate . '"
                                             echo '
                                             <tr>
-                                            <td><h6 style="color:blue;">'. $tasks[$i]->title . '</h6><p>' . $tasks[$i]->info . '</p></td>
-                                            <td><h6 style="color:red; text-align:center;">' . $tasks[$i]->dueDate . '</h6></td>
+                                            <td><h6>'. $tasks[$i]->title . '</h6><p>' . $tasks[$i]->info . '</p></td>
+                                            <td><h6>' . $tasks[$i]->dueDate . '</h6></td>
                                             </tr>
                                             ';
                                           }

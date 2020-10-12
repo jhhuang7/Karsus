@@ -30,19 +30,29 @@ body{
         border-radius: 2rem;
     }
     /*
-    These 4 id's are specifically for the home page
+    Home page
      */
     #classes-card-body{
         background-color: #60A1D1;
     }
+        #classes-card-body .btn{
+            background-color: #D19741;
+            border-color: transparent;
+        }
+
+        #classes-card-body a:hover{
+            background-color: lightgray;
+        }
 
     #tasks-card-body{
         background-color: #74D14C;
     }
 
+
     #leaderboard-card-body{
         background-color: #D136C6;
     }
+
         /* The filter within leaderboard*/
         #filter{
             background-color: #74D14C;
@@ -59,24 +69,55 @@ body{
             scrollbar-track-color: #00bcd4;
         }
          */
+
+/*Customise card on the home page*/
     #customise-card-body{
         background-color: #D19741;
         display: flex;
         flex-wrap: wrap;
+        min-height: 30rem;
 
     }
-        #customise-card-body img{
-            border-radius: 100rem;
-            border: 2rem #60A1D1;
-        }
+    #customise-card-body img{
+        border-radius: 100rem;
+        border: #60A1D1;
+        background-color: transparent;
+    }
 
+    #CC img{
+        margin-top: 15%;
+        margin-left: 20%;
+        width:60%;
+        border-radius: 3rem;
+    }
+    #background-H{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /*todo update this to work with the new image*/
+    /*#customise-card-body img:hover{*/
+    /*    background-color: lightgray;*/
+    /*}*/
+
+
+/*
+Class Page
+Modifications on the cards used in classes
+*/
 
 /* Modifications on the cards used in classes */
+
 .classes .card{
     max-height: none;
 }
 .classes .card-body{
     background-color: #60A1D1;
+    color: black;
+}
+.classes .card-body .card-title{
+    color: white;
 }
 .class-info{
     display: flex;
@@ -88,9 +129,45 @@ body{
     border: 1rem;
     border-radius: 1rem;
 }
+.classes .card-body ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    /*The table of tasks within class*/
+    .classes th{
+        border: none;
+        border-bottom: 5px solid #D19741;
+    }
+    .classes tr:nth-child(even) {
+        background-color: #A5C3D9;}
+
+    .classes .list-group h5{
+        text-align: center;
+        color: white;
+    }
+    .classes tbody{
+        text-align: center;
+    }
+    .classes h6{
+        color: white;
+    }
+    #due-date{
+        color: black;
+    }
+    /*todo this links up to the date to change depending on current date */
+    .tasks-past{
+        color: #D19741;
+    }
+/*Tasks formatting*/
+
 
 
 /* Modification on the cards used by customise */
+
 
 .customise .card{
     max-height: none;
@@ -109,8 +186,6 @@ body{
     margin-bottom: -10px;
 }
     /*The Shop customisation*/
-    .customise .card-body a{
-    }
 
     .customise .card-body a:link{
         color: black;
