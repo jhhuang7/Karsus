@@ -44,7 +44,7 @@
             "hat" => 'hat-christmas.png',
             "mouth" => 'mouth-smile.png',
             "pants" => 'pant-female-normalBlack.png',
-            "legs" => 'legs-chicken.png',
+            "legs" => 'legs-human-normal-pale.png',
             "background" => 'background-stage1.png'
         );
 
