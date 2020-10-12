@@ -77,7 +77,7 @@ body{
         #customise-card-body img{
             border-radius: 100rem;
             border: #60A1D1;
-            background-color: #60A1D1;
+            background-color: transparent;
         }
 
         #customise-card-body img:hover{

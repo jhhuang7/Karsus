@@ -23,18 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/arms/600-arms-octopus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/arms/icon-arms-octopus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/eyes/600-eyes-cyclops.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/eyes/600-eyes-sunglasses.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/eyes/icon-eyes-sunglasses.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hat/600-hat-chef.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hat/600-hat-wizard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hat/icon-hat-wizard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/legs/600-legs-chicken.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/legs/600-legs-chicken.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/customise_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise_new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
