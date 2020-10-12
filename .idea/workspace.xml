@@ -44,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1gB7nyo3IbzIMrKASMt7mbDX1Y7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -570,9 +570,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters/0.58.3200.1742@0.58.3200.1742" timestamp="1598308986061" />
-    <state x="794" y="58" key="#PHP" timestamp="1597627033068">
-      <screen x="0" y="58" width="3200" height="1742" />
+    <state x="476" y="0" key="#PHP" timestamp="1602537287431">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="476" y="0" key="#PHP/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1602537287431" />
     <state x="794" y="58" key="#PHP/0.58.3200.1742@0.58.3200.1742" timestamp="1597627033068" />
     <state x="51" y="574" key="#SQL_Dialects" timestamp="1598091817692">
       <screen x="0" y="58" width="3200" height="1742" />
