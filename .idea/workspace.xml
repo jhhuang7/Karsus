@@ -24,8 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/arms/icon-arms-male-nomal-pale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/arms/icon-arms-male-normal-pale.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/arms/icon-arms-male-normal-pale.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,21 +169,11 @@
       <workItem from="1601938374002" duration="1616000" />
       <workItem from="1601983443835" duration="191000" />
       <workItem from="1602044021600" duration="1074000" />
-      <workItem from="1602115572909" duration="2482000" />
-    </task>
-    <task id="LOCAL-00039" summary="idea">
-      <created>1599271173669</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271173670</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Fixed navbar at top">
-      <created>1599271184382</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271184382</updated>
+      <workItem from="1602115572909" duration="2547000" />
+      <workItem from="1602374824072" duration="2714000" />
+      <workItem from="1602474497214" duration="980000" />
+      <workItem from="1602495279146" duration="173000" />
+      <workItem from="1602541598922" duration="319000" />
     </task>
     <task id="LOCAL-00041" summary="idea">
       <created>1599271197722</created>
@@ -516,7 +504,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602045053794</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="idea">
+      <created>1602133684427</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1602133684433</updated>
+    </task>
+    <task id="LOCAL-00089" summary="name change">
+      <created>1602133692290</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1602133692290</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed navbar at top" />
     <MESSAGE value="Quick update for MVP" />
     <MESSAGE value="Allows completion of task and points awarded" />
     <MESSAGE value="Separate page to display full list of tasks" />
@@ -558,9 +559,10 @@
     <MESSAGE value="Add students and add task" />
     <MESSAGE value="Added new inventory items to shop" />
     <MESSAGE value="Consistent profile dropdown button" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Minor style fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor style fixes" />
+    <MESSAGE value="idea" />
+    <MESSAGE value="name change" />
+    <option name="LAST_COMMIT_MESSAGE" value="name change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -579,10 +581,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1602045053606">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1602133692052">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1602045053606" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1602133692052" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -619,10 +621,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602045068047">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602133698443">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602045068047" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602133698443" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
