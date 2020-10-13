@@ -48,6 +48,14 @@ body{
         background-color: #74D14C;
     }
 
+        #tasks-card-body .btn{
+            background-color: #D136C6;
+            border-color: transparent;
+        }
+        #tasks-card-body a:hover{
+            background-color: lightgray;
+        }
+
 
     #leaderboard-card-body{
         background-color: #D136C6;
@@ -164,19 +172,35 @@ Modifications on the cards used in classes
     }
 
 
-/*Formatting for a specific tasks*/
+
+
+
+
+
+/*Formatting for a specific tasks, TODOo tasks and completed*/
 .tasks-title{
     font-size: x-large;
     color: black;
 }
+
+.tasks .btn{
+    background-color: #D136C6;
+    border: transparent;
+}
+
+.tasks .btn:hover{
+    background-color: lightgray;
+}
+
 
 .tasks .card{
     max-height: none;
 }
 
 .tasks .card-body{
-    background-color: #D136C6;
+    background-color: #65D136;
 }
+
 
 
 

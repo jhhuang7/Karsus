@@ -4,7 +4,6 @@
         <title>Task</title>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"
         <link rel="stylesheet" href="../css/style1.css"/>
         <link rel="stylesheet" href="../css/style3.css"/>
