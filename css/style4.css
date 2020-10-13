@@ -162,7 +162,24 @@ Modifications on the cards used in classes
     .tasks-past{
         color: #D19741;
     }
-/*Tasks formatting*/
+
+
+/*Formatting for a specific tasks*/
+.tasks-title{
+    font-size: x-large;
+    color: black;
+}
+
+.tasks .card{
+    max-height: none;
+}
+
+.tasks .card-body{
+    background-color: #D136C6;
+}
+
+
+
 
 
 

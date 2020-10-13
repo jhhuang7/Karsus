@@ -100,48 +100,63 @@
 
         <div class="container" style="margin-top: 50px; margin-bottom: 50px">
             <form action="answer.php" method="POST">
-                <?php
-                    echo '<p>' . $title . ': ' . $ccode . '<br>' .
-                        "Description: " . $info .
-                        '<br>Due date: ' . $due . '<br>';
-                    echo "Who's completed this task: ";
-                    echo implode(" ", $people);
-                    if (count($people) == 0) {
-                        echo "No one";
-                    }
-                    echo '</p>';
+                <div class="tasks">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <?php
+                                echo '<div class="card-title">' . $title . ': <span class="tasks-title">' . $ccode . '</span><br>' .
+                                    "Description: <span class='tasks-title'>" . $info .
+                                    '</span><br>Due date: <span class="tasks-title">' . $due . '</span><br>';
+                                echo "Who's completed this task: <span class='tasks-title'>";
+                                echo implode(" ", $people);
+                                if (count($people) == 0) {
+                                    echo "No one";
+                                }
+                                echo '</div>';
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                    <div class="card">
+                            <div class="card-body">
+                                <?php
+                                    $count = count($questions);
+                                    for ($i = 0; $i < $count ; $i++) {
+                                        $num = $i + 1;
+                                        echo '<div class="form-group">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-auto">
+                                                            <h2>' . $num . '</h2>
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="q' . $num . '">
+                                                                ' . $questions[$i]->question . '
+                                                            </label>
+                                                            <textarea 
+                                                                name="'.$num.'" 
+                                                                class="form-control" 
+                                                                id="q' . $num . '" 
+                                                                rows="3" 
+                                                                required
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>';
+                                    }
 
-                    $count = count($questions);
-                    for ($i = 0; $i < $count ; $i++) {
-                        $num = $i + 1;
-                        echo '<div class="form-group">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-auto">
-                                            <h2>' . $num . '</h2>
-                                        </div>
-                                        <div class="col">
-                                            <label for="q' . $num . '">
-                                                ' . $questions[$i]->question . '
-                                            </label>
-                                            <textarea 
-                                                name="'.$num.'" 
-                                                class="form-control" 
-                                                id="q' . $num . '" 
-                                                rows="3" 
-                                                required
-                                            ></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>';
-                    }
+                                    echo "<input name='count' type='hidden' value='" . $count . "'/>";
 
-                    echo "<input name='count' type='hidden' value='" . $count . "'/>";
-
-                    $task = $ccode . "+" . $title;
-                    echo "<input name='task' type='hidden' value='" . $task . "'/>";
-                ?>
+                                    $task = $ccode . "+" . $title;
+                                    echo "<input name='task' type='hidden' value='" . $task . "'/>";
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <button class="btn btn-primary float-right" type="submit">
                     Submit Answers
