@@ -24,11 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/completed.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/completed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/todo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1gB7nyo3IbzIMrKASMt7mbDX1Y7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -174,33 +169,11 @@
       <workItem from="1601938374002" duration="1616000" />
       <workItem from="1601983443835" duration="191000" />
       <workItem from="1602044021600" duration="1074000" />
-      <workItem from="1602115572909" duration="2482000" />
-      <workItem from="1602467336677" duration="387000" />
-      <workItem from="1602472517456" duration="384000" />
-      <workItem from="1602475109919" duration="1300000" />
-      <workItem from="1602536115045" duration="682000" />
-      <workItem from="1602537985927" duration="8280000" />
-    </task>
-    <task id="LOCAL-00039" summary="idea">
-      <created>1599271173669</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271173670</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Fixed navbar at top">
-      <created>1599271184382</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271184382</updated>
-    </task>
-    <task id="LOCAL-00041" summary="idea">
-      <created>1599271197722</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271197722</updated>
+      <workItem from="1602115572909" duration="2547000" />
+      <workItem from="1602374824072" duration="2714000" />
+      <workItem from="1602474497214" duration="980000" />
+      <workItem from="1602495279146" duration="173000" />
+      <workItem from="1602541598922" duration="2154000" />
     </task>
     <task id="LOCAL-00042" summary="Quick update for MVP">
       <created>1599520655577</created>
@@ -524,7 +497,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602045053794</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="idea">
+      <created>1602133684427</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1602133684433</updated>
+    </task>
+    <task id="LOCAL-00089" summary="name change">
+      <created>1602133692290</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1602133692290</updated>
+    </task>
+    <task id="LOCAL-00090" summary="idea">
+      <created>1602542043336</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1602542043337</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed navbar at top" />
     <MESSAGE value="Quick update for MVP" />
     <MESSAGE value="Allows completion of task and points awarded" />
     <MESSAGE value="Separate page to display full list of tasks" />
@@ -566,37 +559,35 @@
     <MESSAGE value="Add students and add task" />
     <MESSAGE value="Added new inventory items to shop" />
     <MESSAGE value="Consistent profile dropdown button" />
-    <MESSAGE value="idea" />
     <MESSAGE value="Minor style fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor style fixes" />
+    <MESSAGE value="name change" />
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters/0.58.3200.1742@0.58.3200.1742" timestamp="1598308986061" />
-    <state x="476" y="0" key="#PHP" timestamp="1602537287431">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="794" y="58" key="#PHP" timestamp="1597627033068">
+      <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="476" y="0" key="#PHP/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1602537287431" />
     <state x="794" y="58" key="#PHP/0.58.3200.1742@0.58.3200.1742" timestamp="1597627033068" />
     <state x="51" y="574" key="#SQL_Dialects" timestamp="1598091817692">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="51" y="574" key="#SQL_Dialects/0.58.3200.1742@0.58.3200.1742" timestamp="1598091817692" />
-    <state x="0" y="0" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602475156995">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="0" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1602475156995" />
-    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1602045053606">
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599267661405">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1602045053606" />
-    <state x="1211" y="427" key="FileChooserDialogImpl" timestamp="1602472893909">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1602542042871">
+      <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="1211" y="427" key="FileChooserDialogImpl/0.0.1920.1040/1920.-603.1080.1880@0.0.1920.1040" timestamp="1602472893909" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1602542042871" />
+    <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
+      <screen x="0" y="58" width="3200" height="1742" />
+    </state>
     <state x="1070" y="324" key="FileChooserDialogImpl/0.58.3200.1742@0.58.3200.1742" timestamp="1599267624340" />
     <state width="2109" height="421" key="GridCell.Tab.0.bottom" timestamp="1598092373695">
       <screen x="0" y="58" width="3200" height="1742" />
@@ -614,10 +605,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state width="2109" height="421" key="GridCell.Tab.0.right/0.58.3200.1742@0.58.3200.1742" timestamp="1598092373695" />
-    <state x="702" y="336" key="MultipleFileMergeDialog" timestamp="1601938696912">
+    <state x="702" y="336" key="MultipleFileMergeDialog" timestamp="1602542058120">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="702" y="336" key="MultipleFileMergeDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1601938696912" />
+    <state x="702" y="336" key="MultipleFileMergeDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1602542058120" />
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog" timestamp="1598090216357">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -630,10 +621,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602045068047">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602133698443">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602045068047" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602133698443" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
