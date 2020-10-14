@@ -21,8 +21,25 @@
                 margin-bottom: 30px
             }
 
+            .card{
+                border-radius: 2rem;
+                max-height: 40rem;
+                border-color: #248280;
+            }
+
+            .card-header{
+              border-radius: 2rem;
+              background-color:#248280;
+            }
+
             body {
-                background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(116, 209, 76, 1));
+                background-color: #B5D6A7;
+            }
+
+            footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
             }
             </style>
 
@@ -42,19 +59,23 @@
                 exit();
             }
 
-            // Get teacher's name
-            $tsql = "SELECT FirstName FROM Users WHERE id =" . $id . ";";
+            // Get teacher's details
+            $tsql = "SELECT * FROM Users WHERE id =" . $id . ";";
             $getResults = sqlsrv_query($conn, $tsql);
             if ($getResults == false) {
                 // Query problem
                 header("Location: ../index.html");
                 exit();
             }
+
             $row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC);
             $name = $row["FirstName"];
+            $lname = $row["LastName"];
+            $email = $row["email"];
+            $phone = $row["phone"];
 
             $classes = array();
-            $tsql1 = "SELECT code, FORMAT(sem, 'yyyy-MM-dd') as semester 
+            $tsql1 = "SELECT code, FORMAT(sem, 'yyyy-MM-dd') as semester
                 FROM Classes WHERE teacher=" . $id . " AND sem>=GETDATE();";
             $getResults1 = sqlsrv_query($conn, $tsql1);
             if ($getResults1 == false) {
@@ -80,10 +101,11 @@
             </div>
 
             <div class="col" style="color:white">
-                <h2><?php
+                <?php
                     echo '<h2>Welcome ' . $name . '!</h1>';
-                ?></h2>
+                ?>
             </div>
+
             <div class="dropdown">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
               <img src="../images/profile.png" alt="profile" width=30 height=30 />
@@ -94,8 +116,8 @@
             </div>
           </div>
         </div>
-        <div class="w3-sidebar w3-bar-block w3-black " style="width:10%">
-          <a href="home2.php" class="w3-bar-item w3-button">Dashboard</a>
+        <div class="w3-sidebar w3-bar-block w3-black" style="width:10%;">
+          <a href="#" class="w3-bar-item w3-button">Dashboard</a>
           <div class="w3-dropdown-hover">
             <button class="w3-button w3-black">My Courses</button>
           <div class="w3-dropdown-content w3-bar-block w3-border">
@@ -120,8 +142,8 @@
           <h2 style="font-weight:bold; font-family:Lato, sans-serif">Dashboard</h2>
             <div class="card-deck">
                 <div class="card bg-light">
-                  <div class="card-header" style="background-color:#248280;">
-                  <h4 style="color:white; font-weight:bold;">My Courses</h4>
+                  <div class="card-header">
+                  <h3 style="color:white; font-weight:bold;">My Courses</h3>
                   </div>
                     <div class="card-body">
                         <div class="container scroll">
@@ -143,13 +165,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-deck">
+
                 <div class="card bg-light">
-                  <div class="card-header" style="background-color:#248280;">
-                  <h4 style="color:white; font-weight:bold;">My Profile</h4>
+                  <div class="card-header">
+                  <h3 style="color:white; font-weight:bold;">My Profile</h3>
                   </div>
-                    <div class="card-body">
+                    <div class="card-body" style="font-weight:bold;">
+                      <p class="card-text"><?= $name." ". $lname?></p>
+                      <p class="card-text"style="color:grey;"><?= $email ?></p>
+                      <p class="card-text" style="color:grey;">+610<?= $phone ?></p>
 
                     </div>
                 </div>
@@ -178,5 +202,14 @@
                 alert("You have successfully added a new class!");
             }
         </script>
+        <footer class="page-footer font-small blue" style="background-color:#000000; color:#ffffff;">
+
+            <div class="footer-copyright text-center py-3">Copyright © 2020 Karsus
+                <p>All Rights Reserved by Team Karsus</p>
+            </div>
+
+        </footer>
     </body>
+    <!-- End Page Content -->
+
 </html>
