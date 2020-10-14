@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style4.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,42 +168,12 @@
       <workItem from="1601896701232" duration="76000" />
       <workItem from="1601938374002" duration="1616000" />
       <workItem from="1601983443835" duration="191000" />
-      <workItem from="1602044021600" duration="984000" />
-    </task>
-    <task id="LOCAL-00037" summary="Minor presentation changes">
-      <created>1599271055983</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271055983</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Implemented Contact Us">
-      <created>1599271167532</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271167532</updated>
-    </task>
-    <task id="LOCAL-00039" summary="idea">
-      <created>1599271173669</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271173670</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Fixed navbar at top">
-      <created>1599271184382</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271184382</updated>
-    </task>
-    <task id="LOCAL-00041" summary="idea">
-      <created>1599271197722</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1599271197722</updated>
+      <workItem from="1602044021600" duration="1074000" />
+      <workItem from="1602115572909" duration="2547000" />
+      <workItem from="1602374824072" duration="2714000" />
+      <workItem from="1602474497214" duration="980000" />
+      <workItem from="1602495279146" duration="173000" />
+      <workItem from="1602541598922" duration="2154000" />
     </task>
     <task id="LOCAL-00042" summary="Quick update for MVP">
       <created>1599520655577</created>
@@ -514,7 +483,42 @@
       <option name="project" value="LOCAL" />
       <updated>1601940016325</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="idea">
+      <created>1602045014441</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1602045014444</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Minor style fixes">
+      <created>1602045053793</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1602045053794</updated>
+    </task>
+    <task id="LOCAL-00088" summary="idea">
+      <created>1602133684427</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1602133684433</updated>
+    </task>
+    <task id="LOCAL-00089" summary="name change">
+      <created>1602133692290</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1602133692290</updated>
+    </task>
+    <task id="LOCAL-00090" summary="idea">
+      <created>1602542043336</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1602542043337</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,8 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Contact Us" />
-    <MESSAGE value="Fixed navbar at top" />
     <MESSAGE value="Quick update for MVP" />
     <MESSAGE value="Allows completion of task and points awarded" />
     <MESSAGE value="Separate page to display full list of tasks" />
@@ -557,6 +559,8 @@
     <MESSAGE value="Add students and add task" />
     <MESSAGE value="Added new inventory items to shop" />
     <MESSAGE value="Consistent profile dropdown button" />
+    <MESSAGE value="Minor style fixes" />
+    <MESSAGE value="name change" />
     <MESSAGE value="idea" />
     <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
@@ -577,10 +581,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1601940016116">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1602542042871">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1601940016116" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1602542042871" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -601,10 +605,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state width="2109" height="421" key="GridCell.Tab.0.right/0.58.3200.1742@0.58.3200.1742" timestamp="1598092373695" />
-    <state x="702" y="336" key="MultipleFileMergeDialog" timestamp="1601938696912">
+    <state x="702" y="336" key="MultipleFileMergeDialog" timestamp="1602542058120">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="702" y="336" key="MultipleFileMergeDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1601938696912" />
+    <state x="702" y="336" key="MultipleFileMergeDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1602542058120" />
     <state x="605" y="336" width="1980" height="1228" key="NewPhpClassDialog" timestamp="1598090216357">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -617,10 +621,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1601940047923">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602133698443">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1601940047923" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602133698443" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>

@@ -224,8 +224,8 @@
                         <div class="container scroll">
                             <p class="card-text">
                                 <a href="todo.php">
-                                    <button type="button" name="" id="" class="btn btn-secondary w-100 text-left">
-                                        <i class="fas fa-clipboard-list"></i> TODO Tasks
+                                    <button type="button" name="" id="" style="background: gray" class="btn btn-secondary w-100 text-left">
+                                        <i class="fas fa-clipboard-list" ></i> TODO Tasks
                                     </button>
                                 </a>
                             </p>
@@ -243,7 +243,7 @@
                         <div class="container scroll" style="margin-top: 18px;">
                             <p class="card-text">
                                 <a href="completed.php">
-                                    <button type="button" name="" id="" class="btn btn-secondary w-100 text-left">Completed Tasks</button>
+                                    <button type="button" name="" id="" class="btn btn-secondary w-100 text-left" style="background: gray">Completed Tasks</button>
                                 </a>
                             </p>
                             <?php
@@ -251,7 +251,6 @@
                                 echo '<p class="card-text">
                                     <button type="button"
                                         class="btn btn-info w-100 text-left"
-                                        style="background-color: forestgreen;"
                                     >' . $done[$i]->getDisplayName() . '
                                     </button></p>';
                             }
@@ -307,9 +306,40 @@
                 <div class="card">
                     <div class="card-body" id="customise-card-body">
                         <h4 class="card-title">Customise</h4>
-                        <a href="customise_new.php">
-                            <img src="../images/Avatar.PNG" class="img-thumbnail w-50 mx-auto d-block" alt="Avatar">
-                        </a>
+
+                        
+                        <div id= "CC" >
+                            <a href="customise_new.php">
+                        <?php
+                        $wearing = array(
+                            "arms" => 'arms-female-normal-pale.png',
+                            "body" => 'body-female-normalBlack.png',
+                            "eyes" => 'eyes-normal.png',
+                            "hair" => 'hair-female-normalBrown-pale.png',
+                            "hat" => 'hat-christmas.png',
+                            "mouth" => 'mouth-smile.png',
+                            "pants" => 'pant-female-normalBlack.png',
+                            "legs" => 'legs-human-normal-pale.png',
+                            "background" => 'background-stage1.png'
+                        ); 
+                        $SQL_GET_WEARING = "select * from Purchase p inner join Inventory i on p.item = i.name where p.student=" . $id. "and wearing = 'Y'";
+                        $queryW = sqlsrv_query($conn, $SQL_GET_WEARING);
+                        while($row = sqlsrv_fetch_array( $queryW, SQLSRV_FETCH_ASSOC))  
+                        {$wearing[$row['type']] = $row['imgsrc'];} 
+                        
+                        echo "<img alt='background' id='background-H' src='../images/background/600-" . $wearing['background'] . "' '>
+                              <img alt='hat' id='hat' src='../images/hat/600-" . $wearing['hat'] . "'>
+                              <img alt='hair' id='hair' src='../images/hair/600-" . $wearing['hair'] . "'>
+                              <img alt='eyes' id='eyes' src='../images/eyes/600-" . $wearing['eyes'] . "'>
+                              <img alt='mouth' id='mouth' src='../images/mouth/600-" . $wearing['mouth'] . "'>
+                              <img alt='body' id='body' src='../images/body/600-" . $wearing['body'] . "'>
+                              <img alt='arms' id='arms'  src='../images/arms/600-" . $wearing['arms'] . "'>
+                              <img alt='pants' id='pants' src='../images/pants/600-" . $wearing['pants'] . "'>
+                              <img alt='legs' id='legs' src='../images/legs/600-" . $wearing['legs'] . "'> ";
+                        ?>
+                        </a>                        
+                        </div>
+                        
                     </div>
                 </div>
             </div>
