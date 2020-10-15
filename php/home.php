@@ -225,7 +225,7 @@
                             <p class="card-text">
                                 <a href="todo.php">
                                     <button type="button" name="" id="" style="background: gray" class="btn btn-secondary w-100 text-left">
-                                        <i class="fas fa-clipboard-list" ></i> TODO Tasks
+                                        <i class="fas fa-clipboard-list" ></i> TODO Tasks ...
                                     </button>
                                 </a>
                             </p>
@@ -243,7 +243,7 @@
                         <div class="container scroll" style="margin-top: 18px;">
                             <p class="card-text">
                                 <a href="completed.php">
-                                    <button type="button" name="" id="" class="btn btn-secondary w-100 text-left" style="background: gray">Completed Tasks</button>
+                                    <button type="button" name="" id="" class="btn btn-secondary w-100 text-left" style="background: gray">Completed Tasks ...</button>
                                 </a>
                             </p>
                             <?php

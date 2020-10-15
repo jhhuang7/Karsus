@@ -91,9 +91,8 @@
             <div class="card-deck">
                 <div class="card">
                     <div class="card-body">
-                        <div class="card-title">Completed Tasks</div>
                             <?php
-                                // Currently can't edit completed tasks
+                                // Can't edit completed tasks
                                 for ($i = 0; $i < count($done); $i++) {
                                     echo '<p class="card-text">
                                                         <button type="button"

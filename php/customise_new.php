@@ -365,9 +365,9 @@
                 if (this.readyState === 4 && this.status === 200) {
                     let response = this.responseText;
                     if (response === "1") { // Success
-                        console.log("Equipping succeeded");
+                        alert("Outfit save succeeded");
                     } else {
-                        console.log("Equipping failed");
+                        alert("Outfit save failed");
                     }
                 }
             };

@@ -93,7 +93,6 @@
             <div class="card-deck">
                 <div class="card">
                     <div class="card-body">
-                        <div class="card-title">TODO Tasks</div>
                         <?php
                             for ($i = 0; $i < count($tasks); $i++) {
                                 echo '<p class="card-text">
