@@ -5,6 +5,12 @@
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
         <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"
+        <link rel="stylesheet" href="../css/style1.css"/>
+        <link rel="stylesheet" href="../css/style3.css"/>
+        <link rel="stylesheet" href="../css/style4.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -81,16 +87,23 @@
 
         <br>
 
-        <?php
-            // Currently can't edit completed tasks
-            for ($i = 0; $i < count($done); $i++) {
-                echo '<p class="card-text">
-                                    <button type="button"
-                                        class="btn btn-info w-100 text-left"
-                                        style="background-color: forestgreen;"
-                                    >' . $done[$i]->getDisplayName() . '
-                                    </button></p>';
-            }
-        ?>
+        <div class="tasks">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                            <?php
+                                // Can't edit completed tasks
+                                for ($i = 0; $i < count($done); $i++) {
+                                    echo '<p class="card-text">
+                                                        <button type="button"
+                                                            class="btn btn-info w-100 text-left"
+                                                        >' . $done[$i]->getDisplayName() . '
+                                                        </button></p>';
+                                }
+                            ?>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
