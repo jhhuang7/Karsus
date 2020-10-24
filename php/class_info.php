@@ -93,7 +93,7 @@
         <div class="navbar navbar-expand-md bg-dark navbar-dark" style="background:beige;">
             <div>
                 <a class="navbar-brand" href="home2.php">
-                    <img src="../images/karsus_logo.png" alt="Logo" style="width:55px">
+                    <img src="../images/karsus_logo.png" alt="Logo" width=40 height=40>
                 </a>
             </div>
 
