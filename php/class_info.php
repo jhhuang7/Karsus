@@ -4,19 +4,24 @@
         <title>Class Info</title>
         <link rel="icon" type="image/x-icon" href="../images/karsus.ico">
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/776f279b3d.js" crossorigin="anonymous"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-
+    <style>
+    body {
+        background-color: #B5D6A7;
+    }
+    </style>
     <body>
         <?php
             class Task {
-                public string $title;
-                public string $info;
-                public string $dueDate;
+                public $title;
+                public $info;
+                public $dueDate;
             }
 
             $course = $_GET["course"];
@@ -49,7 +54,7 @@
 
             $q2 = "SELECT * FROM Enrollments E, Users U
                     WHERE E.student=U.id AND E.class ='" . $course . "'
-                    AND E.sem>=GETDATE() 
+                    AND E.sem>=GETDATE()
                     ORDER BY U.score desc, U.LastName, U.FirstName, U.id;";
             $results2 = sqlsrv_query($conn, $q2);
             if ($results2 == false) {
@@ -65,8 +70,8 @@
                 array_push($students, $student);
             }
 
-            $q3 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date 
-                            FROM Tasks T WHERE ccode ='" . $course . "' 
+            $q3 = "SELECT title, info, FORMAT(due, 'dd/MM/yyyy') as date
+                            FROM Tasks T WHERE ccode ='" . $course . "'
                             and sem>=GETDATE() ORDER BY due;";
             $results3 = sqlsrv_query($conn, $q3);
             if ($results3 == false) {
@@ -118,21 +123,24 @@
                 <button  class="btn btn-success">Add +</button>
             <?php echo "</form>"; ?>
             <h4>List of members:</h4>
+            <div class="container">
+            <ul class="list-group ">
             <?php
                 if (count($students) == 0) {
                     echo "No members in this class yet, please add some.";
                     echo "<br>";
                 } else {
-                    echo "<ol>";
+
                     for ($i = 0; $i < count($students); $i++) {
-                        echo "<li>" .
+                        echo "<li class='list-group-item '><i class='glyphicon glyphicon-education'>&nbsp</i>".
                             $students[$i] . "<br>" .
                         "</li>";
                     }
-                    echo "</ol>";
+
                 }
             ?>
-
+          </ul>
+          </div>
             <hr>
 
             <h3>
@@ -162,6 +170,8 @@
                 }
             ?>
         </div>
+        <br>
+        <br>
 
         <script>
             let params = {};
