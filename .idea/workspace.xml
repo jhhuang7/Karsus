@@ -22,12 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="idea">
+    <list default="true" id="ab8de906-98f1-4bb4-a3fb-f59b52842b97" name="Default Changelist" comment="Minor changes based on some user testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/completed.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/completed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/customise_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/customise_new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/class_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/class_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/home2.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/home2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -181,21 +182,17 @@
       <workItem from="1602573541460" duration="695000" />
       <workItem from="1602648263138" duration="771000" />
       <workItem from="1602674277709" duration="267000" />
-      <workItem from="1602720203327" duration="2163000" />
-    </task>
-    <task id="LOCAL-00043" summary="idea">
-      <created>1599705418245</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1599705418245</updated>
-    </task>
-    <task id="LOCAL-00044" summary="idea">
-      <created>1600065642082</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1600065642083</updated>
+      <workItem from="1602720203327" duration="2398000" />
+      <workItem from="1602761764915" duration="1087000" />
+      <workItem from="1602823055055" duration="183000" />
+      <workItem from="1602993605679" duration="640000" />
+      <workItem from="1603080182843" duration="1799000" />
+      <workItem from="1603148658355" duration="741000" />
+      <workItem from="1603249208603" duration="459000" />
+      <workItem from="1603335605340" duration="436000" />
+      <workItem from="1603415358334" duration="225000" />
+      <workItem from="1603448953825" duration="134000" />
+      <workItem from="1603507971314" duration="1085000" />
     </task>
     <task id="LOCAL-00045" summary="Allows completion of task and points awarded">
       <created>1600065701270</created>
@@ -526,7 +523,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602544674009</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="idea">
+      <created>1602723862867</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1602723862869</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Minor changes based on some user testing">
+      <created>1602723892056</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1602723892056</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +556,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Quick update for MVP" />
     <MESSAGE value="Allows completion of task and points awarded" />
     <MESSAGE value="Separate page to display full list of tasks" />
     <MESSAGE value="Minor display info changes" />
@@ -570,7 +580,8 @@
     <MESSAGE value="Minor style fixes" />
     <MESSAGE value="name change" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="Minor changes based on some user testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes based on some user testing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="58" width="2060" height="1709" key="#CLI_Interpreters" timestamp="1598308986061">
@@ -589,10 +600,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="0" y="58" width="3200" height="1742" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.58.3200.1742@0.58.3200.1742" timestamp="1599267661405" />
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1602651322256">
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2" timestamp="1603336031834">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1602651322255" />
+    <state x="515" y="58" width="2685" height="1742" key="CommitChangelistDialog2/0.58.3200.1742@0.58.3200.1742" timestamp="1603336031834" />
     <state x="1070" y="324" key="FileChooserDialogImpl" timestamp="1599267624340">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
@@ -629,10 +640,10 @@
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
     <state x="346" y="58" key="SettingsEditor/0.58.3200.1742@0.58.3200.1742" timestamp="1598308988394" />
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602544703730">
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2" timestamp="1602724008762">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
-    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602544703730" />
+    <state x="521" y="264" width="2000" height="1319" key="Vcs.Push.Dialog.v2/0.58.3200.1742@0.58.3200.1742" timestamp="1602724008762" />
     <state x="1028" y="510" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600411480486">
       <screen x="0" y="58" width="3200" height="1742" />
     </state>
