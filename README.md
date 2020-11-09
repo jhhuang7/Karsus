@@ -11,3 +11,12 @@
 4. Open the `index.html` file.
 5. Hover over in the right hand corner of the file and you should see browser icons appearing. Click on your browser of your choice to run the website.
 6. Enjoy exploring through our system!
+
+## Test Accounts
+Student account:
+- user: 45321573
+- pass: K@rth0us
+
+Teacher account:
+- user: 2427626
+- pass: teacher
